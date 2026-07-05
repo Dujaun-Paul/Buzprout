@@ -1,6 +1,6 @@
 # Buzprout Website
 
-Marketing site for Buzprout — a digital studio based in Harare, Zimbabwe.
+Marketing site for Buzprout — a digital studio serving Caribbean businesses and beyond.
 
 Design source: [Figma](https://www.figma.com/design/VY4mRlFuKh3mK3amZzMY2A/Buzprout-Website-Design)
 

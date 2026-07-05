@@ -1,10 +1,13 @@
 import { ArrowRight, Check } from "lucide-react";
 import {
   ADD_ONS,
+  BUILDER_COMPARISON,
   packagesByTier,
+  PAYMENT_PLANS,
   PRICING_LADDER,
   type PackageTier,
 } from "../data/packages";
+import { CONTACT } from "../data/contact";
 
 export default function PricingSection() {
   return (
@@ -44,6 +47,115 @@ export default function PricingSection() {
           ))}
         </div>
 
+        {/* Payment options */}
+        <div className="mb-20">
+          <div className="mb-8">
+            <p className="text-xs text-primary uppercase tracking-widest font-medium mb-2">
+              How to pay
+            </p>
+            <h3 className="text-2xl font-bold tracking-tight text-foreground mb-1">
+              Cash, milestones, or monthly
+            </h3>
+            <p className="text-sm text-muted-foreground">
+              We quote a cash price first, then match you to the payment path that fits.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {PAYMENT_PLANS.map((plan) => (
+              <div
+                key={plan.title}
+                className={`flex flex-col p-7 rounded-2xl border bg-background ${
+                  plan.highlight
+                    ? "border-primary/40 ring-1 ring-primary/20"
+                    : "border-border"
+                }`}
+              >
+                {plan.highlight && (
+                  <span className="text-xs font-medium text-primary uppercase tracking-widest mb-3">
+                    Most common
+                  </span>
+                )}
+                <h4 className="text-lg font-semibold text-foreground mb-1">{plan.title}</h4>
+                <p className="text-xs text-primary font-medium mb-3">{plan.subtitle}</p>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4 flex-1">
+                  {plan.outcome}
+                </p>
+                <p className="text-sm font-medium text-foreground mb-4">{plan.summary}</p>
+                <ul className="space-y-2 mb-4">
+                  {plan.includes.map((item) => (
+                    <li key={item} className="flex gap-2 text-sm text-muted-foreground">
+                      <Check size={14} className="text-primary shrink-0 mt-0.5" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                {plan.example && (
+                  <p className="text-xs text-muted-foreground mb-5 border-t border-border pt-4">
+                    Example: {plan.example}
+                  </p>
+                )}
+                <a
+                  href={plan.href}
+                  className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-sm font-semibold mt-auto ${
+                    plan.highlight
+                      ? "bg-primary text-background hover:opacity-90"
+                      : "border border-border hover:border-primary/40 hover:text-primary"
+                  }`}
+                >
+                  {plan.ctaLabel} <ArrowRight size={14} />
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Builder comparison */}
+        <div className="mb-20 p-8 rounded-2xl border border-border bg-background">
+          <h3 className="text-xl font-bold text-foreground mb-6">{BUILDER_COMPARISON.title}</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
+            <div>
+              <p className="text-sm font-semibold text-foreground mb-3">
+                {BUILDER_COMPARISON.builderLabel}
+              </p>
+              <ul className="space-y-2">
+                {BUILDER_COMPARISON.builderGoodFor.map((item) => (
+                  <li key={item} className="flex gap-2 text-sm text-muted-foreground">
+                    <Check size={14} className="text-muted-foreground shrink-0 mt-0.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-foreground mb-3">
+                {BUILDER_COMPARISON.buzproutLabel}
+              </p>
+              <ul className="space-y-2">
+                {BUILDER_COMPARISON.buzproutGoodFor.map((item) => (
+                  <li key={item} className="flex gap-2 text-sm text-muted-foreground">
+                    <Check size={14} className="text-primary shrink-0 mt-0.5" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+          <p className="text-sm text-muted-foreground mb-4">{BUILDER_COMPARISON.academyNote}</p>
+          <div className="flex flex-wrap gap-4">
+            <a
+              href="/caribbean-site-checklist.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-primary hover:underline underline-offset-4"
+            >
+              Download free checklist
+            </a>
+            <a href="#academy" className="text-sm text-primary hover:underline underline-offset-4">
+              Buzprout Academy
+            </a>
+          </div>
+        </div>
+
         {/* Tier groups */}
         <div className="space-y-20">
           {PRICING_LADDER.map((tierMeta) => (
@@ -76,16 +188,26 @@ export default function PricingSection() {
         {/* Funnel CTA */}
         <div className="mt-16 p-8 rounded-2xl border border-primary/25 bg-primary/5 text-center">
           <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">
-            Not sure where you fit? Most clients start with a landing page or
-            starter site, then add booking, dashboards, or custom software as
-            revenue grows. We stay on through retainers so you're not resetting
-            every month.
+            Not sure where you fit? Start with Academy if you want DIY, Flex if you need
+            a custom build but prefer monthly payments, or book a call and we will map
+            the right entry point.
           </p>
+          <div className="flex flex-wrap gap-3 justify-center mb-4">
+            <a href="#academy" className="text-sm text-primary hover:underline underline-offset-4">
+              Academy
+            </a>
+            <span className="text-muted-foreground">·</span>
+            <a href="#flex" className="text-sm text-primary hover:underline underline-offset-4">
+              Buzprout Flex
+            </a>
+          </div>
           <a
-            href="#contact"
+            href={CONTACT.calendlyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary text-background font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 text-sm"
           >
-            Book a free call <ArrowRight size={16} />
+            {CONTACT.calendlyLabel} <ArrowRight size={16} />
           </a>
         </div>
       </div>

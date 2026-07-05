@@ -19,10 +19,15 @@ import {
 } from "lucide-react";
 
 import PricingSection from "./components/PricingSection";
+import FlexSection from "./components/FlexSection";
+import AcademySection from "./components/AcademySection";
+import { CONTACT } from "./data/contact";
 
 const NAV_LINKS = [
   { label: "Services", href: "#services" },
   { label: "Pricing", href: "#pricing" },
+  { label: "Flex", href: "#flex" },
+  { label: "Academy", href: "#academy" },
   { label: "Work", href: "#work" },
   { label: "Process", href: "#process" },
   { label: "FAQ", href: "#faq" },
@@ -199,7 +204,19 @@ const FAQS = [
   },
   {
     q: "Do you offer payment plans?",
-    a: "For larger builds we can structure milestones so you're not paying everything upfront. We'll walk through options on your discovery call based on project size and timeline.",
+    a: "Yes. Buzprout Flex lets you pay a deposit upfront and spread the rest over 6 to 18 months with a plan fee on the financed portion. You use the site while you pay; ownership transfers when the plan is complete. We also offer milestone payments and Build + Care for entry tier sites.",
+  },
+  {
+    q: "What is Buzprout Flex?",
+    a: "Flex is our build now, pay over time option for growth and systems projects. Example: a JMD 400,000 build might start with a JMD 160,000 deposit and about JMD 23,000 per month for 12 months. It is a commercial payment plan, not a loan. Terms are confirmed in your contract after a discovery call.",
+  },
+  {
+    q: "Why does care start at JMD 5,000 but you also show JMD 15,000?",
+    a: "Care Essential from JMD 5,000 covers hosting, backups, and security with no edit hours included. Care Standard around JMD 15,000 includes 2 hours of updates per month plus WhatsApp support. Different scope, not the same product.",
+  },
+  {
+    q: "Do you teach DIY instead of building for me?",
+    a: "We offer both. The Buzprout Academy teaches you to launch a credible site with AI and modern tools. When you outgrow DIY, Flex or a full build is the next step. Graduates get a discount on their first Flex deposit.",
   },
   {
     q: "What size businesses do you work with?",
@@ -223,7 +240,7 @@ const FAQS = [
   },
   {
     q: "What happens after we launch?",
-    a: "We offer hosting, maintenance, and support retainers covering fixes, updates, and quarterly check ins. Most clients stay with us well after their first project goes live.",
+    a: "Most clients move to a care plan. Essential starts around JMD 5,000 for hosting only. Standard and Plus add included edit hours and priority support. Software clients often use a systems retainer instead.",
   },
 ];
 
@@ -261,10 +278,12 @@ export default function App() {
               Contact
             </a>
             <a
-              href="#contact"
+              href={CONTACT.calendlyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm px-4 py-2 rounded-md bg-primary text-background font-semibold hover:opacity-90 active:scale-95 transition-all duration-150"
             >
-              Book a Call
+              {CONTACT.calendlyLabel}
             </a>
           </div>
 
@@ -290,11 +309,13 @@ export default function App() {
               </a>
             ))}
             <a
-              href="#contact"
+              href={CONTACT.calendlyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-sm px-4 py-2.5 rounded-md bg-primary text-background font-semibold text-center"
               onClick={() => setMenuOpen(false)}
             >
-              Book a Discovery Call
+              {CONTACT.calendlyLabel}
             </a>
           </div>
         )}
@@ -332,10 +353,12 @@ export default function App() {
 
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="#contact"
+                  href={CONTACT.calendlyUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-primary text-background font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 text-sm"
                 >
-                  Book Discovery Call <ArrowRight size={16} />
+                  {CONTACT.calendlyLabel} <ArrowRight size={16} />
                 </a>
                 <a
                   href="#work"
@@ -445,6 +468,10 @@ export default function App() {
         </section>
 
         <PricingSection />
+
+        <FlexSection />
+
+        <AcademySection />
 
         {/* ── Featured Work ── */}
         <section id="work" className="py-28 px-6 bg-card border-y border-border">
@@ -725,15 +752,15 @@ export default function App() {
 
             <div className="flex flex-wrap gap-4 justify-center">
               <a
-                href="https://calendly.com"
+                href={CONTACT.calendlyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-8 py-4 rounded-md bg-primary text-background font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 text-base"
               >
-                Book Discovery Call <ArrowRight size={18} />
+                {CONTACT.calendlyLabel} <ArrowRight size={18} />
               </a>
               <a
-                href="https://wa.me/263"
+                href={CONTACT.whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2.5 px-8 py-4 rounded-md border border-border text-foreground hover:border-primary/40 hover:text-primary transition-colors duration-150 text-base"
@@ -741,12 +768,22 @@ export default function App() {
                 <svg className="w-5 h-5 text-primary fill-current" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
-                WhatsApp Us
+                {CONTACT.whatsappLabel}
               </a>
             </div>
 
+            <p className="mt-6 text-sm text-muted-foreground">
+              Or email{" "}
+              <a
+                href={CONTACT.mailto("Project enquiry")}
+                className="text-primary hover:underline underline-offset-4"
+              >
+                {CONTACT.email}
+              </a>
+            </p>
+
             {/* Trust note */}
-            <p className="mt-10 text-xs text-muted-foreground">
+            <p className="mt-6 text-xs text-muted-foreground">
               Free call. No commitment. Honest advice.
             </p>
           </div>
@@ -770,7 +807,7 @@ export default function App() {
             <div>
               <div className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Services</div>
               <ul className="space-y-2.5 text-sm text-muted-foreground">
-                {["Brand & Design", "Websites", "Software Development", "AI & Automation", "Support & Growth"].map(s => (
+                {["Brand & Design", "Websites", "Software Development", "AI & Automation", "Care Plans"].map(s => (
                   <li key={s}><a href="#services" className="hover:text-foreground transition-colors">{s}</a></li>
                 ))}
               </ul>
@@ -783,6 +820,8 @@ export default function App() {
                   { label: "About", href: "#" },
                   { label: "Services", href: "#services" },
                   { label: "Pricing", href: "#pricing" },
+                  { label: "Flex", href: "#flex" },
+                  { label: "Academy", href: "#academy" },
                   { label: "Portfolio", href: "#work" },
                   { label: "Process", href: "#process" },
                   { label: "FAQ", href: "#faq" },
@@ -796,21 +835,39 @@ export default function App() {
             <div>
               <div className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Contact</div>
               <ul className="space-y-2.5 text-sm text-muted-foreground">
-                <li>hello@buzprout.com</li>
-                <li>WhatsApp available</li>
-                <li>Mon to Fri, 8am to 6pm CAT</li>
+                <li>
+                  <a
+                    href={CONTACT.mailto("Hello from Buzprout")}
+                    className="hover:text-foreground transition-colors"
+                  >
+                    {CONTACT.email}
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href={CONTACT.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-foreground transition-colors"
+                  >
+                    {CONTACT.whatsappLabel}
+                  </a>
+                </li>
+                <li>{CONTACT.hours}</li>
               </ul>
               <a
-                href="#contact"
+                href={CONTACT.calendlyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mt-6 inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-primary text-background text-sm font-semibold hover:opacity-90 transition-opacity"
               >
-                Book a Call <ArrowRight size={14} />
+                {CONTACT.calendlyLabel} <ArrowRight size={14} />
               </a>
             </div>
           </div>
 
           <div className="mt-14 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-xs text-muted-foreground">© 2024 Buzprout. All rights reserved.</p>
+            <p className="text-xs text-muted-foreground">© 2026 Buzprout. All rights reserved.</p>
             <p className="text-xs text-muted-foreground">Built with intention. Maintained with care.</p>
           </div>
         </div>

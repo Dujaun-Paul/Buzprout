@@ -51,7 +51,7 @@ export const PACKAGES: Package[] = [
   {
     title: "Starter Website",
     tier: "entry",
-    priceJmd: "JMD $80,000 to $180,000",
+    priceJmd: "JMD $60,000 to $180,000",
     priceUsd: "~USD $500 to $1,200",
     timeline: "7 to 10 days",
     outcome: "Show up online with a site that makes you look credible and easy to contact.",
@@ -168,20 +168,49 @@ export const PACKAGES: Package[] = [
     ],
     ctaLabel: "Book a scoping call",
   },
-  // Retainers
+  // Retainers — Website Care (3 tiers)
   {
-    title: "Website Care Plan",
+    title: "Care Essential",
     tier: "retainers",
-    priceJmd: "JMD $15,000 to $50,000/month",
-    priceUsd: "~USD $95 to $315/month",
-    outcome: "Your site stays online, secure, and current without you thinking about it.",
+    priceJmd: "JMD $5,000 to $8,000/month",
+    priceUsd: "~USD $32 to $51/month",
+    outcome: "Hosting peace of mind for brochure sites that rarely change.",
     includes: [
-      "Hosting and backups handled for you",
-      "Small updates when you need them",
-      "Security and performance looked after",
-      "Someone to call when something breaks",
+      "Hosting, SSL, backups, and uptime checks",
+      "Security patches applied for you",
+      "Email support, 48 hour response",
+      "No edit hours included (edits billed separately)",
     ],
-    ctaLabel: "Talk about a care plan",
+    ctaLabel: "Talk about care",
+  },
+  {
+    title: "Care Standard",
+    tier: "retainers",
+    priceJmd: "JMD $12,000 to $18,000/month",
+    priceUsd: "~USD $76 to $115/month",
+    outcome: "Stay current without paying for every small change separately.",
+    includes: [
+      "Everything in Essential",
+      "2 hours of content or design edits per month",
+      "WhatsApp support during business hours",
+      "Monthly site health report",
+    ],
+    ctaLabel: "Talk about care",
+    highlight: true,
+  },
+  {
+    title: "Care Plus",
+    tier: "retainers",
+    priceJmd: "JMD $25,000 to $40,000/month",
+    priceUsd: "~USD $160 to $255/month",
+    outcome: "For tourism, campaigns, and teams that need priority support.",
+    includes: [
+      "Everything in Standard",
+      "5 hours of edits per month",
+      "Same-day priority response",
+      "Quarterly analytics and conversion review",
+    ],
+    ctaLabel: "Talk about care",
   },
   {
     title: "Business Systems Retainer",
@@ -221,6 +250,87 @@ export const ADD_ONS = [
   { label: "AI chatbot", price: "JMD $100K to $500K" },
   { label: "Speed optimization", price: "JMD $30K to $100K" },
 ];
+
+export type PaymentPlan = {
+  title: string;
+  subtitle: string;
+  summary: string;
+  outcome: string;
+  includes: string[];
+  example?: string;
+  ctaLabel: string;
+  href: string;
+  highlight?: boolean;
+};
+
+export const PAYMENT_PLANS: PaymentPlan[] = [
+  {
+    title: "Milestone build",
+    subtitle: "Default for most projects",
+    summary: "40% deposit, then staged payments at design approval and launch",
+    outcome: "Best margin and clearest scope. You own everything when the final milestone clears.",
+    includes: [
+      "Deposit before work starts",
+      "Payments tied to visible progress",
+      "Full ownership on final payment",
+      "Works for Entry through Systems tiers",
+    ],
+    example: "JMD 400,000 → 160K signing, 120K design, 120K launch",
+    ctaLabel: "Book a scoping call",
+    href: "#contact",
+    highlight: true,
+  },
+  {
+    title: "Buzprout Flex",
+    subtitle: "Build now, pay monthly",
+    summary: "40% deposit + monthly installments (6 to 18 months by tier)",
+    outcome: "Get a custom build live without paying everything upfront. Own it when the plan is complete.",
+    includes: [
+      "Plan fee on the financed portion only",
+      "Use your site while you pay",
+      "Early payoff discount available",
+      "Eligibility checks before signing",
+    ],
+    example: "JMD 400,000 → 160K deposit + ~23K/mo × 12",
+    ctaLabel: "See Flex details",
+    href: "#flex",
+  },
+  {
+    title: "Build + Care",
+    subtitle: "Lower deposit, bundled support",
+    summary: "25% deposit + 18 monthly payments that include hosting and light care",
+    outcome: "Entry-tier sites only. Good when Flex deposit is still a stretch but you need more than DIY.",
+    includes: [
+      "Hosting and light support included in monthly",
+      "Ownership after term or early buyout",
+      "Not available for Systems-tier builds",
+      "Care continues after buyout if you want it",
+    ],
+    example: "JMD 120,000 site → 30K deposit + 7.5K/mo × 18",
+    ctaLabel: "Ask about Build + Care",
+    href: "#contact",
+  },
+];
+
+export const BUILDER_COMPARISON = {
+  title: "Not sure if you need us or a builder?",
+  builderLabel: "Wix, Framer, Squarespace",
+  builderGoodFor: [
+    "1 to 5 pages that rarely change",
+    "You are happy updating content yourself",
+    "No bookings, dashboards, or custom logic",
+    "Budget under ~JMD 50,000/year all-in",
+  ],
+  buzproutLabel: "Buzprout (Flex or full build)",
+  buzproutGoodFor: [
+    "Bookings, payments, or admin tools",
+    "WhatsApp and spreadsheets are breaking",
+    "Delivery tracking, portals, or multi-user systems",
+    "You want monthly payments instead of one big invoice",
+  ],
+  academyNote:
+    "Still deciding? Start with our free Caribbean Site Checklist or Buzprout Academy before committing to a build.",
+};
 
 export function packagesByTier(tier: PackageTier): Package[] {
   return PACKAGES.filter((p) => p.tier === tier);

@@ -1,0 +1,9 @@
+Scenario,Cash Price JMD,Product,Deposit %,Term Months,Fee %,Deposit JMD,Monthly JMD,Total Collected JMD,Premium %
+Starter Website Flex,120000,Flex,40,6,10,48000,13200,127200,6.0
+Business Website Flex,400000,Flex,40,12,15,160000,23000,436000,9.0
+Tourism Website Flex,550000,Flex,40,12,15,220000,31625,599500,9.0
+Logistics Lite Flex,1000000,Flex,40,12,15,400000,57500,1090000,9.0
+Custom Platform Flex,1200000,Flex,50,18,20,600000,46667,1440000,20.0
+MVP Build Flex,1500000,Flex,50,18,20,750000,58333,1800000,20.0
+Starter Build+Care,120000,Build+Care,25,18,,30000,7500,165000,37.5
+Business Milestone,400000,Milestone,40,,,160000,,400000,0.0
