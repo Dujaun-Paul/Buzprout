@@ -46,6 +46,13 @@ export const PRICING_LADDER: TierMeta[] = [
   },
 ];
 
+export const RECOMMENDED_START = {
+  packageTitle: "Business Website + Systems",
+  reason:
+    "Most growing Caribbean SMEs need more than a brochure site: enquiries, bookings, or a simple way to manage leads.",
+  href: "#contact",
+} as const;
+
 export const PACKAGES: Package[] = [
   // Entry
   {

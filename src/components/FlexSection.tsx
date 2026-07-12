@@ -168,7 +168,7 @@ export default function FlexSection() {
             Discuss Flex on a call <ArrowRight size={16} />
           </a>
           <a
-            href="#academy"
+            href="/academy"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-border text-foreground hover:border-primary/40 hover:text-primary text-sm"
           >
             Not ready yet? See Academy
@@ -178,7 +178,14 @@ export default function FlexSection() {
         <p className="text-xs text-muted-foreground mt-6 max-w-2xl">
           We do not offer 100% financing. Deposits start at {FLEX_DEFAULTS.depositPercent}%
           for most growth builds. {ELIGIBILITY_DECLINES[0].toLowerCase()} and similar cases
-          are declined.
+          are declined. Read the{" "}
+          <a href="/flex-terms.html" className="text-primary hover:underline underline-offset-4">
+            Flex terms summary
+          </a>{" "}
+          and{" "}
+          <a href="/payment-policy.html" className="text-primary hover:underline underline-offset-4">
+            payment policy
+          </a>.
         </p>
       </div>
     </section>

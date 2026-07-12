@@ -5,6 +5,7 @@ import {
   packagesByTier,
   PAYMENT_PLANS,
   PRICING_LADDER,
+  RECOMMENDED_START,
   type PackageTier,
 } from "../data/packages";
 import { CONTACT } from "../data/contact";
@@ -23,6 +24,24 @@ export default function PricingSection() {
           <p className="text-muted-foreground leading-relaxed">
             Every package targets a real result: more enquiries, smoother operations, less manual work. Most clients start simple and grow into bigger systems over time.
           </p>
+        </div>
+
+        <div className="mb-16 p-6 md:p-8 rounded-2xl border border-primary/25 bg-primary/[0.05] flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+          <div>
+            <p className="text-xs text-primary uppercase tracking-widest font-medium mb-2">
+              Most clients start here
+            </p>
+            <h3 className="text-xl font-semibold text-foreground mb-2">
+              {RECOMMENDED_START.packageTitle}
+            </h3>
+            <p className="text-sm text-muted-foreground max-w-xl">{RECOMMENDED_START.reason}</p>
+          </div>
+          <a
+            href={RECOMMENDED_START.href}
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 text-sm shrink-0"
+          >
+            Talk about your project <ArrowRight size={16} />
+          </a>
         </div>
 
         {/* Ladder */}

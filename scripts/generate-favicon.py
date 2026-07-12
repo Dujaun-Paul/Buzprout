@@ -1,18 +1,29 @@
-"""Generate raster favicon assets from the Buzprout sprout mark."""
+"""Generate raster favicon assets from the Buzprout B mark."""
 
 from __future__ import annotations
 
 from pathlib import Path
 
-from PIL import Image, ImageDraw
+from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "public"
 
 NAVY = "#0b1f2a"
-STEM = "#3d9f6a"
-LEAF_LEFT = "#1b7a4a"
-LEAF_RIGHT = "#2a9d8f"
+GREEN = "#3d9f6a"
+
+
+def _load_font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
+    candidates = [
+        "C:/Windows/Fonts/segoeuib.ttf",
+        "C:/Windows/Fonts/arialbd.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        "/System/Library/Fonts/Supplemental/Arial Bold.ttf",
+    ]
+    for path in candidates:
+        if Path(path).exists():
+            return ImageFont.truetype(path, size)
+    return ImageFont.load_default()
 
 
 def draw_icon(size: int) -> Image.Image:
@@ -28,27 +39,15 @@ def draw_icon(size: int) -> Image.Image:
         fill=NAVY,
     )
 
-    cx = size / 2
-    stem_top = 12 * scale
-    stem_bottom = 23 * scale
-    stem_width = max(2, round(2.5 * scale))
-    draw.line(
-        [(cx, stem_bottom), (cx, stem_top)],
-        fill=STEM,
-        width=stem_width,
-    )
-
-    def leaf_polygon(side: str) -> list[tuple[float, float]]:
-        tip_x = 8 * scale if side == "left" else 24 * scale
-        tip_y = 8 * scale
-        mid_x = 16 * scale
-        mid_y = 14 * scale
-        base_x = 11 * scale if side == "left" else 21 * scale
-        base_y = 13 * scale
-        return [(tip_x, tip_y), (mid_x, mid_y), (base_x, base_y)]
-
-    draw.polygon(leaf_polygon("left"), fill=LEAF_LEFT)
-    draw.polygon(leaf_polygon("right"), fill=LEAF_RIGHT)
+    font_size = max(8, round(19 * scale))
+    font = _load_font(font_size)
+    text = "B"
+    bbox = draw.textbbox((0, 0), text, font=font)
+    text_w = bbox[2] - bbox[0]
+    text_h = bbox[3] - bbox[1]
+    x = (size - text_w) / 2 - bbox[0]
+    y = (size - text_h) / 2 - bbox[1] + scale
+    draw.text((x, y), text, fill=GREEN, font=font)
     return img
 
 
