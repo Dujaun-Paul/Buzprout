@@ -4,7 +4,7 @@ import { CONTACT } from "../data/contact";
 
 export default function AcademySection() {
   return (
-    <section id="academy" className="py-28 px-6 bg-card border-y border-border">
+    <section id="academy" className="py-28 px-6 section-muted">
       <div className="max-w-7xl mx-auto">
         <div className="max-w-3xl mb-16">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
@@ -53,7 +53,7 @@ export default function AcademySection() {
               {COURSE_MODULES.map((mod) => (
                 <div
                   key={mod.number}
-                  className="p-4 rounded-xl border border-border bg-background"
+                  className="p-4 rounded-xl border border-border bg-card shadow-soft"
                 >
                   <p className="text-xs text-primary font-medium mb-1">Module {mod.number}</p>
                   <p className="text-sm font-semibold text-foreground mb-1">{mod.title}</p>
@@ -69,9 +69,9 @@ export default function AcademySection() {
           {COURSE_TIERS.map((tier) => (
             <div
               key={tier.title}
-              className={`flex flex-col p-7 rounded-2xl border bg-background ${
+              className={`flex flex-col p-7 rounded-2xl border bg-card shadow-soft ${
                 tier.highlight
-                  ? "border-primary/40 ring-1 ring-primary/20"
+                  ? "border-primary/30 ring-1 ring-primary/15 shadow-card"
                   : "border-border"
               }`}
             >
@@ -105,7 +105,7 @@ export default function AcademySection() {
           ))}
         </div>
 
-        <div className="p-8 rounded-2xl border border-primary/25 bg-primary/5 text-center">
+        <div className="p-8 rounded-2xl border border-primary/20 bg-primary/[0.04] text-center shadow-soft">
           <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">
             Outgrown DIY? Module 8 walks you through when Flex or a full build makes sense.
             Course graduates book a level-up call with a Flex deposit discount.

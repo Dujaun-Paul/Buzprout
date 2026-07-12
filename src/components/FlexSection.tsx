@@ -40,7 +40,7 @@ export default function FlexSection() {
           {FLEX_PRODUCT.promises.map((promise) => (
             <div
               key={promise}
-              className="p-6 rounded-2xl border border-border bg-card flex gap-3"
+              className="p-6 rounded-2xl border border-border bg-card shadow-soft flex gap-3"
             >
               <Shield size={18} className="text-primary shrink-0 mt-0.5" />
               <p className="text-sm text-foreground">{promise}</p>
@@ -50,7 +50,7 @@ export default function FlexSection() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
           {/* Example quote */}
-          <div className="p-8 rounded-2xl border border-primary/30 bg-primary/5">
+          <div className="p-8 rounded-2xl border border-primary/20 bg-primary/[0.04] shadow-soft">
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-3">
               Example quote
             </p>

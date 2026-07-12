@@ -252,7 +252,7 @@ export default function App() {
     <div className="bg-background text-foreground min-h-screen antialiased">
 
       {/* ── Navigation ── */}
-      <header className="fixed top-0 left-0 right-0 z-50 border-b border-border backdrop-blur-xl bg-background/75">
+      <header className="fixed top-0 left-0 right-0 z-50 border-b border-border backdrop-blur-xl bg-background/90 shadow-soft">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#" className="font-heading text-xl tracking-tight">
             Buzprout
@@ -327,14 +327,14 @@ export default function App() {
         <section className="relative pt-36 pb-28 px-6 overflow-hidden">
           {/* Dot grid */}
           <div
-            className="absolute inset-0 opacity-40"
+            className="absolute inset-0 opacity-60"
             style={{
-              backgroundImage: "radial-gradient(circle, rgba(0,217,126,0.15) 1px, transparent 1px)",
-              backgroundSize: "40px 40px",
+              backgroundImage: "radial-gradient(circle, rgba(99,91,255,0.09) 1px, transparent 1px)",
+              backgroundSize: "32px 32px",
             }}
           />
-          {/* Radial fade */}
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(0,217,126,0.08),transparent)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(99,91,255,0.07),transparent)]" />
+          <div className="absolute top-0 right-0 w-[480px] h-[480px] bg-[radial-gradient(circle,rgba(0,212,255,0.12),transparent_70%)] blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent" />
 
           <div className="relative max-w-7xl mx-auto">
@@ -391,7 +391,7 @@ export default function App() {
         </section>
 
         {/* ── Industries ── */}
-        <section className="py-10 px-6 border-y border-border bg-card">
+        <section className="py-10 px-6 section-muted">
           <div className="max-w-7xl mx-auto">
             <p
               className="text-xs text-muted-foreground uppercase tracking-widest mb-5 font-medium"
@@ -439,7 +439,7 @@ export default function App() {
                 return (
                   <div
                     key={svc.title}
-                    className={`group p-7 rounded-2xl border border-border bg-card hover:border-primary/25 hover:bg-card/80 transition-all duration-200 ${svc.wide ? "md:col-span-2" : ""}`}
+                    className={`group p-7 rounded-2xl border border-border bg-card shadow-soft hover:border-primary/30 hover:shadow-card transition-all duration-200 ${svc.wide ? "md:col-span-2" : ""}`}
                   >
                     <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/18 transition-colors duration-150">
                       <Icon size={20} className="text-primary" />
@@ -474,7 +474,7 @@ export default function App() {
         <AcademySection />
 
         {/* ── Featured Work ── */}
-        <section id="work" className="py-28 px-6 bg-card border-y border-border">
+        <section id="work" className="py-28 px-6 section-muted">
           <div className="max-w-7xl mx-auto">
             <div className="flex items-end justify-between mb-16">
               <div>
@@ -502,7 +502,7 @@ export default function App() {
                   href={proj.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group rounded-2xl overflow-hidden border border-border bg-background hover:border-primary/25 transition-colors duration-200"
+                  className="group rounded-2xl overflow-hidden border border-border bg-card shadow-soft hover:border-primary/30 hover:shadow-card transition-all duration-200"
                 >
                   <div className="relative h-56 overflow-hidden bg-muted">
                     <img
@@ -510,9 +510,9 @@ export default function App() {
                       alt={`${proj.title} website preview`}
                       className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-background/70 via-transparent to-transparent" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-foreground/10 to-transparent" />
                     <div className="absolute top-4 left-4 flex items-center gap-2">
-                      <span className="text-xs px-2.5 py-1 rounded-full bg-primary/90 text-background font-medium">
+                      <span className="text-xs px-2.5 py-1 rounded-full bg-primary text-primary-foreground font-medium">
                         {proj.category}
                       </span>
                     </div>
@@ -578,7 +578,7 @@ export default function App() {
                 {WHY.map(w => (
                   <div
                     key={w.number}
-                    className="flex gap-5 p-6 rounded-2xl border border-border bg-card hover:border-primary/25 transition-colors duration-150"
+                    className="flex gap-5 p-6 rounded-2xl border border-border bg-card shadow-soft hover:border-primary/30 hover:shadow-card transition-all duration-200"
                   >
                     <span
                       className="text-xs text-primary/50 mt-0.5 w-7 shrink-0 font-medium"
@@ -601,7 +601,7 @@ export default function App() {
         </section>
 
         {/* ── Process ── */}
-        <section id="process" className="py-28 px-6 bg-card border-y border-border">
+        <section id="process" className="py-28 px-6 section-muted">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
@@ -655,7 +655,7 @@ export default function App() {
               {TESTIMONIALS.map(t => (
                 <div
                   key={t.name}
-                  className="p-8 rounded-2xl border border-border bg-card hover:border-primary/25 transition-colors duration-150 flex flex-col"
+                  className="p-8 rounded-2xl border border-border bg-card shadow-soft hover:border-primary/30 hover:shadow-card transition-all duration-200 flex flex-col"
                 >
                   <div className="flex gap-0.5 mb-6">
                     {[...Array(5)].map((_, i) => (
@@ -683,7 +683,7 @@ export default function App() {
         </section>
 
         {/* ── FAQ ── */}
-        <section id="faq" className="py-28 px-6 bg-card border-y border-border">
+        <section id="faq" className="py-28 px-6 section-muted">
           <div className="max-w-2xl mx-auto">
             <div className="text-center mb-16">
               <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
@@ -700,7 +700,7 @@ export default function App() {
               {FAQS.map((faq, i) => (
                 <div
                   key={i}
-                  className="rounded-xl border border-border bg-background overflow-hidden"
+                  className="rounded-xl border border-border bg-card shadow-soft overflow-hidden"
                 >
                   <button
                     onClick={() => setOpenFaq(openFaq === i ? null : i)}
@@ -728,11 +728,12 @@ export default function App() {
           <div
             className="absolute inset-0 opacity-50"
             style={{
-              backgroundImage: "radial-gradient(circle, rgba(0,217,126,0.12) 1px, transparent 1px)",
-              backgroundSize: "40px 40px",
+              backgroundImage: "radial-gradient(circle, rgba(99,91,255,0.08) 1px, transparent 1px)",
+              backgroundSize: "32px 32px",
             }}
           />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,rgba(0,217,126,0.05),transparent)]" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,rgba(99,91,255,0.05),transparent)]" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[radial-gradient(ellipse,rgba(0,212,255,0.1),transparent_70%)] blur-3xl pointer-events-none" />
           <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
 
@@ -792,7 +793,7 @@ export default function App() {
       </main>
 
       {/* ── Footer ── */}
-      <footer className="border-t border-border bg-card py-16 px-6">
+      <footer className="border-t border-border bg-muted py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             <div className="lg:col-span-1">

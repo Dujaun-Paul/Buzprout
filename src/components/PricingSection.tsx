@@ -11,7 +11,7 @@ import { CONTACT } from "../data/contact";
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="py-28 px-6 bg-card border-y border-border">
+    <section id="pricing" className="py-28 px-6 section-muted">
       <div className="max-w-7xl mx-auto">
         <div className="mb-16 max-w-3xl">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
@@ -64,10 +64,10 @@ export default function PricingSection() {
             {PAYMENT_PLANS.map((plan) => (
               <div
                 key={plan.title}
-                className={`flex flex-col p-7 rounded-2xl border bg-background ${
+                className={`flex flex-col p-7 rounded-2xl border bg-card shadow-soft transition-all duration-200 ${
                   plan.highlight
-                    ? "border-primary/40 ring-1 ring-primary/20"
-                    : "border-border"
+                    ? "border-primary/30 ring-1 ring-primary/15 shadow-card"
+                    : "border-border hover:border-primary/25"
                 }`}
               >
                 {plan.highlight && (
@@ -110,7 +110,7 @@ export default function PricingSection() {
         </div>
 
         {/* Builder comparison */}
-        <div className="mb-20 p-8 rounded-2xl border border-border bg-background">
+        <div className="mb-20 p-8 rounded-2xl border border-border bg-card shadow-soft">
           <h3 className="text-xl font-bold text-foreground mb-6">{BUILDER_COMPARISON.title}</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-6">
             <div>
@@ -186,7 +186,7 @@ export default function PricingSection() {
         </div>
 
         {/* Funnel CTA */}
-        <div className="mt-16 p-8 rounded-2xl border border-primary/25 bg-primary/5 text-center">
+        <div className="mt-16 p-8 rounded-2xl border border-primary/20 bg-primary/[0.04] text-center shadow-soft">
           <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">
             Not sure where you fit? Start with Academy if you want DIY, Flex if you need
             a custom build but prefer monthly payments, or book a call and we will map
@@ -244,9 +244,9 @@ function TierGroup({
         {packages.map((pkg) => (
           <div
             key={pkg.title}
-            className={`flex flex-col p-7 rounded-2xl border bg-background transition-colors duration-200 ${
+            className={`flex flex-col p-7 rounded-2xl border bg-card shadow-soft transition-colors duration-200 ${
               pkg.highlight
-                ? "border-primary/40 ring-1 ring-primary/20"
+                ? "border-primary/30 ring-1 ring-primary/15 shadow-card"
                 : "border-border hover:border-primary/25"
             }`}
           >
