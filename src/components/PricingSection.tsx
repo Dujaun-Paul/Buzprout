@@ -18,12 +18,10 @@ export default function PricingSection() {
             Packages
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-5">
-            Start small. Grow into systems.
+            Packages built around what you need to improve.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Clear packages so you know what you're buying. Most clients start with
-            something simple, then upgrade as the business grows. You can climb
-            this ladder at your own pace.
+            Every package targets a real result: more enquiries, smoother operations, less manual work. Most clients start simple and grow into bigger systems over time.
           </p>
         </div>
 

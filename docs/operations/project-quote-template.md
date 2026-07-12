@@ -10,9 +10,43 @@
 
 ---
 
+## Business outcome
+
+What the client wants to improve (in their words):
+
+> e.g. "More bookings after hours" / "Fewer WhatsApp status questions" / "Less time on manual dispatch"
+
+---
+
+## Cost of the problem
+
+Quantify what the problem costs today:
+
+| Metric | Before (current) |
+|--------|------------------|
+| Time lost per week | |
+| Missed enquiries / bookings | |
+| Support calls or messages per day | |
+| Revenue impact (if known) | |
+| Operational bottlenecks | |
+
+---
+
+## Success metrics (before / after)
+
+Agreed targets for measuring whether the project succeeded:
+
+| Metric | Before | After (target) |
+|--------|--------|----------------|
+| | | |
+| | | |
+| | | |
+
+---
+
 ## Scope summary
 
-(Describe deliverables in outcome language, not feature laundry list.)
+(Describe the technology solution in outcome language — what changes for the business — not a feature laundry list.)
 
 ---
 

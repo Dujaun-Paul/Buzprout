@@ -23,16 +23,16 @@ export default function FlexSection() {
       <div className="max-w-7xl mx-auto">
         <div className="max-w-3xl mb-16">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
-            Pay over time
+            How to start
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-5">
-            {FLEX_PRODUCT.name}
+            {FLEX_PRODUCT.tagline}
           </h2>
-          <p className="text-lg text-muted-foreground mb-3">{FLEX_PRODUCT.tagline}</p>
+          <p className="text-lg text-muted-foreground mb-3">{FLEX_PRODUCT.name}</p>
           <p className="text-sm text-muted-foreground leading-relaxed">
-            Flexible payment plans for growth and systems builds. Not a loan. A commercial
-            build agreement with a plan fee on the financed portion. Final terms confirmed
-            on your discovery call and in contract.
+            You shouldn't have to delay growth because of upfront cost. Flex gets your
+            custom build live with a deposit and monthly payments. It's a commercial build
+            agreement, not a loan. Final terms confirmed on your discovery call.
           </p>
         </div>
 

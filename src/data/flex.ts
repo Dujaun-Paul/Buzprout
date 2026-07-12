@@ -3,7 +3,7 @@ export type PackageTierForFlex = "entry" | "growth" | "systems";
 
 export const FLEX_PRODUCT = {
   name: "Buzprout Flex",
-  tagline: "Build now. Pay over time. Own it when you're done.",
+  tagline: "Start building without waiting to save the full amount.",
   promises: [
     "Start with a deposit, not the full project cost",
     "Use your site or system while you pay",

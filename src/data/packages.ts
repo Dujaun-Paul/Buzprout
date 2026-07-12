@@ -313,7 +313,7 @@ export const PAYMENT_PLANS: PaymentPlan[] = [
 ];
 
 export const BUILDER_COMPARISON = {
-  title: "Not sure if you need us or a builder?",
+  title: "When DIY is enough, and when you need a partner",
   builderLabel: "Wix, Framer, Squarespace",
   builderGoodFor: [
     "1 to 5 pages that rarely change",

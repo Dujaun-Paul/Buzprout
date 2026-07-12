@@ -8,7 +8,7 @@ export default function AcademySection() {
       <div className="max-w-7xl mx-auto">
         <div className="max-w-3xl mb-16">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
-            Academy
+            DIY path
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-5">
             {ACADEMY.title}
@@ -107,8 +107,8 @@ export default function AcademySection() {
 
         <div className="p-8 rounded-2xl border border-primary/20 bg-primary/[0.04] text-center shadow-soft">
           <p className="text-sm text-muted-foreground mb-4 max-w-xl mx-auto">
-            Outgrown DIY? Module 8 walks you through when Flex or a full build makes sense.
-            Course graduates book a level-up call with a Flex deposit discount.
+            Outgrown DIY? Module 8 covers when Flex or a full build makes sense.
+            Course graduates get a discount on their first Flex deposit.
           </p>
           <a
             href="#flex"

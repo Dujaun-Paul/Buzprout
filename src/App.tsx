@@ -6,16 +6,18 @@ import {
   ArrowUpRight,
   Plus,
   Minus,
-  Globe,
-  Code2,
-  Zap,
-  Bot,
-  LifeBuoy,
+  Megaphone,
+  MessageSquare,
+  Sparkles,
+  Workflow,
+  TrendingUp,
   Truck,
   Heart,
   ShoppingBag,
   Building2,
   Rocket,
+  Globe,
+  UtensilsCrossed,
 } from "lucide-react";
 
 import PricingSection from "./components/PricingSection";
@@ -24,111 +26,113 @@ import AcademySection from "./components/AcademySection";
 import { CONTACT } from "./data/contact";
 
 const NAV_LINKS = [
-  { label: "Services", href: "#services" },
+  { label: "Outcomes", href: "#outcomes" },
+  { label: "Work", href: "#work" },
+  { label: "Process", href: "#process" },
   { label: "Pricing", href: "#pricing" },
   { label: "Flex", href: "#flex" },
   { label: "Academy", href: "#academy" },
-  { label: "Work", href: "#work" },
-  { label: "Process", href: "#process" },
   { label: "FAQ", href: "#faq" },
 ];
 
-const SERVICES = [
+const OUTCOMES = [
   {
-    icon: Globe,
-    title: "Brand & Design",
-    desc: "Look as polished as the work you do. We help you show up with clarity so customers trust you before they ever pick up the phone.",
-    tags: ["Credibility", "First impressions", "Consistency", "Stand out"],
+    icon: Megaphone,
+    title: "Acquire Customers",
+    desc: "If customers can't find you or don't trust what they see online, enquiries go elsewhere. We build sites, landing pages, and booking tools that bring people in.",
+    tags: ["More enquiries", "More bookings", "Credibility", "Found online"],
     wide: true,
   },
   {
-    icon: Code2,
-    title: "Websites",
-    desc: "Turn curious visitors into paying customers. Your site should sell while you sleep, not just look good in a portfolio.",
-    tags: ["More enquiries", "Clear messaging", "Mobile ready", "Built to convert"],
+    icon: MessageSquare,
+    title: "Improve Customer Communication",
+    desc: "If your team answers the same WhatsApp questions every day, hours disappear on autopilot. We set up automation so routine messages handle themselves.",
+    tags: ["Hours saved", "Faster responses", "24/7 support", "Less repetition"],
     wide: false,
   },
   {
-    icon: Zap,
-    title: "Software Development",
-    desc: "Stop running the business out of spreadsheets and WhatsApp threads. Get tools that save hours every week and grow with you.",
-    tags: ["Less manual work", "Fewer errors", "Team visibility", "Room to grow"],
+    icon: Sparkles,
+    title: "Improve Customer Experience",
+    desc: "When customers wait on hold or chase you for updates, they don't come back. We build portals, booking flows, and tracking so they can help themselves.",
+    tags: ["Self-service", "Fewer calls", "Better reviews", "Repeat business"],
     wide: false,
   },
   {
-    icon: Bot,
-    title: "AI & Automation",
-    desc: "Give your team their time back. Routine questions and repetitive tasks get handled automatically so people can focus on work that actually needs them.",
-    tags: ["Hours saved", "Faster responses", "Lower workload", "Smarter ops"],
+    icon: Workflow,
+    title: "Streamline Operations",
+    desc: "Running the business from spreadsheets and WhatsApp threads only works for so long. We build dashboards and custom tools that cut manual work and show you what's happening.",
+    tags: ["Less manual work", "Fewer errors", "Team visibility", "Clearer ops"],
     wide: false,
   },
   {
-    icon: LifeBuoy,
-    title: "Support & Growth",
-    desc: "Your digital systems should keep working long after launch day. We handle the upkeep so you can keep growing without nasty surprises.",
-    tags: ["Peace of mind", "Always online", "Stay current", "Strategic advice"],
+    icon: TrendingUp,
+    title: "Scale the Business",
+    desc: "What worked at 10 customers breaks at 100. We build platforms, integrations, and systems that grow with you as demand increases.",
+    tags: ["Room to grow", "Integrations", "Multi-location", "Long-term platform"],
     wide: false,
   },
 ];
 
 const INDUSTRIES = [
   { label: "Tourism & Hospitality", icon: Globe },
-  { label: "Logistics & Delivery", icon: Truck },
+  { label: "Logistics & Courier", icon: Truck },
   { label: "Healthcare", icon: Heart },
+  { label: "Beauty & Wellness", icon: Sparkles },
+  { label: "Restaurants & Food", icon: UtensilsCrossed },
   { label: "Retail & E-commerce", icon: ShoppingBag },
   { label: "Professional Services", icon: Building2 },
-  { label: "Startups", icon: Rocket },
+  { label: "Startups & SMEs", icon: Rocket },
 ];
 
 const PROJECTS = [
   {
     title: "Immers3D",
-    category: "Brand & Web",
+    category: "More bookings",
     desc: "Tourists can explore Jamaica before they book. Immersive 3D previews turn flat photos into experiences that help visitors feel confident about where they're going.",
     image: "/projects/immers3d.png",
     url: "https://immers3-d.vercel.app/",
-    tags: ["Tourism 3.0", "Immersive previews", "More bookings", "Jamaica"],
+    tags: ["Tourism", "Immersive previews", "Booking confidence", "Jamaica"],
     impact: "Experience before arrival",
   },
   {
     title: "Wayfora Health",
-    category: "Websites & Software",
+    category: "Better patient outcomes",
     desc: "Caribbean patients no longer navigate healthcare alone. Wayfora helps people find subsidies, affordable care, and a clear path through a system that was never built to be simple.",
     image: "/projects/wayfora.png",
     url: "https://wayfora-web.vercel.app/",
-    tags: ["Healthcare navigation", "Lower costs", "Clear next steps", "Caribbean"],
+    tags: ["Healthcare", "Lower costs", "Clear next steps", "Caribbean"],
     impact: "More health per dollar",
   },
   {
     title: "Waataly",
-    category: "Software & IoT",
+    category: "Operational visibility",
     desc: "Families and schools in Jamaica no longer climb ladders to guess tank levels. Waataly shows how much water is left and warns you before the taps run dry.",
     image: "/projects/waataly.png",
     url: "https://waataly.com",
-    tags: ["Peace of mind", "Fewer dry taps", "Remote visibility", "Jamaica"],
+    tags: ["IoT monitoring", "Fewer dry taps", "Remote visibility", "Jamaica"],
     impact: "Never run out blind",
   },
   {
     title: "Smart Xpress Courier",
-    category: "Websites & Software",
+    category: "Fewer status calls",
     desc: "Guyanese customers shipping from Miami finally know where their packages are. One place for tracking, rates, and support without chasing updates.",
     image: "/projects/smartxpress.png",
     url: "https://smartxpress.net",
-    tags: ["Shipment clarity", "Less anxiety", "Self service", "Miami to Guyana"],
+    tags: ["Shipment clarity", "Self service", "Less anxiety", "Miami to Guyana"],
     impact: "Confidence at every step",
   },
   {
     title: "Yaadex",
-    category: "Software Development",
+    category: "Scale without chaos",
     desc: "Delivery teams stopped losing orders in WhatsApp chats. Yaadex gives dispatchers one calm view of riders, jobs, and customer updates as volume grows.",
     image: "/projects/yaadex.png",
     url: "https://yaadex.com",
-    tags: ["Less chaos", "Happy customers", "Scale without stress", "Jamaica"],
+    tags: ["Less chaos", "Happy customers", "Dispatch clarity", "Jamaica"],
     impact: "Grow without the mess",
   },
   {
     title: "Autokima",
-    category: "Brand & Web",
+    category: "Early demand",
     desc: "A waitlist for people tired of surprise subscription charges. Clear story, simple signup, and momentum building before launch.",
     image: "/projects/autokima.png",
     url: "https://autokima.com",
@@ -140,32 +144,47 @@ const PROJECTS = [
 const WHY = [
   {
     number: "01",
-    title: "One partner, full stack",
-    desc: "One team handles your brand, site, software, and automation. No chasing five vendors or repeating yourself in every handoff.",
+    title: "We solve problems, not sell deliverables",
+    desc: "Most agencies hand you a website and move on. We start with what's broken in your business and build technology around that.",
   },
   {
     number: "02",
-    title: "Business outcomes first",
-    desc: "We care about leads won, hours saved, and money kept. Not how many pages we shipped or how pretty the repo looks.",
+    title: "Business before technology",
+    desc: "We never open with a tech stack. We ask what you need to improve, what it's costing you, then pick the right fix.",
   },
   {
     number: "03",
-    title: "Built for SMEs",
-    desc: "Serious capability without enterprise price tags or bloated builds. You get what you need to grow, scoped to what you can actually use.",
+    title: "Simplicity creates value",
+    desc: "Simple systems are easier to use, maintain, and scale. We avoid complexity unless it serves a clear business purpose.",
   },
   {
     number: "04",
     title: "Long-term partnership",
-    desc: "We stick around after launch. Your systems get maintained, improved, and scaled as your business changes.",
+    desc: "Projects end. Partnerships continue. We stay close after launch so your systems keep improving as your business grows.",
   },
 ];
 
 const STEPS = [
-  { step: "01", label: "Discover", desc: "We learn what success looks like for you and where you are today." },
-  { step: "02", label: "Plan", desc: "You get a clear scope, timeline, and budget before anything gets built." },
-  { step: "03", label: "Build", desc: "Regular demos keep you in the loop. No disappearing for months." },
-  { step: "04", label: "Launch", desc: "Go live smoothly with everything tested and your team ready." },
-  { step: "05", label: "Support", desc: "We stay close so your investment keeps paying off." },
+  {
+    step: "01",
+    label: "Identify the outcome",
+    desc: "What do you want to improve? More bookings, fewer support calls, less manual work.",
+  },
+  {
+    step: "02",
+    label: "Quantify the cost",
+    desc: "How much time, revenue, or opportunity is the problem costing you today?",
+  },
+  {
+    step: "03",
+    label: "Design the technology",
+    desc: "We pick the right tools after we understand your business. Website, automation, or custom software. Whatever actually solves the problem.",
+  },
+  {
+    step: "04",
+    label: "Measure success",
+    desc: "Every project has before/after metrics so you know the investment paid off.",
+  },
 ];
 
 const TESTIMONIALS = [
@@ -182,7 +201,7 @@ const TESTIMONIALS = [
     initial: "P",
   },
   {
-    quote: "The AI chatbot now handles 70% of routine customer queries. Our team can focus on work that actually requires human judgement. Game-changing.",
+    quote: "The AI chatbot now handles 70% of routine customer queries. Our team can focus on work that actually requires human judgement.",
     name: "Daniel M.",
     role: "CEO, MedAccess Clinics",
     initial: "D",
@@ -191,12 +210,16 @@ const TESTIMONIALS = [
 
 const FAQS = [
   {
+    q: "Do you build websites or solve business problems?",
+    a: "Both. We always start with your problem. The website or booking system is how we solve it. What matters is whether you get more enquiries, save hours, or serve customers better.",
+  },
+  {
     q: "Do you publish fixed prices?",
     a: "The ranges on our packages page are starting points. Every business is different, so we confirm scope and give you a firm quote after a discovery call. No surprises once we agree on what you're getting.",
   },
   {
     q: "Which package should I start with?",
-    a: "If you mainly need to be found online, start with a starter website or landing page. If you need bookings, inquiries, or internal tools, look at our growth packages. We'll help you pick the right entry point on a free call.",
+    a: "It depends on the outcome you need. If you mainly need to be found online, start with a starter website or landing page. If you need bookings, inquiries, or internal tools, look at our growth packages. We'll help you pick the right entry point on a free call.",
   },
   {
     q: "Can I upgrade later?",
@@ -208,35 +231,23 @@ const FAQS = [
   },
   {
     q: "What is Buzprout Flex?",
-    a: "Flex is our build now, pay over time option for growth and systems projects. Example: a JMD 400,000 build might start with a JMD 160,000 deposit and about JMD 23,000 per month for 12 months. It is a commercial payment plan, not a loan. Terms are confirmed in your contract after a discovery call.",
-  },
-  {
-    q: "Why does care start at JMD 5,000 but you also show JMD 15,000?",
-    a: "Care Essential from JMD 5,000 covers hosting, backups, and security with no edit hours included. Care Standard around JMD 15,000 includes 2 hours of updates per month plus WhatsApp support. Different scope, not the same product.",
+    a: "Flex lets you start building without saving the full amount upfront. Example: a JMD 400,000 build might start with a JMD 160,000 deposit and about JMD 23,000 per month for 12 months. It is a commercial payment plan, not a loan. Terms are confirmed in your contract after a discovery call.",
   },
   {
     q: "Do you teach DIY instead of building for me?",
-    a: "We offer both. The Buzprout Academy teaches you to launch a credible site with AI and modern tools. When you outgrow DIY, Flex or a full build is the next step. Graduates get a discount on their first Flex deposit.",
+    a: "We offer both. Buzprout Academy teaches you to launch a credible site with AI and modern tools. When you outgrow DIY, Flex or a full build is the next step. Graduates get a discount on their first Flex deposit.",
   },
   {
     q: "What size businesses do you work with?",
-    a: "We mainly work with SMEs, usually teams of 5 to 200 people in tourism, logistics, healthcare, retail, and professional services. We also help early stage startups building their first product.",
+    a: "We mainly work with SMEs in tourism, logistics, healthcare, beauty, retail, restaurants, and professional services across the Caribbean. We also help early stage startups building their first product.",
   },
   {
     q: "How does the discovery call work?",
-    a: "It's a free 30 minute call where we learn about your business and what you're trying to achieve. No hard sell. We'll tell you honestly if we're the right fit and what working together would look like.",
-  },
-  {
-    q: "Do you do one-off projects or ongoing work?",
-    a: "Both. Many clients start with one project, like a website or custom tool, then move into ongoing support as they grow. We're built for long term relationships but happy to scope a single deliverable.",
+    a: "It's a free 30 minute call where we learn what business problem you're trying to solve. No hard sell. We'll tell you honestly if we're the right fit and what working together would look like.",
   },
   {
     q: "How long does a typical project take?",
     a: "A business website usually takes 3 to 6 weeks. Custom software runs 6 to 16 weeks depending on scope. We agree timelines upfront during planning so there are no surprises.",
-  },
-  {
-    q: "Can you integrate with our existing systems?",
-    a: "Yes. We regularly plug into CRMs, payment gateways, booking platforms, and other tools you already use. We map what you have first so new work fits your setup instead of fighting it.",
   },
   {
     q: "What happens after we launch?",
@@ -281,7 +292,7 @@ export default function App() {
               href={CONTACT.calendlyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm px-4 py-2 rounded-md bg-primary text-background font-semibold hover:opacity-90 active:scale-95 transition-all duration-150"
+              className="text-sm px-4 py-2 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 hover-lift"
             >
               {CONTACT.calendlyLabel}
             </a>
@@ -312,7 +323,7 @@ export default function App() {
               href={CONTACT.calendlyUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-sm px-4 py-2.5 rounded-md bg-primary text-background font-semibold text-center"
+              className="text-sm px-4 py-2.5 rounded-md bg-primary text-primary-foreground font-semibold text-center"
               onClick={() => setMenuOpen(false)}
             >
               {CONTACT.calendlyLabel}
@@ -325,38 +336,38 @@ export default function App() {
 
         {/* ── Hero ── */}
         <section className="relative pt-36 pb-28 px-6 overflow-hidden">
-          {/* Dot grid */}
           <div
-            className="absolute inset-0 opacity-60"
+            className="absolute inset-0 opacity-50"
             style={{
-              backgroundImage: "radial-gradient(circle, rgba(99,91,255,0.09) 1px, transparent 1px)",
+              backgroundImage: "radial-gradient(circle, rgba(27,122,74,0.07) 1px, transparent 1px)",
               backgroundSize: "32px 32px",
             }}
           />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(99,91,255,0.07),transparent)]" />
-          <div className="absolute top-0 right-0 w-[480px] h-[480px] bg-[radial-gradient(circle,rgba(0,212,255,0.12),transparent_70%)] blur-3xl pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(27,122,74,0.06),transparent)]" />
+          <div className="absolute top-0 right-0 w-[480px] h-[480px] bg-[radial-gradient(circle,rgba(42,157,143,0.1),transparent_70%)] blur-3xl pointer-events-none" />
           <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent" />
 
           <div className="relative max-w-7xl mx-auto">
             <div className="max-w-5xl">
-              <h1
-                className="text-5xl md:text-7xl lg:text-8xl font-semibold leading-[1.04] tracking-tight text-foreground mb-7"
-              >
-                Technology that<br />
-                helps businesses<br />
-                <span className="text-primary">grow.</span>
-              </h1>
-
-              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-11 leading-relaxed">
-                We build digital systems that help businesses grow and operate more efficiently. Brand, web, software, and automation under one roof.
+              <p className="font-heading text-2xl md:text-3xl tracking-tight text-foreground mb-6 animate-fade-up">
+                Buzprout
               </p>
 
-              <div className="flex flex-wrap gap-4">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.08] tracking-tight text-foreground mb-7 animate-fade-up delay-100">
+                Helping businesses grow<br />
+                through <span className="text-primary">technology.</span>
+              </h1>
+
+              <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mb-11 leading-relaxed animate-fade-up delay-200">
+                You want more customers, less time on repetitive work, and systems that keep up as you grow. Tell us what's slowing you down and we'll build what fixes it.
+              </p>
+
+              <div className="flex flex-wrap gap-4 animate-fade-up delay-300">
                 <a
                   href={CONTACT.calendlyUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-primary text-background font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 text-sm"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 text-sm hover-lift"
                 >
                   {CONTACT.calendlyLabel} <ArrowRight size={16} />
                 </a>
@@ -368,43 +379,23 @@ export default function App() {
                 </a>
               </div>
             </div>
-
-            {/* Stats */}
-            <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 border-t border-border pt-14">
-              {[
-                { num: "50+", label: "Businesses helped to grow" },
-                { num: "3×", label: "Average revenue lift for clients" },
-                { num: "5", label: "Ways we help under one roof" },
-                { num: "< 3s", label: "Sites built to load fast" },
-              ].map(s => (
-                <div key={s.label}>
-                  <div
-                    className="text-4xl font-bold text-primary mb-1.5"
-                  >
-                    {s.num}
-                  </div>
-                  <div className="text-sm text-muted-foreground">{s.label}</div>
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
         {/* ── Industries ── */}
         <section className="py-10 px-6 section-muted">
           <div className="max-w-7xl mx-auto">
-            <p
-              className="text-xs text-muted-foreground uppercase tracking-widest mb-5 font-medium"
-            >
+            <p className="text-xs text-muted-foreground uppercase tracking-widest mb-5 font-medium">
               Industries we serve
             </p>
             <div className="flex flex-wrap gap-3">
-              {INDUSTRIES.map(ind => {
+              {INDUSTRIES.map((ind, i) => {
                 const Icon = ind.icon;
                 return (
                   <div
                     key={ind.label}
-                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background text-sm text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors duration-150 cursor-default select-none"
+                    className="flex items-center gap-2 px-4 py-2 rounded-full border border-border bg-background text-sm text-muted-foreground hover:text-foreground hover:border-primary/30 transition-colors duration-150 cursor-default select-none animate-fade-up"
+                    style={{ animationDelay: `${i * 60}ms` }}
                   >
                     <Icon size={13} className="text-primary" />
                     {ind.label}
@@ -415,50 +406,55 @@ export default function App() {
           </div>
         </section>
 
-        {/* ── Services ── */}
-        <section id="services" className="py-28 px-6">
+        {/* ── Outcomes ── */}
+        <section id="outcomes" className="py-28 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="mb-16">
               <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
-                Services
+                Outcomes
               </p>
-              <h2
-                className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-5"
-              >
-                Everything your business<br className="hidden md:block" />
-                needs, under one roof.
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-5">
+                Built for the results<br className="hidden md:block" />
+                you actually need.
               </h2>
               <p className="text-muted-foreground max-w-lg leading-relaxed">
-                You shouldn't need five different vendors to look credible, sell online, and run your ops. We handle it all so you can stay focused on the business.
+                We start with what's not working in your business, then build the right fix.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {SERVICES.map((svc) => {
-                const Icon = svc.icon;
+            <div className="space-y-0 divide-y divide-border">
+              {OUTCOMES.map((outcome, i) => {
+                const Icon = outcome.icon;
                 return (
                   <div
-                    key={svc.title}
-                    className={`group p-7 rounded-2xl border border-border bg-card shadow-soft hover:border-primary/30 hover:shadow-card transition-all duration-200 ${svc.wide ? "md:col-span-2" : ""}`}
+                    key={outcome.title}
+                    className={`grid grid-cols-1 lg:grid-cols-12 gap-6 py-10 first:pt-0 last:pb-0 animate-fade-up`}
+                    style={{ animationDelay: `${i * 80}ms` }}
                   >
-                    <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center mb-5 group-hover:bg-primary/18 transition-colors duration-150">
-                      <Icon size={20} className="text-primary" />
+                    <div className="lg:col-span-1 flex items-start">
+                      <div className="w-11 h-11 rounded-xl bg-primary/10 flex items-center justify-center">
+                        <Icon size={20} className="text-primary" />
+                      </div>
                     </div>
-                    <h3
-                      className="text-lg font-semibold text-foreground mb-2.5"
-                    >
-                      {svc.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground leading-relaxed mb-5">{svc.desc}</p>
-                    <div className="flex flex-wrap gap-2">
-                      {svc.tags.map(t => (
-                        <span
-                          key={t}
-                          className="text-xs px-2.5 py-1 rounded-full bg-muted text-muted-foreground"
-                        >
-                          {t}
-                        </span>
-                      ))}
+                    <div className="lg:col-span-3">
+                      <h3 className="text-lg font-semibold text-foreground mb-2">
+                        {outcome.title}
+                      </h3>
+                      <div className="flex flex-wrap gap-2">
+                        {outcome.tags.map(t => (
+                          <span
+                            key={t}
+                            className="text-xs px-2.5 py-1 rounded-full bg-muted text-muted-foreground"
+                          >
+                            {t}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="lg:col-span-8">
+                      <p className="text-sm text-muted-foreground leading-relaxed">
+                        {outcome.desc}
+                      </p>
                     </div>
                   </div>
                 );
@@ -466,12 +462,6 @@ export default function App() {
             </div>
           </div>
         </section>
-
-        <PricingSection />
-
-        <FlexSection />
-
-        <AcademySection />
 
         {/* ── Featured Work ── */}
         <section id="work" className="py-28 px-6 section-muted">
@@ -481,10 +471,8 @@ export default function App() {
                 <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
                   Portfolio
                 </p>
-                <h2
-                  className="text-4xl md:text-5xl font-bold tracking-tight text-foreground"
-                >
-                  Real results for<br />real businesses.
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+                  Real businesses,<br />real results.
                 </h2>
               </div>
               <a
@@ -502,7 +490,7 @@ export default function App() {
                   href={proj.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group rounded-2xl overflow-hidden border border-border bg-card shadow-soft hover:border-primary/30 hover:shadow-card transition-all duration-200"
+                  className="group rounded-2xl overflow-hidden border border-border bg-card shadow-soft hover:border-primary/30 hover:shadow-card transition-all duration-200 hover-lift"
                 >
                   <div className="relative h-56 overflow-hidden bg-muted">
                     <img
@@ -547,28 +535,26 @@ export default function App() {
           </div>
         </section>
 
-        {/* ── Why Buzprout ── */}
+        {/* ── What Makes Us Different ── */}
         <section className="py-28 px-6">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
               <div>
                 <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
-                  Why Buzprout
+                  What makes us different
                 </p>
-                <h2
-                  className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-7"
-                >
-                  One partner.<br />Full accountability.
+                <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-7">
+                  A studio built<br />around your business.
                 </h2>
                 <p className="text-muted-foreground leading-relaxed mb-4 max-w-md">
-                  Most SMEs juggle four or five vendors just to keep their digital side running. We replace that mess with one team that actually knows your business.
+                  We're not a web design agency. We figure out what's broken in your operation, build technology that fixes it, and keep improving as you grow.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-10 max-w-md">
-                  We're not the kind of agency that builds something and vanishes. We stay close, keep improving, and measure ourselves by what changes for you.
+                  If we can't measure the improvement, we rethink the approach. Your business should be better off when we're done.
                 </p>
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-primary text-background font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 text-sm"
+                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 text-sm hover-lift"
                 >
                   Start the conversation <ArrowRight size={16} />
                 </a>
@@ -578,17 +564,13 @@ export default function App() {
                 {WHY.map(w => (
                   <div
                     key={w.number}
-                    className="flex gap-5 p-6 rounded-2xl border border-border bg-card shadow-soft hover:border-primary/30 hover:shadow-card transition-all duration-200"
+                    className="flex gap-5 p-6 rounded-2xl border border-border bg-card shadow-soft hover:border-primary/30 transition-all duration-200"
                   >
-                    <span
-                      className="text-xs text-primary/50 mt-0.5 w-7 shrink-0 font-medium"
-                    >
+                    <span className="text-xs text-primary/50 mt-0.5 w-7 shrink-0 font-medium">
                       {w.number}
                     </span>
                     <div>
-                      <h4
-                        className="text-base font-semibold text-foreground mb-1.5"
-                      >
+                      <h4 className="text-base font-semibold text-foreground mb-1.5">
                         {w.title}
                       </h4>
                       <p className="text-sm text-muted-foreground leading-relaxed">{w.desc}</p>
@@ -605,37 +587,40 @@ export default function App() {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
-                Process
+                How we work
               </p>
-              <h2
-                className="text-4xl md:text-5xl font-bold tracking-tight text-foreground"
-              >
-                How we work together.
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-5">
+                Four steps. Clear results.
               </h2>
+              <p className="text-muted-foreground max-w-lg mx-auto leading-relaxed">
+                We figure out what you need to improve, what it's costing you, build the right technology, then track what changed.
+              </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 gap-6 relative">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 relative">
               {STEPS.map((s, i) => (
                 <div key={s.step} className="relative flex flex-col items-center text-center group">
-                  <div
-                    className="relative w-14 h-14 rounded-full border-2 border-border bg-background flex items-center justify-center mb-5 text-primary font-bold group-hover:border-primary group-hover:bg-primary/10 transition-all duration-200 z-10"
-                  >
+                  <div className="relative w-14 h-14 rounded-full border-2 border-border bg-background flex items-center justify-center mb-5 text-primary font-bold group-hover:border-primary group-hover:bg-primary/10 transition-all duration-200 z-10">
                     {s.step}
                     {i < STEPS.length - 1 && (
                       <div className="hidden md:block absolute top-1/2 left-[calc(100%+4px)] w-[calc(100%+1.5rem)] h-px bg-border -translate-y-1/2" />
                     )}
                   </div>
-                  <h4
-                    className="font-semibold text-foreground mb-2"
-                  >
+                  <h4 className="font-semibold text-foreground mb-2">
                     {s.label}
                   </h4>
-                  <p className="text-xs text-muted-foreground leading-relaxed max-w-[140px]">{s.desc}</p>
+                  <p className="text-xs text-muted-foreground leading-relaxed max-w-[200px]">{s.desc}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
+
+        <PricingSection />
+
+        <FlexSection />
+
+        <AcademySection />
 
         {/* ── Testimonials ── */}
         <section className="py-28 px-6">
@@ -644,10 +629,8 @@ export default function App() {
               <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
                 Testimonials
               </p>
-              <h2
-                className="text-4xl md:text-5xl font-bold tracking-tight text-foreground"
-              >
-                What our clients say.
+              <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+                Results our clients measure.
               </h2>
             </div>
 
@@ -689,9 +672,7 @@ export default function App() {
               <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
                 FAQ
               </p>
-              <h2
-                className="text-4xl font-bold tracking-tight text-foreground"
-              >
+              <h2 className="text-4xl font-bold tracking-tight text-foreground">
                 Common questions.
               </h2>
             </div>
@@ -728,12 +709,12 @@ export default function App() {
           <div
             className="absolute inset-0 opacity-50"
             style={{
-              backgroundImage: "radial-gradient(circle, rgba(99,91,255,0.08) 1px, transparent 1px)",
+              backgroundImage: "radial-gradient(circle, rgba(27,122,74,0.07) 1px, transparent 1px)",
               backgroundSize: "32px 32px",
             }}
           />
-          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,rgba(99,91,255,0.05),transparent)]" />
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[radial-gradient(ellipse,rgba(0,212,255,0.1),transparent_70%)] blur-3xl pointer-events-none" />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,rgba(27,122,74,0.04),transparent)]" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[radial-gradient(ellipse,rgba(42,157,143,0.08),transparent_70%)] blur-3xl pointer-events-none" />
           <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-background to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
 
@@ -741,14 +722,12 @@ export default function App() {
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-5">
               Get started
             </p>
-            <h2
-              className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-7"
-            >
-              Ready to build something<br />
-              <span className="text-primary">that works?</span>
+            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground mb-7">
+              What business problem<br />
+              <span className="text-primary">are you solving?</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-lg mx-auto mb-12 leading-relaxed">
-              Book a free 30 minute call. We'll listen, give you an honest read on your options, and show you what's actually possible.
+              Book a free 30 minute call. We'll listen, figure out what's costing you, and tell you honestly what's possible.
             </p>
 
             <div className="flex flex-wrap gap-4 justify-center">
@@ -756,7 +735,7 @@ export default function App() {
                 href={CONTACT.calendlyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-md bg-primary text-background font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 text-base"
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 active:scale-95 transition-all duration-150 text-base hover-lift"
               >
                 {CONTACT.calendlyLabel} <ArrowRight size={18} />
               </a>
@@ -783,7 +762,6 @@ export default function App() {
               </a>
             </p>
 
-            {/* Trust note */}
             <p className="mt-6 text-xs text-muted-foreground">
               Free call. No commitment. Honest advice.
             </p>
@@ -801,15 +779,17 @@ export default function App() {
                 Buzprout
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-                We help businesses look credible, sell online, and run smarter.
+                We help Caribbean businesses get more customers, communicate better, run more efficiently, and grow.
               </p>
             </div>
 
             <div>
-              <div className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Services</div>
+              <div className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Outcomes</div>
               <ul className="space-y-2.5 text-sm text-muted-foreground">
-                {["Brand & Design", "Websites", "Software Development", "AI & Automation", "Care Plans"].map(s => (
-                  <li key={s}><a href="#services" className="hover:text-foreground transition-colors">{s}</a></li>
+                {OUTCOMES.map(o => (
+                  <li key={o.title}>
+                    <a href="#outcomes" className="hover:text-foreground transition-colors">{o.title}</a>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -818,13 +798,12 @@ export default function App() {
               <div className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-medium">Company</div>
               <ul className="space-y-2.5 text-sm text-muted-foreground">
                 {[
-                  { label: "About", href: "#" },
-                  { label: "Services", href: "#services" },
+                  { label: "Outcomes", href: "#outcomes" },
+                  { label: "Work", href: "#work" },
+                  { label: "Process", href: "#process" },
                   { label: "Pricing", href: "#pricing" },
                   { label: "Flex", href: "#flex" },
                   { label: "Academy", href: "#academy" },
-                  { label: "Portfolio", href: "#work" },
-                  { label: "Process", href: "#process" },
                   { label: "FAQ", href: "#faq" },
                   { label: "Contact", href: "#contact" },
                 ].map(l => (
@@ -860,7 +839,7 @@ export default function App() {
                 href={CONTACT.calendlyUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-6 inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-primary text-background text-sm font-semibold hover:opacity-90 transition-opacity"
+                className="mt-6 inline-flex items-center gap-2 px-4 py-2.5 rounded-md bg-primary text-primary-foreground text-sm font-semibold hover:opacity-90 transition-opacity"
               >
                 {CONTACT.calendlyLabel} <ArrowRight size={14} />
               </a>
@@ -869,7 +848,7 @@ export default function App() {
 
           <div className="mt-14 pt-6 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-xs text-muted-foreground">© 2026 Buzprout. All rights reserved.</p>
-            <p className="text-xs text-muted-foreground">Built with intention. Maintained with care.</p>
+            <p className="text-xs text-muted-foreground">Helping businesses grow through technology.</p>
           </div>
         </div>
       </footer>
