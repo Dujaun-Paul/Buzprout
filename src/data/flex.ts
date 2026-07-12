@@ -41,22 +41,22 @@ export const BUILD_PLUS_CARE = {
   description:
     "Lower upfront deposit with monthly payments that bundle hosting, light support, and build cost. Ownership transfers after the term or early buyout.",
   example: {
-    cashPriceJmd: 120_000,
-    depositJmd: 30_000,
-    monthlyJmd: 7_500,
+    cashPriceJmd: 80_000,
+    depositJmd: 20_000,
+    monthlyJmd: 5_000,
     months: 18,
-    totalJmd: 165_000,
+    totalJmd: 110_000,
   },
 } as const;
 
 export const FLEX_EXAMPLE = {
   label: "Business Website + Systems",
-  cashPriceJmd: 400_000,
+  cashPriceJmd: 200_000,
   depositPercent: 40,
   termMonths: 12 as FlexTermMonths,
-  depositJmd: 160_000,
-  monthlyJmd: 23_000,
-  totalJmd: 436_000,
+  depositJmd: 80_000,
+  monthlyJmd: 11_500,
+  totalJmd: 218_000,
 };
 
 export const ELIGIBILITY_SCORECARD: {

@@ -231,7 +231,7 @@ const FAQS = [
   },
   {
     q: "What is Buzprout Flex?",
-    a: "Flex lets you start building without saving the full amount upfront. Example: a JMD 400,000 build might start with a JMD 160,000 deposit and about JMD 23,000 per month for 12 months. It is a commercial payment plan, not a loan. Terms are confirmed in your contract after a discovery call.",
+    a: "Flex lets you start building without saving the full amount upfront. Example: a JMD 200,000 build might start with a JMD 80,000 deposit and about JMD 11,500 per month for 12 months. It is a commercial payment plan, not a loan. Terms are confirmed in your contract after a discovery call.",
   },
   {
     q: "Do you teach DIY instead of building for me?",
@@ -251,7 +251,7 @@ const FAQS = [
   },
   {
     q: "What happens after we launch?",
-    a: "Most clients move to a care plan. Essential starts around JMD 5,000 for hosting only. Standard and Plus add included edit hours and priority support. Software clients often use a systems retainer instead.",
+    a: "Most clients move to a care plan. Essential starts around JMD 4,000 for hosting only. Standard and Plus add included edit hours and priority support. Software clients often use a systems retainer instead.",
   },
 ];
 

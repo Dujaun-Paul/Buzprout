@@ -65,13 +65,13 @@ Include in quote under **Success metrics**.
 
 **→ Milestone build** (default, best margin)
 
-Example: JMD 400,000 → 40% signing, 30% design approval, 30% launch.
+Example: JMD 200,000 → 40% signing, 30% design approval, 30% launch.
 
 ### 2. Need it live but can pay monthly?
 
 **→ Buzprout Flex** (12 months, 15% plan fee on financed portion)
 
-Example: JMD 400,000 → JMD 160,000 deposit + JMD 23,000/mo × 12.
+Example: JMD 200,000 → JMD 80,000 deposit + JMD 11,500/mo × 12.
 
 See [`flex-pricing-calculator.csv`](../internal/flex-pricing-calculator.csv).
 
@@ -79,7 +79,7 @@ See [`flex-pricing-calculator.csv`](../internal/flex-pricing-calculator.csv).
 
 **→ Build + Care** (entry tier only) **OR walk away**
 
-Example: JMD 120,000 site → JMD 30,000 deposit + JMD 7,500/mo × 18.
+Example: JMD 80,000 site → JMD 20,000 deposit + JMD 5,000/mo × 18.
 
 ### 4. Already running custom software?
 
@@ -102,7 +102,7 @@ Graduates get JMD 20,000 off first Flex deposit.
 | We just need a website | What business problem should the site solve? More bookings, credibility, or something else? |
 | Why not Wix? | Module 4 in Academy, or Flex when you outgrow templates |
 | Why not ChatGPT? | Course teaches AI properly; we build production systems |
-| JMD 15K maintenance? | Essential from JMD 5K (hosting only); Standard adds 2 hrs edits |
+| JMD 12K maintenance? | Essential from JMD 4K (hosting only); Standard adds 2 hrs edits |
 | Too expensive upfront | Flex or Build + Care monthly path |
 | How do I know it will work? | We agree before/after metrics upfront — hours saved, bookings, calls reduced |
 

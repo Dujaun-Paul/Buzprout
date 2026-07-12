@@ -68,7 +68,7 @@
 
 **If budget is unclear:**
 
-> "Our entry packages start around JMD 60K for visibility. Growth builds with booking and systems run JMD 250K+. I'll send a firm quote after we confirm scope — does that range work as a starting point?"
+> "Our entry packages start around JMD 40K for visibility. Growth builds with booking and systems run JMD 120K+. I'll send a firm quote after we confirm scope. Does that range work as a starting point?"
 
 ---
 

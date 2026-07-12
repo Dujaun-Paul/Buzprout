@@ -51,8 +51,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Starter Website",
     tier: "entry",
-    priceJmd: "JMD $60,000 to $180,000",
-    priceUsd: "~USD $500 to $1,200",
+    priceJmd: "JMD $40,000 to $95,000",
+    priceUsd: "~USD $250 to $600",
     timeline: "7 to 10 days",
     outcome: "Show up online with a site that makes you look credible and easy to contact.",
     includes: [
@@ -66,8 +66,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Landing Page",
     tier: "entry",
-    priceJmd: "JMD $50,000 to $120,000",
-    priceUsd: "~USD $300 to $750",
+    priceJmd: "JMD $25,000 to $60,000",
+    priceUsd: "~USD $160 to $380",
     timeline: "3 to 5 days",
     outcome: "Turn ad clicks and promotions into real enquiries, fast.",
     includes: [
@@ -81,8 +81,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Brand Starter Kit",
     tier: "entry",
-    priceJmd: "JMD $120,000 to $300,000",
-    priceUsd: "~USD $750 to $1,900",
+    priceJmd: "JMD $60,000 to $150,000",
+    priceUsd: "~USD $380 to $950",
     outcome: "Look consistent everywhere so people remember and trust your business.",
     includes: [
       "A logo and look you can use with confidence",
@@ -96,8 +96,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Business Website + Systems",
     tier: "growth",
-    priceJmd: "JMD $250,000 to $600,000",
-    priceUsd: "~USD $1,600 to $3,800",
+    priceJmd: "JMD $120,000 to $280,000",
+    priceUsd: "~USD $760 to $1,770",
     timeline: "3 to 6 weeks",
     outcome: "A site that captures leads and gives you a simple way to manage them.",
     includes: [
@@ -112,8 +112,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Tourism Website",
     tier: "growth",
-    priceJmd: "JMD $300,000 to $800,000",
-    priceUsd: "~USD $1,900 to $5,000",
+    priceJmd: "JMD $140,000 to $320,000",
+    priceUsd: "~USD $890 to $2,025",
     outcome: "Turn browsers into booking requests for tours, stays, and experiences.",
     includes: [
       "Showcase destinations and itineraries beautifully",
@@ -126,8 +126,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Logistics / Delivery Lite",
     tier: "growth",
-    priceJmd: "JMD $500,000 to $1.5M",
-    priceUsd: "~USD $3,200 to $9,500",
+    priceJmd: "JMD $220,000 to $550,000",
+    priceUsd: "~USD $1,400 to $3,480",
     outcome: "Give customers tracking and your team a dashboard instead of endless status calls.",
     includes: [
       "Customers see where their delivery is",
@@ -141,8 +141,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Custom Business Platform",
     tier: "systems",
-    priceJmd: "JMD $1.2M to $5M+",
-    priceUsd: "~USD $7,500+",
+    priceJmd: "JMD $550,000 to $2M+",
+    priceUsd: "~USD $3,500+",
     timeline: "6 to 16+ weeks",
     outcome: "Software built around how your business actually runs.",
     includes: [
@@ -156,8 +156,8 @@ export const PACKAGES: Package[] = [
   {
     title: "MVP / Startup Build",
     tier: "systems",
-    priceJmd: "JMD $800K to $3M",
-    priceUsd: "~USD $5,000 to $19,000",
+    priceJmd: "JMD $350,000 to $1.2M",
+    priceUsd: "~USD $2,200 to $7,600",
     timeline: "8 to 14 weeks",
     outcome: "Validate your product idea with something real users can touch.",
     includes: [
@@ -172,8 +172,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Care Essential",
     tier: "retainers",
-    priceJmd: "JMD $5,000 to $8,000/month",
-    priceUsd: "~USD $32 to $51/month",
+    priceJmd: "JMD $4,000 to $6,000/month",
+    priceUsd: "~USD $25 to $38/month",
     outcome: "Hosting peace of mind for brochure sites that rarely change.",
     includes: [
       "Hosting, SSL, backups, and uptime checks",
@@ -186,8 +186,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Care Standard",
     tier: "retainers",
-    priceJmd: "JMD $12,000 to $18,000/month",
-    priceUsd: "~USD $76 to $115/month",
+    priceJmd: "JMD $8,000 to $12,000/month",
+    priceUsd: "~USD $50 to $76/month",
     outcome: "Stay current without paying for every small change separately.",
     includes: [
       "Everything in Essential",
@@ -201,8 +201,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Care Plus",
     tier: "retainers",
-    priceJmd: "JMD $25,000 to $40,000/month",
-    priceUsd: "~USD $160 to $255/month",
+    priceJmd: "JMD $15,000 to $22,000/month",
+    priceUsd: "~USD $95 to $140/month",
     outcome: "For tourism, campaigns, and teams that need priority support.",
     includes: [
       "Everything in Standard",
@@ -215,8 +215,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Business Systems Retainer",
     tier: "retainers",
-    priceJmd: "JMD $50,000 to $250,000/month",
-    priceUsd: "~USD $315 to $1,600/month",
+    priceJmd: "JMD $35,000 to $120,000/month",
+    priceUsd: "~USD $220 to $760/month",
     outcome: "Keep improving your software without scoping a new project every time.",
     includes: [
       "Regular fixes and feature improvements",
@@ -229,8 +229,8 @@ export const PACKAGES: Package[] = [
   {
     title: "Growth Retainer",
     tier: "retainers",
-    priceJmd: "JMD $150,000 to $500,000/month",
-    priceUsd: "~USD $950 to $3,150/month",
+    priceJmd: "JMD $80,000 to $200,000/month",
+    priceUsd: "~USD $500 to $1,270/month",
     outcome: "Continuous product growth, automation, and optimization as your business scales.",
     includes: [
       "Ongoing feature development on your roadmap",
@@ -243,12 +243,12 @@ export const PACKAGES: Package[] = [
 ];
 
 export const ADD_ONS = [
-  { label: "Extra pages", price: "JMD $10K to $30K each" },
-  { label: "Booking system", price: "JMD $50K to $200K" },
-  { label: "Admin dashboard", price: "JMD $100K+" },
-  { label: "API integrations", price: "JMD $80K to $300K" },
-  { label: "AI chatbot", price: "JMD $100K to $500K" },
-  { label: "Speed optimization", price: "JMD $30K to $100K" },
+  { label: "Extra pages", price: "JMD $5K to $15K each" },
+  { label: "Booking system", price: "JMD $30K to $100K" },
+  { label: "Admin dashboard", price: "JMD $60K+" },
+  { label: "API integrations", price: "JMD $50K to $150K" },
+  { label: "AI chatbot", price: "JMD $60K to $250K" },
+  { label: "Speed optimization", price: "JMD $15K to $50K" },
 ];
 
 export type PaymentPlan = {
@@ -275,7 +275,7 @@ export const PAYMENT_PLANS: PaymentPlan[] = [
       "Full ownership on final payment",
       "Works for Entry through Systems tiers",
     ],
-    example: "JMD 400,000 → 160K signing, 120K design, 120K launch",
+    example: "JMD 200,000 → 80K signing, 60K design, 60K launch",
     ctaLabel: "Book a scoping call",
     href: "#contact",
     highlight: true,
@@ -291,7 +291,7 @@ export const PAYMENT_PLANS: PaymentPlan[] = [
       "Early payoff discount available",
       "Eligibility checks before signing",
     ],
-    example: "JMD 400,000 → 160K deposit + ~23K/mo × 12",
+    example: "JMD 200,000 → 80K deposit + ~11.5K/mo × 12",
     ctaLabel: "See Flex details",
     href: "#flex",
   },
@@ -306,7 +306,7 @@ export const PAYMENT_PLANS: PaymentPlan[] = [
       "Not available for Systems-tier builds",
       "Care continues after buyout if you want it",
     ],
-    example: "JMD 120,000 site → 30K deposit + 7.5K/mo × 18",
+    example: "JMD 80,000 site → 20K deposit + 5K/mo × 18",
     ctaLabel: "Ask about Build + Care",
     href: "#contact",
   },
@@ -319,7 +319,7 @@ export const BUILDER_COMPARISON = {
     "1 to 5 pages that rarely change",
     "You are happy updating content yourself",
     "No bookings, dashboards, or custom logic",
-    "Budget under ~JMD 50,000/year all-in",
+    "Budget under ~JMD 30,000/year all-in",
   ],
   buzproutLabel: "Buzprout (Flex or full build)",
   buzproutGoodFor: [
