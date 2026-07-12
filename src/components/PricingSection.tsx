@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, Check } from "lucide-react";
 import {
   ADD_ONS,
@@ -159,6 +160,12 @@ export default function PricingSection() {
           </div>
           <p className="text-sm text-muted-foreground mb-4">{BUILDER_COMPARISON.academyNote}</p>
           <div className="flex flex-wrap gap-4">
+            <Link
+              to="/assessment"
+              className="text-sm text-primary hover:underline underline-offset-4"
+            >
+              Free systems assessment
+            </Link>
             <a
               href="/caribbean-site-checklist.md"
               target="_blank"
@@ -167,9 +174,9 @@ export default function PricingSection() {
             >
               Download free checklist
             </a>
-            <a href="#academy" className="text-sm text-primary hover:underline underline-offset-4">
+            <Link to="/academy" className="text-sm text-primary hover:underline underline-offset-4">
               Buzprout Academy
-            </a>
+            </Link>
           </div>
         </div>
 

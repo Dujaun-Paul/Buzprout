@@ -7,6 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import PricingPage from "./pages/PricingPage";
 import AcademyPage from "./pages/AcademyPage";
 import ContactPage from "./pages/ContactPage";
+import AssessmentPage from "./pages/AssessmentPage";
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="about" element={<AboutPage />} />
           <Route path="pricing" element={<PricingPage />} />
           <Route path="academy" element={<AcademyPage />} />
+          <Route path="assessment" element={<AssessmentPage />} />
           <Route path="contact" element={<ContactPage />} />
         </Route>
       </Routes>

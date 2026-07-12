@@ -21,6 +21,7 @@ export const FOOTER_EXPLORE = [
   { label: "About", to: "/about" },
   { label: "Pricing", to: "/pricing" },
   { label: "Academy", to: "/academy" },
+  { label: "Free assessment", to: "/assessment" },
 ] as const;
 
 export const FOOTER_COMPANY = [

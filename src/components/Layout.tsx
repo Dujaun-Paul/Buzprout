@@ -3,6 +3,7 @@ import { Link, NavLink, Outlet } from "react-router-dom";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { BrandLockup, JsonLd } from "./Brand";
 import StickyCTA from "./StickyCTA";
+import CookieBanner from "./CookieBanner";
 import { CONTACT } from "../data/contact";
 import { FOOTER_COMPANY, FOOTER_EXPLORE, NAV_LINKS } from "../data/navigation";
 
@@ -92,6 +93,7 @@ export default function Layout() {
       </main>
 
       <StickyCTA />
+      <CookieBanner />
 
       <footer className="border-t border-border bg-muted py-16 px-6">
         <div className="max-w-7xl mx-auto">

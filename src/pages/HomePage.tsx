@@ -4,6 +4,7 @@ import StockVideo from "../components/StockVideo";
 import StockImage from "../components/StockImage";
 import OutcomesList from "../components/OutcomesList";
 import ProcessSection from "../components/ProcessSection";
+import InsightsSection from "../components/InsightsSection";
 import { CONTACT } from "../data/contact";
 import { PROJECTS } from "../data/projects";
 import { STOCK_VIDEOS } from "../data/videos";
@@ -40,10 +41,10 @@ export default function HomePage() {
               {CONTACT.calendlyLabel} <ArrowRight size={16} />
             </a>
             <Link
-              to="/work"
+              to="/assessment"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md border border-border text-foreground hover:border-primary/40 hover:text-primary transition-colors text-sm"
             >
-              View our work <ArrowUpRight size={16} />
+              Free systems assessment <ArrowUpRight size={16} />
             </Link>
           </div>
         </div>
@@ -120,20 +121,30 @@ export default function HomePage() {
 
       <ProcessSection />
 
+      <InsightsSection />
+
       <section className="py-20 px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-5">
             Ready to fix what's slowing you down?
           </h2>
           <p className="text-muted-foreground mb-8">
-            Book a free discovery call. No hard sell, just an honest conversation about what you need.
+            Start with a free systems score, or book a discovery call. No hard sell, just clarity on what to fix first.
           </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 text-sm"
-          >
-            Get in touch <ArrowRight size={16} />
-          </Link>
+          <div className="flex flex-wrap justify-center gap-3">
+            <Link
+              to="/assessment"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 text-sm"
+            >
+              Take the free assessment <ArrowRight size={16} />
+            </Link>
+            <Link
+              to="/contact"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md border border-border text-foreground hover:border-primary/40 hover:text-primary text-sm"
+            >
+              Get in touch
+            </Link>
+          </div>
         </div>
       </section>
     </>
