@@ -50,7 +50,7 @@ export const RECOMMENDED_START = {
   packageTitle: "Business Website + Systems",
   reason:
     "Most growing Caribbean SMEs need more than a brochure site: enquiries, bookings, or a simple way to manage leads.",
-  href: "#contact",
+  href: "/contact",
 } as const;
 
 export const PACKAGES: Package[] = [
@@ -284,7 +284,7 @@ export const PAYMENT_PLANS: PaymentPlan[] = [
     ],
     example: "JMD 200,000 → 80K signing, 60K design, 60K launch",
     ctaLabel: "Book a scoping call",
-    href: "#contact",
+    href: "/contact",
     highlight: true,
   },
   {
@@ -315,7 +315,7 @@ export const PAYMENT_PLANS: PaymentPlan[] = [
     ],
     example: "JMD 80,000 site → 20K deposit + 5K/mo × 18",
     ctaLabel: "Ask about Build + Care",
-    href: "#contact",
+    href: "/contact",
   },
 ];
 

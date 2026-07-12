@@ -9,7 +9,6 @@ const ICONS = {
 } as const;
 
 function ResourceCta({ type, href }: { type: string; href: string }) {
-  if (type === "article") return "Coming soon";
   if (href === "/assessment") return "Take assessment";
   if (type === "course") return "Learn more";
   return "Read more";

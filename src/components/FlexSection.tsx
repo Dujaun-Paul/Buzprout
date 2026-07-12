@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ArrowRight, Check, Shield } from "lucide-react";
 import {
   BUILD_PLUS_CARE,
@@ -161,18 +162,18 @@ export default function FlexSection() {
         </div>
 
         <div className="flex flex-wrap gap-4">
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary text-background font-semibold hover:opacity-90 text-sm"
           >
             Discuss Flex on a call <ArrowRight size={16} />
-          </a>
-          <a
-            href="/academy"
+          </Link>
+          <Link
+            to="/academy"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-md border border-border text-foreground hover:border-primary/40 hover:text-primary text-sm"
           >
             Not ready yet? See Academy
-          </a>
+          </Link>
         </div>
 
         <p className="text-xs text-muted-foreground mt-6 max-w-2xl">

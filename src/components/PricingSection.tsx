@@ -37,12 +37,12 @@ export default function PricingSection() {
             </h3>
             <p className="text-sm text-muted-foreground max-w-xl">{RECOMMENDED_START.reason}</p>
           </div>
-          <a
-            href={RECOMMENDED_START.href}
+          <Link
+            to={RECOMMENDED_START.href}
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 text-sm shrink-0"
           >
             Talk about your project <ArrowRight size={16} />
-          </a>
+          </Link>
         </div>
 
         {/* Ladder */}
@@ -112,16 +112,29 @@ export default function PricingSection() {
                     Example: {plan.example}
                   </p>
                 )}
-                <a
-                  href={plan.href}
-                  className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-sm font-semibold mt-auto ${
-                    plan.highlight
-                      ? "bg-primary text-background hover:opacity-90"
-                      : "border border-border hover:border-primary/40 hover:text-primary"
-                  }`}
-                >
-                  {plan.ctaLabel} <ArrowRight size={14} />
-                </a>
+                {plan.href.startsWith("#") ? (
+                  <a
+                    href={plan.href}
+                    className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-sm font-semibold mt-auto ${
+                      plan.highlight
+                        ? "bg-primary text-background hover:opacity-90"
+                        : "border border-border hover:border-primary/40 hover:text-primary"
+                    }`}
+                  >
+                    {plan.ctaLabel} <ArrowRight size={14} />
+                  </a>
+                ) : (
+                  <Link
+                    to={plan.href}
+                    className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-sm font-semibold mt-auto ${
+                      plan.highlight
+                        ? "bg-primary text-background hover:opacity-90"
+                        : "border border-border hover:border-primary/40 hover:text-primary"
+                    }`}
+                  >
+                    {plan.ctaLabel} <ArrowRight size={14} />
+                  </Link>
+                )}
               </div>
             ))}
           </div>
@@ -217,9 +230,9 @@ export default function PricingSection() {
             the right entry point.
           </p>
           <div className="flex flex-wrap gap-3 justify-center mb-4">
-            <a href="#academy" className="text-sm text-primary hover:underline underline-offset-4">
+            <Link to="/academy" className="text-sm text-primary hover:underline underline-offset-4">
               Academy
-            </a>
+            </Link>
             <span className="text-muted-foreground">·</span>
             <a href="#flex" className="text-sm text-primary hover:underline underline-offset-4">
               Buzprout Flex
@@ -301,8 +314,8 @@ function TierGroup({
               ))}
             </ul>
 
-            <a
-              href="#contact"
+            <Link
+              to="/contact"
               className={`inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-md text-sm font-semibold transition-all duration-150 ${
                 pkg.highlight
                   ? "bg-primary text-background hover:opacity-90"
@@ -310,7 +323,7 @@ function TierGroup({
               }`}
             >
               {pkg.ctaLabel} <ArrowRight size={14} />
-            </a>
+            </Link>
           </div>
         ))}
       </div>

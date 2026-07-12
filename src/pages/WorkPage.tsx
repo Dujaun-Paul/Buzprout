@@ -2,6 +2,7 @@ import { useState } from "react";
 import PageHeader from "../components/PageHeader";
 import WorkSection from "../components/WorkSection";
 import CaseStudiesSection from "../components/CaseStudiesSection";
+import TestimonialsSection from "../components/TestimonialsSection";
 import { INDUSTRIES } from "../data/industries";
 import { STOCK_VIDEOS } from "../data/videos";
 
@@ -65,6 +66,7 @@ export default function WorkPage() {
         hideHeader
       />
       <CaseStudiesSection />
+      <TestimonialsSection />
     </>
   );
 }

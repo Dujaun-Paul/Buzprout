@@ -4,6 +4,7 @@ import { ArrowRight, Menu, X } from "lucide-react";
 import { BrandLockup, JsonLd } from "./Brand";
 import StickyCTA from "./StickyCTA";
 import CookieBanner from "./CookieBanner";
+import HashScroll from "./HashScroll";
 import { CONTACT } from "../data/contact";
 import { FOOTER_COMPANY, FOOTER_EXPLORE, NAV_LINKS } from "../data/navigation";
 
@@ -18,6 +19,7 @@ export default function Layout() {
   return (
     <div className="bg-background text-foreground min-h-screen antialiased">
       <JsonLd />
+      <HashScroll />
 
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-border backdrop-blur-xl bg-background/90 shadow-soft">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -51,6 +53,7 @@ export default function Layout() {
             className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle navigation"
+            aria-expanded={menuOpen}
           >
             {menuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>

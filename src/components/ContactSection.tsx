@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import { ArrowRight } from "lucide-react";
 import { CONTACT } from "../data/contact";
+import { isLeadApiConfigured, submitLead } from "../lib/submitLead";
 import StockImage from "./StockImage";
 import { STOCK_IMAGES } from "../data/images";
 
@@ -9,55 +10,94 @@ type ContactSectionProps = {
 };
 
 export default function ContactSection({ compact = false }: ContactSectionProps) {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "saving" | "done" | "error">("idle");
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const form = new FormData(e.currentTarget);
-    const name = String(form.get("name") || "");
-    const business = String(form.get("business") || "");
-    const problem = String(form.get("problem") || "");
-    const body = [
-      `Name: ${name}`,
-      `Business: ${business}`,
-      "",
-      "What they need help with:",
-      problem,
-    ].join("\n");
+    if (status === "saving") return;
 
-    window.location.href = CONTACT.mailto("Project enquiry from website", body);
-    setSubmitted(true);
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const name = String(data.get("name") || "").trim();
+    const business = String(data.get("business") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const problem = String(data.get("problem") || "").trim();
+
+    setError(null);
+    setStatus("saving");
+
+    try {
+      if (!isLeadApiConfigured()) {
+        const body = [
+          `Name: ${name}`,
+          `Email: ${email}`,
+          `Business: ${business}`,
+          "",
+          "What they need help with:",
+          problem,
+        ].join("\n");
+        window.location.href = CONTACT.mailto("Project enquiry from website", body);
+        setStatus("done");
+        return;
+      }
+
+      const result = await submitLead({
+        source: "contact",
+        name,
+        email,
+        business,
+        message: problem,
+      });
+
+      if (!result.ok) {
+        setError(result.error || "Could not send your message.");
+        setStatus("error");
+        return;
+      }
+
+      form.reset();
+      setStatus("done");
+    } catch {
+      setError("Something went wrong. Please try again or email us directly.");
+      setStatus("error");
+    }
   }
 
   return (
-    <section id="contact" className={`relative ${compact ? "py-16" : "py-36"} px-6 overflow-hidden pb-28 md:pb-36`}>
+    <section
+      id="contact"
+      className={`relative ${compact ? "py-16" : "py-36"} px-6 overflow-hidden pb-28 md:pb-36`}
+    >
       {!compact && (
         <>
-      <div
-        className="absolute inset-0 opacity-50"
-        style={{
-          backgroundImage: "radial-gradient(circle, rgba(27,122,74,0.07) 1px, transparent 1px)",
-          backgroundSize: "32px 32px",
-        }}
-      />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,rgba(27,122,74,0.04),transparent)]" />
+          <div
+            className="absolute inset-0 opacity-50"
+            style={{
+              backgroundImage:
+                "radial-gradient(circle, rgba(27,122,74,0.07) 1px, transparent 1px)",
+              backgroundSize: "32px 32px",
+            }}
+          />
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_70%_70%_at_50%_50%,rgba(27,122,74,0.04),transparent)]" />
         </>
       )}
 
       <div className="relative max-w-7xl mx-auto">
         {!compact && (
-        <div className="text-center mb-14">
-          <p className="text-xs text-primary uppercase tracking-widest font-medium mb-5">
-            Get started
-          </p>
-          <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground mb-5">
-            What business problem<br />
-            <span className="text-primary">are you solving?</span>
-          </h2>
-          <p className="text-lg text-muted-foreground max-w-lg mx-auto leading-relaxed">
-            Book a call, send a quick message, or tell us what's slowing you down below.
-          </p>
-        </div>
+          <div className="text-center mb-14">
+            <p className="text-xs text-primary uppercase tracking-widest font-medium mb-5">
+              Get started
+            </p>
+            <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground mb-5">
+              What business problem
+              <br />
+              <span className="text-primary">are you solving?</span>
+            </h2>
+            <p className="text-lg text-muted-foreground max-w-lg mx-auto leading-relaxed">
+              Book a call, send a quick message, or tell us what's slowing you down below.
+            </p>
+          </div>
         )}
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
@@ -77,8 +117,23 @@ export default function ContactSection({ compact = false }: ContactSectionProps)
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm"
+                disabled={status === "saving"}
+                className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm disabled:opacity-60"
                 placeholder="Jane Smith"
+              />
+            </div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
+                Email
+              </label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                required
+                disabled={status === "saving"}
+                className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm disabled:opacity-60"
+                placeholder="you@business.com"
               />
             </div>
             <div>
@@ -88,7 +143,8 @@ export default function ContactSection({ compact = false }: ContactSectionProps)
               <input
                 id="business"
                 name="business"
-                className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm"
+                disabled={status === "saving"}
+                className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm disabled:opacity-60"
                 placeholder="Your company"
               />
             </div>
@@ -101,19 +157,29 @@ export default function ContactSection({ compact = false }: ContactSectionProps)
                 name="problem"
                 required
                 rows={4}
-                className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm resize-y"
+                disabled={status === "saving"}
+                className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm resize-y disabled:opacity-60"
                 placeholder="More bookings, less time on WhatsApp, a customer tracking portal..."
               />
             </div>
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 text-sm"
+              disabled={status === "saving"}
+              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 text-sm disabled:opacity-60"
             >
-              {submitted ? "Opening your email app..." : "Send via email"} <ArrowRight size={16} />
+              {status === "saving"
+                ? "Sending…"
+                : status === "done"
+                  ? "Message sent"
+                  : "Send message"}{" "}
+              <ArrowRight size={16} />
             </button>
-            <p className="text-xs text-muted-foreground">
-              Opens your email client with a pre-filled message to {CONTACT.email}.
-            </p>
+            {status === "done" && (
+              <p className="text-xs text-muted-foreground">
+                Thanks. We'll get back to you soon, usually within one business day.
+              </p>
+            )}
+            {error && <p className="text-xs text-muted-foreground">{error}</p>}
           </form>
 
           <div className="lg:col-span-4 space-y-5">

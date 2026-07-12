@@ -1,5 +1,6 @@
 export type StockVideo = {
-  id: number;
+  id?: number;
+  src: string;
   label: string;
   attribution: string;
 };
@@ -16,16 +17,14 @@ export const STOCK_VIDEOS = {
     attribution: "Video by Pexels",
   },
   about: {
-    id: 3254065,
-    src: pexelsHd(3254065),
+    src: "/videos/about.mp4",
     label: "Team collaboration",
-    attribution: "Video by Pexels",
+    attribution: "Buzprout",
   },
   work: {
-    id: 3209828,
-    src: pexelsHd(3209828),
+    src: "/videos/work.mp4",
     label: "Creative workspace",
-    attribution: "Video by Pexels",
+    attribution: "Buzprout",
   },
   outcomes: {
     id: 3129957,

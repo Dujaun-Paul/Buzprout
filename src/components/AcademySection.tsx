@@ -2,60 +2,124 @@ import { ArrowRight, BookOpen, Check } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { ACADEMY, COURSE_MODULES, COURSE_TIERS } from "../data/academy";
 import { CONTACT } from "../data/contact";
+import { isLeadApiConfigured, submitLead } from "../lib/submitLead";
 import StockImage from "./StockImage";
 import { STOCK_IMAGES } from "../data/images";
 
 function AcademyWaitlistForm() {
   const [course, setCourse] = useState("Live cohort");
+  const [status, setStatus] = useState<"idle" | "saving" | "done" | "error">("idle");
+  const [error, setError] = useState<string | null>(null);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const form = new FormData(e.currentTarget);
-    const name = String(form.get("name") || "");
-    const email = String(form.get("email") || "");
-    const body = [`Name: ${name}`, `Email: ${email}`, `Course: ${course}`].join("\n");
-    window.location.href = CONTACT.mailto("Buzprout Academy waitlist", body);
+    if (status === "saving") return;
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+    const name = String(data.get("name") || "").trim();
+    const email = String(data.get("email") || "").trim();
+
+    setError(null);
+    setStatus("saving");
+
+    try {
+      if (!isLeadApiConfigured()) {
+        const body = [`Name: ${name}`, `Email: ${email}`, `Course: ${course}`].join("\n");
+        window.location.href = CONTACT.mailto("Buzprout Academy waitlist", body);
+        setStatus("done");
+        return;
+      }
+
+      const result = await submitLead({
+        source: "academy",
+        name,
+        email,
+        course,
+      });
+
+      if (!result.ok) {
+        setError(result.error || "Could not join the waitlist.");
+        setStatus("error");
+        return;
+      }
+
+      form.reset();
+      setStatus("done");
+    } catch {
+      setError("Something went wrong. Please try again or email us directly.");
+      setStatus("error");
+    }
   }
 
   return (
     <form
-      id="academy-waitlist"
       onSubmit={handleSubmit}
       className="p-8 rounded-2xl border border-border bg-card shadow-soft space-y-4"
+      aria-labelledby="academy-waitlist-heading"
     >
-      <h3 className="text-lg font-semibold text-foreground">Join the waitlist</h3>
+      <h3 id="academy-waitlist-heading" className="text-lg font-semibold text-foreground">
+        Join the waitlist
+      </h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <input
-          name="name"
-          required
-          placeholder="Your name"
-          className="px-4 py-3 rounded-md border border-border bg-background text-sm"
-        />
-        <input
-          name="email"
-          type="email"
-          required
-          placeholder="Email address"
-          className="px-4 py-3 rounded-md border border-border bg-background text-sm"
-        />
+        <div>
+          <label htmlFor="academy-name" className="block text-sm font-medium text-foreground mb-2">
+            Your name
+          </label>
+          <input
+            id="academy-name"
+            name="name"
+            required
+            disabled={status === "saving"}
+            placeholder="Your name"
+            className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm disabled:opacity-60"
+          />
+        </div>
+        <div>
+          <label htmlFor="academy-email" className="block text-sm font-medium text-foreground mb-2">
+            Email
+          </label>
+          <input
+            id="academy-email"
+            name="email"
+            type="email"
+            required
+            disabled={status === "saving"}
+            placeholder="Email address"
+            className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm disabled:opacity-60"
+          />
+        </div>
       </div>
-      <select
-        value={course}
-        onChange={(e) => setCourse(e.target.value)}
-        className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm"
-      >
-        {COURSE_TIERS.map((t) => (
-          <option key={t.title} value={t.title}>
-            {t.title}
-          </option>
-        ))}
-      </select>
+      <div>
+        <label htmlFor="academy-course" className="block text-sm font-medium text-foreground mb-2">
+          Course interest
+        </label>
+        <select
+          id="academy-course"
+          value={course}
+          onChange={(e) => setCourse(e.target.value)}
+          disabled={status === "saving"}
+          className="w-full px-4 py-3 rounded-md border border-border bg-background text-sm disabled:opacity-60"
+        >
+          {COURSE_TIERS.map((t) => (
+            <option key={t.title} value={t.title}>
+              {t.title}
+            </option>
+          ))}
+        </select>
+      </div>
       <button
         type="submit"
-        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm"
+        disabled={status === "saving"}
+        className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold text-sm disabled:opacity-60"
       >
-        Join waitlist <ArrowRight size={14} />
+        {status === "saving" ? "Joining…" : status === "done" ? "You're on the list" : "Join waitlist"}{" "}
+        <ArrowRight size={14} />
       </button>
+      {status === "done" && (
+        <p className="text-xs text-muted-foreground">We'll email you when the next cohort opens.</p>
+      )}
+      {error && <p className="text-xs text-muted-foreground">{error}</p>}
     </form>
   );
 }

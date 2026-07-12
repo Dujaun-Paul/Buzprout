@@ -236,6 +236,17 @@ Deno.serve(async (req: Request) => {
 
   const supabase = createClient(supabaseUrl, serviceRoleKey);
 
+  const since = new Date(Date.now() - 60 * 60 * 1000).toISOString();
+  const { count } = await supabase
+    .from("assessment_submissions")
+    .select("id", { count: "exact", head: true })
+    .eq("email", email)
+    .gte("created_at", since);
+
+  if ((count ?? 0) >= 5) {
+    return json(429, { error: "Too many submissions. Please try again later." });
+  }
+
   const { data: row, error: insertError } = await supabase
     .from("assessment_submissions")
     .insert({
@@ -260,7 +271,7 @@ Deno.serve(async (req: Request) => {
 
   const siteUrl = Deno.env.get("SITE_URL") ?? "https://buzprout.com";
   const calendlyUrl =
-    Deno.env.get("CALENDLY_URL") ?? "https://calendly.com/buzprout/discovery";
+    Deno.env.get("CALENDLY_URL") ?? "https://calendly.com/dujaunjpaul/30min";
   const notifyEmail = Deno.env.get("ASSESSMENT_NOTIFY_EMAIL") ?? "hello@buzprout.com";
   const fromEmail =
     Deno.env.get("RESEND_FROM_EMAIL") ?? "Buzprout <hello@buzprout.com>";

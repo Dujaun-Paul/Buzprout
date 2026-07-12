@@ -26,10 +26,4 @@ export const RESOURCES: Resource[] = [
     href: "/academy",
     type: "course",
   },
-  {
-    title: "When WhatsApp becomes the bottleneck",
-    desc: "Coming soon: how Caribbean SMEs know they've outgrown chat-based ops.",
-    href: "#insights",
-    type: "article",
-  },
 ];
