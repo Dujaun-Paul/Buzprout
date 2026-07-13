@@ -1,7 +1,7 @@
 export const ACADEMY = {
   title: "Build Your Business Online",
   tagline:
-    "Not ready for a custom build? Learn to launch a credible online presence yourself, then come back when you need more.",
+    "Step-by-step courses teach you to launch a credible site yourself, then come back when you need us to build it properly.",
   forWho: [
     "Sole traders and side hustlers",
     "Early startups validating an idea",

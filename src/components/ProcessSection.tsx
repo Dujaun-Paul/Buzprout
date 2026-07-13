@@ -17,7 +17,7 @@ export default function ProcessSection() {
             Four steps. Clear results.
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            Outcome, cost, build, measure.
+            We name the problem, count what it's costing you, set up the right tools, then check if it worked.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">

@@ -7,6 +7,7 @@ import ProcessSection from "../components/ProcessSection";
 import InsightsSection from "../components/InsightsSection";
 import { CONTACT } from "../data/contact";
 import { PROJECTS } from "../data/projects";
+import { SITE } from "../data/site";
 import { STOCK_VIDEOS } from "../data/videos";
 import { STOCK_IMAGES } from "../data/images";
 
@@ -29,7 +30,7 @@ export default function HomePage() {
             through <span className="text-primary">technology.</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-11 leading-relaxed animate-fade-up delay-100">
-            More customers, less repetitive work, tools that keep up as you grow. Tell us what's slowing you down.
+            {SITE.subtagline}
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fade-up delay-200">
             <a
@@ -61,7 +62,7 @@ export default function HomePage() {
               Business owners across the Caribbean
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Tourism, logistics, healthcare, retail, and professional services in Jamaica, Guyana, and the wider region.
+              We hear what's slowing them down, then set up websites, booking, and WhatsApp help that fits their industry.
             </p>
             <Link
               to="/about"
@@ -80,9 +81,12 @@ export default function HomePage() {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
             <div>
               <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">Portfolio</p>
-              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3">
                 Real businesses, real results
               </h2>
+              <p className="text-muted-foreground max-w-xl">
+                We fix what's costing them customers or time with websites, booking, and custom tools.
+              </p>
             </div>
             <Link
               to="/work"
@@ -129,7 +133,7 @@ export default function HomePage() {
             Ready to fix what's slowing you down?
           </h2>
           <p className="text-muted-foreground mb-8">
-            Start with a free systems score, or book a discovery call. No hard sell, just clarity on what to fix first.
+            Take a 3-minute score or book a free call. We'll tell you what's slowing you down and what to fix first.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             <Link

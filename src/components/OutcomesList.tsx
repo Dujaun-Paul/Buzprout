@@ -22,7 +22,7 @@ export default function OutcomesList({ limit, showLink = false }: OutcomesListPr
               Fixes for the problems you actually have
             </h2>
             <p className="text-muted-foreground">
-              We start with what's not working, then set up the right tools.
+              We hear what's not working, then set up the website, booking, or WhatsApp help that fixes it.
             </p>
           </div>
         )}

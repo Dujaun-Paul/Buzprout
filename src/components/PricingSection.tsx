@@ -23,7 +23,7 @@ export default function PricingSection() {
             Packages that fix real problems.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Every package targets something you can feel: more enquiries, less manual work, happier customers. Most owners start simple and grow from there.
+            Each package fixes one problem with a website, booking setup, or WhatsApp help. Pick what matches your bottleneck.
           </p>
         </div>
 

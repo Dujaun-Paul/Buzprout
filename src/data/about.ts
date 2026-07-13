@@ -1,7 +1,7 @@
 export const ABOUT = {
   headline: "Caribbean-built. Plain talk.",
   intro:
-    "We help Caribbean business owners fix what's costing them customers, time, or money. No jargon.",
+    "We start with your problem in words you actually use, then set up the tools that fix it.",
   story:
     "We start with what's slowing you down, then set up the website, software, or WhatsApp help that fixes it.",
   markets: ["Jamaica", "Guyana", "Trinidad & Tobago", "Barbados", "Regional SMEs"],

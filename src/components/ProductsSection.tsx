@@ -19,7 +19,7 @@ export default function ProductsSection() {
             Software born from<br />real client problems.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Client work reveals patterns. We're turning the best ones into products that help more businesses.
+            We spot the same headaches across clients, then build products so more businesses can fix them without a full custom job.
           </p>
         </div>
 

@@ -10,7 +10,7 @@ export default function OutcomesPage() {
       <PageHeader
         eyebrow="Outcomes"
         title={<>Real fixes for real business problems</>}
-        description="We start with what's not working, then set up the right tools to fix it."
+        description="We hear what's not working, then set up the website, booking, or WhatsApp help that fixes it."
         videoSrc={STOCK_VIDEOS.outcomes.src}
         videoLabel={STOCK_VIDEOS.outcomes.label}
         cta={{ label: "Tell us what's slowing you down", to: "/contact" }}
@@ -25,7 +25,7 @@ export default function OutcomesPage() {
             Get your Business Systems Score
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            A 3-minute check that shows what's slowing you down and what to fix first.
+            Answer 12 quick questions online. We score your setup and show what to fix first.
           </p>
           <Link
             to="/assessment"

@@ -95,7 +95,7 @@ export default function ContactSection({ compact = false }: ContactSectionProps)
               <span className="text-primary">are you solving?</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-lg mx-auto leading-relaxed">
-              Book a call, send a quick message, or tell us what's slowing you down below.
+              Tell us what's slowing you down. We'll point you to the right fix on a free call.
             </p>
           </div>
         )}

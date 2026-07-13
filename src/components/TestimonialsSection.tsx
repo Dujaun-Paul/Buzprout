@@ -8,9 +8,12 @@ export default function TestimonialsSection() {
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
             Testimonials
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-3">
             Results our clients measure.
           </h2>
+          <p className="text-muted-foreground max-w-lg mx-auto">
+            We fix a real problem, then clients tell us what changed in their day-to-day business.
+          </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">

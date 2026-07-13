@@ -26,7 +26,7 @@ export default function InsightsSection() {
             Learn before you buy.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Tools and education for Caribbean business owners figuring out what to fix first.
+            Read guides and take the free assessment so you know what to fix before you spend.
           </p>
         </div>
 

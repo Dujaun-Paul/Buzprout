@@ -11,7 +11,7 @@ export default function PricingPage() {
       <PageHeader
         eyebrow="Pricing"
         title={<>Clear starting points. Firm quotes after discovery.</>}
-        description="Prices below help you plan. We confirm the full quote on a free call before you commit."
+        description="We talk through your problem on a free call, match you to the right package, then give you a firm quote."
         imageSrc={STOCK_IMAGES.workspace.src}
         imageAlt={STOCK_IMAGES.workspace.alt}
         cta={{ label: "Get a quote", to: "/contact" }}

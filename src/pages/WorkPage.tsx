@@ -14,7 +14,7 @@ export default function WorkPage() {
       <PageHeader
         eyebrow="Work"
         title={<>Real businesses, real results</>}
-        description="Websites, booking systems, and custom software built around business outcomes."
+        description="We fix what's costing them customers or time with websites, booking, and custom tools."
         videoSrc={STOCK_VIDEOS.work.src}
         videoLabel={STOCK_VIDEOS.work.label}
         cta={{ label: "Start a project", to: "/contact" }}

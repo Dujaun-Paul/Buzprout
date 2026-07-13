@@ -14,7 +14,7 @@ export default function MaturitySection() {
             Not sure what you need yet?
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Take the free Business Systems Assessment for a score and next steps, or pick the stage that sounds like you.
+            Take the free assessment for a score, or pick the stage that sounds like you.
           </p>
           <Link
             to="/assessment"

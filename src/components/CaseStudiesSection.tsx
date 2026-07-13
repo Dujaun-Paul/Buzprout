@@ -13,7 +13,7 @@ export default function CaseStudiesSection() {
             Before and after,<br />in real numbers.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Every project starts with a business problem and ends with something you can measure.
+            We measure the problem first, build the fix, then track the result in real numbers.
           </p>
         </div>
 

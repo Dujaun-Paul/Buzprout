@@ -1,11 +1,13 @@
 export const SITE = {
   name: "Buzprout",
   tagline: "Helping businesses grow through technology",
+  subtagline:
+    "We find what's slowing you down, then set up websites, booking, and WhatsApp help that bring in customers and save you time.",
   url: "https://buzprout.com",
   locale: "en_JM",
   region: "Caribbean",
   description:
-    "Buzprout helps Caribbean businesses get more customers, save time, and grow. Websites, booking, and WhatsApp help built around your business.",
+    "We find what's slowing Caribbean businesses down, then set up websites, booking, and WhatsApp help that bring in customers and save time.",
   ogImage: "/og-image.png",
 } as const;
 

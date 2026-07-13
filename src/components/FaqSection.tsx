@@ -10,7 +10,10 @@ export default function FaqSection() {
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">FAQ</p>
-          <h2 className="text-3xl font-bold tracking-tight text-foreground">Common questions</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-foreground mb-3">Common questions</h2>
+          <p className="text-muted-foreground text-sm">
+            Straight answers on how we work, what things cost, and what happens after you reach out.
+          </p>
         </div>
         <div className="space-y-2">
           {FAQS.map((faq, i) => (

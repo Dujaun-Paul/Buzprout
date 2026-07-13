@@ -42,9 +42,10 @@ export type RoadmapPhase = {
 
 export const ASSESSMENT_META = {
   headline: "How Efficient Is Your Business?",
-  subhead: "Find out in 3 minutes.",
+  subhead:
+    "Answer 12 quick questions about how customers find you, book, pay, and get followed up.",
   description:
-    "Answer a few questions about how customers find you, book, pay, and get followed up. You'll get a score, your biggest gaps, and clear next steps.",
+    "You get a score, your biggest gaps, and what to fix first.",
   questionCountLabel: "12 quick questions",
   timeLabel: "About 3 minutes",
 } as const;

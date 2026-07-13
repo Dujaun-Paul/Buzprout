@@ -7,7 +7,7 @@ export default function AcademyPage() {
       <PageHeader
         eyebrow="Academy"
         title={<>Learn to launch. Grow into a full build.</>}
-        description="DIY courses for founders who want a credible site now and a studio partner when they outgrow it."
+        description="You learn to build it yourself with our courses. When you outgrow DIY, we build it properly for you."
       />
       <AcademySection />
     </>

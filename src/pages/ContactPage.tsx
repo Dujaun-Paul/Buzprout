@@ -14,7 +14,7 @@ export default function ContactPage() {
             <span className="text-primary">are you solving?</span>
           </>
         }
-        description="Book a call, send a message, or tell us what's slowing you down."
+        description="Tell us what's slowing you down. We'll point you to the right fix on a free call."
         videoSrc={STOCK_VIDEOS.contact.src}
         videoLabel={STOCK_VIDEOS.contact.label}
       />

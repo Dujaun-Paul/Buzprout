@@ -22,9 +22,12 @@ export default function WorkSection({ activeIndustry, onClearFilter, hideHeader 
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
               Portfolio
             </p>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-3">
               Real businesses,<br />real results.
             </h2>
+            <p className="text-muted-foreground max-w-xl">
+              We fix what's costing them customers or time with websites, booking, and custom tools.
+            </p>
             {activeIndustry && (
               <button
                 onClick={onClearFilter}
