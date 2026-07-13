@@ -62,7 +62,7 @@ export default function HomePage() {
               Business owners across the Caribbean
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              We hear what's slowing them down, then set up websites, booking, and WhatsApp help that fits their industry.
+              We hear what's slowing you down, then set up websites, booking, and WhatsApp help that fits your business.
             </p>
             <Link
               to="/about"
@@ -85,7 +85,7 @@ export default function HomePage() {
                 Real businesses, real results
               </h2>
               <p className="text-muted-foreground max-w-xl">
-                We fix what's costing them customers or time with websites, booking, and custom tools.
+                We fix what's costing you customers or time with websites, booking, and custom tools.
               </p>
             </div>
             <Link

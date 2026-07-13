@@ -30,7 +30,7 @@ export default function PricingSection() {
         <div className="mb-16 p-6 md:p-8 rounded-2xl border border-primary/25 bg-primary/[0.05] flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-2">
-              Most clients start here
+              Where most owners start
             </p>
             <h3 className="text-xl font-semibold text-foreground mb-2">
               {RECOMMENDED_START.packageTitle}

@@ -9,10 +9,10 @@ export default function TestimonialsSection() {
             Testimonials
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-3">
-            Results our clients measure.
+            Results you can measure.
           </h2>
           <p className="text-muted-foreground max-w-lg mx-auto">
-            We fix a real problem, then clients tell us what changed in their day-to-day business.
+            We fix what's costing you customers or time. Here's what changed for other owners we worked with.
           </p>
         </div>
 

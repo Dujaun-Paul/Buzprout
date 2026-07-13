@@ -26,7 +26,7 @@ export default function WorkSection({ activeIndustry, onClearFilter, hideHeader 
               Real businesses,<br />real results.
             </h2>
             <p className="text-muted-foreground max-w-xl">
-              We fix what's costing them customers or time with websites, booking, and custom tools.
+              We fix what's costing you customers or time with websites, booking, and custom tools.
             </p>
             {activeIndustry && (
               <button

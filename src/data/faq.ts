@@ -9,7 +9,7 @@ export const FAQS = [
   },
   {
     q: "Can I upgrade later?",
-    a: "Yes. Many clients begin with a site, add booking or a dashboard, then move into custom software as the business grows.",
+    a: "Yes. You can start with a site, add booking or a dashboard, then move into custom software as your business grows.",
   },
   {
     q: "Do you offer payment plans?",
