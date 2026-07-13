@@ -106,7 +106,7 @@ export default function Layout() {
                 <BrandLockup />
               </div>
               <p className="text-sm text-muted-foreground leading-relaxed max-w-xs">
-                Caribbean digital business solutions studio. More customers, less manual work, systems that scale.
+                Helping Caribbean businesses get more customers, save time, and grow. Plain talk, real fixes.
               </p>
             </div>
             <div>

@@ -1,9 +1,9 @@
 export const ABOUT = {
-  headline: "Caribbean-built. Outcome-focused.",
+  headline: "Caribbean-built. Plain talk.",
   intro:
-    "Buzprout is a digital business solutions studio for Caribbean SMEs who need more than a pretty website.",
+    "We help Caribbean business owners fix what's costing them customers, time, or money. No jargon.",
   story:
-    "We start with what's costing you time or revenue, then build websites, software, and automation that fix it.",
+    "We start with what's slowing you down, then set up the website, software, or WhatsApp help that fixes it.",
   markets: ["Jamaica", "Guyana", "Trinidad & Tobago", "Barbados", "Regional SMEs"],
   beliefs: [
     "Business problems come before technology choices",

@@ -10,8 +10,8 @@ export default function AboutPage() {
     <>
       <PageHeader
         eyebrow="About"
-        title={<>Caribbean-built. Outcome-focused.</>}
-        description="A digital business solutions studio for SMEs who need more than a pretty website."
+        title={<>Caribbean-built. Plain talk.</>}
+        description="We help business owners fix what's costing them customers, time, or money. Then we set up the right tools."
         videoSrc={STOCK_VIDEOS.about.src}
         videoLabel={STOCK_VIDEOS.about.label}
         cta={{ label: "Book a discovery call", to: "/contact" }}

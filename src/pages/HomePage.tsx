@@ -29,7 +29,7 @@ export default function HomePage() {
             through <span className="text-primary">technology.</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-11 leading-relaxed animate-fade-up delay-100">
-            More customers, less repetitive work, systems that keep up as you grow. Tell us what's slowing you down.
+            More customers, less repetitive work, tools that keep up as you grow. Tell us what's slowing you down.
           </p>
           <div className="flex flex-wrap justify-center gap-4 animate-fade-up delay-200">
             <a
@@ -58,10 +58,10 @@ export default function HomePage() {
           <div className="order-1 lg:order-2">
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">Who we help</p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">
-              Caribbean SMEs ready to grow
+              Business owners across the Caribbean
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              Tourism, logistics, healthcare, retail, and professional services across Jamaica, Guyana, and the wider region.
+              Tourism, logistics, healthcare, retail, and professional services in Jamaica, Guyana, and the wider region.
             </p>
             <Link
               to="/about"

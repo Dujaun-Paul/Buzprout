@@ -20,10 +20,10 @@ export default function PricingSection() {
             Packages
           </p>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground mb-5">
-            Packages built around what you need to improve.
+            Packages that fix real problems.
           </h2>
           <p className="text-muted-foreground leading-relaxed">
-            Every package targets a real result: more enquiries, smoother operations, less manual work. Most clients start simple and grow into bigger systems over time.
+            Every package targets something you can feel: more enquiries, less manual work, happier customers. Most owners start simple and grow from there.
           </p>
         </div>
 

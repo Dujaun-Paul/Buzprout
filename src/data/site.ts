@@ -5,7 +5,7 @@ export const SITE = {
   locale: "en_JM",
   region: "Caribbean",
   description:
-    "Buzprout helps Caribbean businesses get more customers, save time on manual work, and build systems that scale. Websites, software, and automation built around your business.",
+    "Buzprout helps Caribbean businesses get more customers, save time, and grow. Websites, booking, and WhatsApp help built around your business.",
   ogImage: "/og-image.png",
 } as const;
 
@@ -20,8 +20,8 @@ export const JSON_LD = {
   serviceType: [
     "Business websites",
     "Custom software",
-    "WhatsApp automation",
+    "WhatsApp help for businesses",
     "Booking systems",
-    "Digital business consulting",
+    "Business technology consulting",
   ],
 };

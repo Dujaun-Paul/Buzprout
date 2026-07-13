@@ -9,11 +9,11 @@ export default function OutcomesPage() {
     <>
       <PageHeader
         eyebrow="Outcomes"
-        title={<>Built for the results you actually need</>}
-        description="We start with what's not working in your business, then build the right fix."
+        title={<>Real fixes for real business problems</>}
+        description="We start with what's not working, then set up the right tools to fix it."
         videoSrc={STOCK_VIDEOS.outcomes.src}
         videoLabel={STOCK_VIDEOS.outcomes.label}
-        cta={{ label: "Discuss your goals", to: "/contact" }}
+        cta={{ label: "Tell us what's slowing you down", to: "/contact" }}
       />
       <OutcomesList />
       <section className="py-20 px-6 section-muted">
@@ -25,7 +25,7 @@ export default function OutcomesPage() {
             Get your Business Systems Score
           </h2>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            A 3-minute assessment that shows what's slowing you down, and which outcomes to tackle first.
+            A 3-minute check that shows what's slowing you down and what to fix first.
           </p>
           <Link
             to="/assessment"

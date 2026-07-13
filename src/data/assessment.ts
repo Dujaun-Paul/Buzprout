@@ -205,17 +205,17 @@ export const CATEGORY_OPPORTUNITIES: Record<AssessmentCategoryId, Opportunity> =
   },
   bookings: {
     category: "bookings",
-    title: "Make booking self-serve",
+    title: "Stop losing bookings to back-and-forth messages",
     recommendation:
-      "Let customers pick a slot online with automatic confirmations and reminders. Fewer back-and-forth messages, fewer no-shows.",
-    packageHint: "Booking system on your site or WhatsApp",
+      "Customers can't book after hours or without calling? Let them pick a slot online with confirmations and reminders.",
+    packageHint: "Online booking on your site or WhatsApp",
   },
   whatsapp: {
     category: "whatsapp",
-    title: "Tame WhatsApp overload",
+    title: "Stop answering the same WhatsApp questions",
     recommendation:
-      "Automate FAQs, hours, and availability replies so your team only handles the conversations that need a human.",
-    packageHint: "WhatsApp automation and saved-reply flows",
+      "Tired of repeating hours, prices, and availability? Auto-replies handle the routine stuff so your team only steps in when a human is needed.",
+    packageHint: "WhatsApp auto-replies and saved-reply flows",
   },
   website: {
     category: "website",
@@ -233,17 +233,17 @@ export const CATEGORY_OPPORTUNITIES: Record<AssessmentCategoryId, Opportunity> =
   },
   followup: {
     category: "followup",
-    title: "Follow up consistently",
+    title: "Stop losing sales to missed follow-ups",
     recommendation:
-      "Missed follow-ups cost sales. Simple sequences after enquiries, visits, or quotes keep you top of mind without more admin.",
-    packageHint: "Follow-up automation and reminders",
+      "Enquiries slip when you're busy? Simple reminders after visits or quotes keep you top of mind without more admin.",
+    packageHint: "Automatic follow-up reminders",
   },
   automation: {
     category: "automation",
-    title: "Automate the repetitive work",
+    title: "Stop doing the same tasks over and over",
     recommendation:
-      "Anything you do the same way every week is a candidate for automation: reminders, status updates, handoffs between tools.",
-    packageHint: "Systems automation or custom workflow build",
+      "Anything you do the same way every week is worth fixing once: reminders, status updates, handoffs between tools.",
+    packageHint: "Set up the right tools so routine work runs itself",
   },
 };
 
@@ -256,20 +256,20 @@ export const ROADMAP_PHASES: RoadmapPhase[] = [
   },
   {
     phase: "Phase 2",
-    title: "Automate customer communication",
+    title: "Answer customers faster",
     description: "WhatsApp FAQs, confirmations, and follow-ups that don't need you every time.",
     when: "low",
   },
   {
     phase: "Phase 3",
-    title: "Streamline operations",
+    title: "Save time on daily work",
     description: "Bookings, payments, and enquiry tracking in one clearer system.",
     when: "mid",
   },
   {
     phase: "Phase 4",
-    title: "Scale with custom software",
-    description: "Portals, integrations, and tools built around how your business actually runs.",
+    title: "Grow without the chaos",
+    description: "Custom tools built around how your business actually runs.",
     when: "high",
   },
 ];
@@ -298,7 +298,7 @@ export function scoreBand(score: number): {
   return {
     label: "Strong foundation",
     summary:
-      "Your basics are solid. The next wins are usually tighter automation, better ops visibility, or custom tools as volume rises.",
+      "Your basics are solid. The next wins are usually faster replies, clearer reports, or custom tools as you get busier.",
     maturityId: "scaling",
   };
 }

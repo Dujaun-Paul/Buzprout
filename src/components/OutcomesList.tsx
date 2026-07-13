@@ -19,10 +19,10 @@ export default function OutcomesList({ limit, showLink = false }: OutcomesListPr
           <div className="mb-12 text-center max-w-2xl mx-auto">
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">Outcomes</p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">
-              Built for the results you need
+              Fixes for the problems you actually have
             </h2>
             <p className="text-muted-foreground">
-              We start with what's not working, then build the right fix.
+              We start with what's not working, then set up the right tools.
             </p>
           </div>
         )}
