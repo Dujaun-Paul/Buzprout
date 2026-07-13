@@ -1,13 +1,14 @@
 export const SITE = {
   name: "Buzprout",
-  tagline: "Helping businesses grow through technology",
+  tagline: "Technology that helps your business grow.",
   subtagline:
-    "We find what's slowing you down, then set up websites, booking, and WhatsApp help that bring in customers and save you time.",
+    "Whether you need more bookings, less manual work, or better customer communication, we'll build the right system to help your business move forward.",
+  heroCta: "Let's Improve Your Business",
   url: "https://buzprout.com",
   locale: "en_JM",
   region: "Caribbean",
   description:
-    "We find what's slowing Caribbean businesses down, then set up websites, booking, and WhatsApp help that bring in customers and save time.",
+    "Whether you need more bookings, less manual work, or better customer communication, we'll build the right system to help your business move forward.",
   ogImage: "/og-image.png",
 } as const;
 

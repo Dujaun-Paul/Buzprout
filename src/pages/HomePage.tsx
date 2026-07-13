@@ -26,8 +26,8 @@ export default function HomePage() {
 
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-semibold leading-[1.08] tracking-tight text-foreground mb-7 animate-fade-up">
-            Helping businesses grow<br />
-            through <span className="text-primary">technology.</span>
+            Technology that helps your business{" "}
+            <span className="text-primary">grow.</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-11 leading-relaxed animate-fade-up delay-100">
             {SITE.subtagline}
@@ -39,7 +39,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 text-sm hover-lift"
             >
-              {CONTACT.calendlyLabel} <ArrowRight size={16} />
+              {SITE.heroCta} <ArrowRight size={16} />
             </a>
             <Link
               to="/assessment"
