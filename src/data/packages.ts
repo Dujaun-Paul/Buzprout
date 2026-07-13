@@ -113,7 +113,7 @@ export const PACKAGES: Package[] = [
       "See what's working with real analytics",
       "Fast enough that people don't bounce",
     ],
-    ctaLabel: "Book a scoping call",
+    ctaLabel: "Let's Improve Your Business",
     highlight: true,
   },
   {
@@ -128,7 +128,7 @@ export const PACKAGES: Package[] = [
       "WhatsApp and payment paths that fit how you sell",
       "Gallery and content that sells the experience",
     ],
-    ctaLabel: "Book a scoping call",
+    ctaLabel: "Let's Improve Your Business",
   },
   {
     title: "Logistics / Delivery Lite",
@@ -142,7 +142,7 @@ export const PACKAGES: Package[] = [
       "Drivers get a simple mobile experience",
       "Fewer where is my order messages",
     ],
-    ctaLabel: "Book a scoping call",
+    ctaLabel: "Let's Improve Your Business",
   },
   // Systems
   {
@@ -158,7 +158,7 @@ export const PACKAGES: Package[] = [
       "Connects to the tools you already use",
       "Launched with support so nothing falls through",
     ],
-    ctaLabel: "Book a scoping call",
+    ctaLabel: "Let's Improve Your Business",
   },
   {
     title: "MVP / Startup Build",
@@ -173,7 +173,7 @@ export const PACKAGES: Package[] = [
       "Launch with room to iterate",
       "Support through the first 30 to 60 days",
     ],
-    ctaLabel: "Book a scoping call",
+    ctaLabel: "Let's Improve Your Business",
   },
   // Retainers — Website Care (3 tiers)
   {
@@ -283,7 +283,7 @@ export const PAYMENT_PLANS: PaymentPlan[] = [
       "Works for Entry through Systems tiers",
     ],
     example: "JMD 200,000 → 80K signing, 60K design, 60K launch",
-    ctaLabel: "Book a scoping call",
+    ctaLabel: "Let's Improve Your Business",
     href: "/contact",
     highlight: true,
   },

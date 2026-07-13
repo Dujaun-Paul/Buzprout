@@ -41,7 +41,7 @@ export default function PricingSection() {
             to={RECOMMENDED_START.href}
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 text-sm shrink-0"
           >
-            Talk about your project <ArrowRight size={16} />
+            {CONTACT.calendlyLabel} <ArrowRight size={16} />
           </Link>
         </div>
 

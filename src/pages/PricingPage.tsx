@@ -10,11 +10,11 @@ export default function PricingPage() {
     <>
       <PageHeader
         eyebrow="Pricing"
-        title={<>Clear starting points. Firm quotes after discovery.</>}
+        title={<>Clear starting points. Firm quotes after a free call.</>}
         description="We talk through your problem on a free call, match you to the right package, then give you a firm quote."
         imageSrc={STOCK_IMAGES.workspace.src}
         imageAlt={STOCK_IMAGES.workspace.alt}
-        cta={{ label: "Get a quote", to: "/contact" }}
+        cta={{ label: "Let's Improve Your Business", to: "/contact" }}
       />
       <MaturitySection />
       <PricingSection />

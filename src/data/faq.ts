@@ -5,7 +5,7 @@ export const FAQS = [
   },
   {
     q: "Do you publish fixed prices?",
-    a: "The ranges on our pricing page are starting points. We confirm scope and give you a firm quote after a discovery call.",
+    a: "The ranges on our pricing page are starting points. We confirm scope and give you a firm quote after a free call.",
   },
   {
     q: "Can I upgrade later?",

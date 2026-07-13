@@ -17,7 +17,7 @@ export default function WorkPage() {
         description="We fix what's costing them customers or time with websites, booking, and custom tools."
         videoSrc={STOCK_VIDEOS.work.src}
         videoLabel={STOCK_VIDEOS.work.label}
-        cta={{ label: "Start a project", to: "/contact" }}
+        cta={{ label: "Let's Improve Your Business", to: "/contact" }}
       />
 
       <section className="py-8 px-6 border-b border-border">

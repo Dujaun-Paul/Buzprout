@@ -1,10 +1,12 @@
 /**
  * Single place to update contact details across the site.
  */
+import { SITE } from "./site";
+
 export const CONTACT = {
   email: "hello@buzprout.com",
   calendlyUrl: "https://calendly.com/dujaunjpaul/30min",
-  calendlyLabel: "Book Discovery Call",
+  calendlyLabel: SITE.heroCta,
   whatsappUrl: "https://wa.me/18765175047",
   whatsappLabel: "WhatsApp Us",
   hours: "Mon to Fri, 8am to 6pm AST",

@@ -440,7 +440,7 @@ export default function AssessmentSection() {
                 Want help implementing this?
               </h3>
               <p className="text-sm text-muted-foreground mb-6 max-w-md mx-auto">
-                Book a free discovery call. We'll walk through your score and tell you honestly what
+                Book a free call. We'll walk through your score and tell you honestly what
                 to fix first.
               </p>
               <div className="flex flex-wrap justify-center gap-3">

@@ -14,7 +14,7 @@ export default function AboutPage() {
         description="We start with your problem in plain English, then set up the website or software that fixes it."
         videoSrc={STOCK_VIDEOS.about.src}
         videoLabel={STOCK_VIDEOS.about.label}
-        cta={{ label: "Book a discovery call", to: "/contact" }}
+        cta={{ label: "Let's Improve Your Business", to: "/contact" }}
       />
       <AboutSection compact />
       <ProductsSection />

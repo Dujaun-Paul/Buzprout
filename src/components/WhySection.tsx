@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
+import { CONTACT } from "../data/contact";
 import { WHY } from "../data/process";
 import StockImage from "./StockImage";
 import { STOCK_IMAGES } from "../data/images";
@@ -29,7 +30,7 @@ export default function WhySection() {
               to="/contact"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-md bg-primary text-primary-foreground font-semibold hover:opacity-90 text-sm hover-lift"
             >
-              Start the conversation <ArrowRight size={16} />
+              {CONTACT.calendlyLabel} <ArrowRight size={16} />
             </Link>
           </div>
           <div className="space-y-3">

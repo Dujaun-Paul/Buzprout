@@ -51,7 +51,7 @@ export const MATURITY_STAGES: MaturityStage[] = [
     ],
     needs: ["Custom software", "Tools that connect", "Clear reports", "Ongoing help"],
     startWith: "Custom Business Platform or Systems Retainer",
-    ctaLabel: "Book a scoping call",
+    ctaLabel: "Let's Improve Your Business",
     ctaHref: "/contact",
   },
 ];

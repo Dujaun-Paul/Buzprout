@@ -33,7 +33,7 @@ export default function FlexSection() {
           <p className="text-sm text-muted-foreground leading-relaxed">
             You shouldn't have to delay growth because of upfront cost. Flex gets your
             custom build live with a deposit and monthly payments. It's a commercial build
-            agreement, not a loan. Final terms confirmed on your discovery call.
+            agreement, not a loan. Final terms confirmed on your free call.
           </p>
         </div>
 

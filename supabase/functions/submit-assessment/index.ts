@@ -149,8 +149,8 @@ function buildResultsEmailHtml(input: {
 
     <div style="margin:0 0 24px;padding:24px;background:#eef7f1;border:1px solid #cfe5d8;border-radius:16px;text-align:center;">
       <p style="margin:0 0 8px;font-size:18px;font-weight:600;color:#0b1f2a;">Want help implementing this?</p>
-      <p style="margin:0 0 16px;font-size:14px;line-height:1.5;color:#5a6b73;">Book a free discovery call. We'll walk through your score and tell you honestly what to fix first.</p>
-      <a href="${escapeHtml(calendlyUrl)}" style="display:inline-block;padding:12px 20px;background:#1b7a4a;color:#ffffff;text-decoration:none;border-radius:8px;font-weight:600;font-size:14px;">Book Discovery Call</a>
+      <p style="margin:0 0 16px;font-size:14px;line-height:1.5;color:#5a6b73;">Book a free call. We'll walk through your score and tell you honestly what to fix first.</p>
+      <a href="${escapeHtml(calendlyUrl)}" style="display:inline-block;padding:12px 20px;background:#1b7a4a;color:#ffffff;text-decoration:none;border-radius:8px;font-weight:600;font-size:14px;">Let's Improve Your Business</a>
     </div>
 
     <p style="margin:0;font-size:12px;line-height:1.5;color:#8a9aa3;text-align:center;">

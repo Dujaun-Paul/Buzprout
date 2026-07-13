@@ -54,6 +54,6 @@ Talk to Buzprout (Flex or full build) if:
 
 - Not ready for a build? Join Buzprout Academy waitlist at hello@buzprout.com (subject: Academy waitlist)
 - Need a custom build with monthly payments? Ask about Buzprout Flex
-- Ready to scope a project? Book a free discovery call at hello@buzprout.com
+- Ready to improve your business? Book a free call at hello@buzprout.com
 
 © Buzprout. Share freely with attribution.
