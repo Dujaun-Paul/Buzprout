@@ -8,30 +8,33 @@ import sys
 from pathlib import Path
 
 import markdown
-from fpdf import FPDF
+from fpdf import FPDF, FontFace, TextStyle
 
 ROOT = Path(__file__).resolve().parents[1]
 CLIENT_DIR = ROOT / "docs" / "clients" / "the-beauty-refinery-ja"
 DEFAULT_STEM = "referrer-pricing-guide"
 
+# fpdf2 does not apply <style> blocks; it renders them as visible text.
+# Use tag_styles instead.
+TAG_STYLES = {
+    "h1": FontFace(size_pt=18, color=(11, 31, 42)),
+    "h2": FontFace(size_pt=12, color=(27, 122, 74)),
+    "h3": FontFace(size_pt=10.5, color=(11, 31, 42)),
+    "blockquote": TextStyle(
+        color=(61, 85, 99),
+        font_style="I",
+        l_margin=8,
+        t_margin=2,
+        b_margin=2,
+    ),
+}
 
-def build_html(md_text: str, css_text: str) -> str:
-    body = markdown.markdown(
+
+def build_html(md_text: str) -> str:
+    return markdown.markdown(
         md_text,
         extensions=["tables", "nl2br", "sane_lists"],
     )
-    return f"""<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8" />
-<style>
-{css_text}
-</style>
-</head>
-<body>
-{body}
-</body>
-</html>"""
 
 
 def register_fonts(pdf: FPDF) -> bool:
@@ -66,8 +69,6 @@ def register_fonts(pdf: FPDF) -> bool:
 
 def generate_pdf(stem: str) -> int:
     md_path = CLIENT_DIR / f"{stem}.md"
-    css_path = CLIENT_DIR / f"{stem}.css"
-    shared_css = CLIENT_DIR / "website-care-retainer-rationale.css"
     pdf_path = CLIENT_DIR / f"{stem}.pdf"
 
     if not md_path.exists():
@@ -75,14 +76,7 @@ def generate_pdf(stem: str) -> int:
         return 1
 
     md_text = md_path.read_text(encoding="utf-8")
-    if css_path.exists():
-        css_text = css_path.read_text(encoding="utf-8")
-    elif shared_css.exists():
-        css_text = shared_css.read_text(encoding="utf-8")
-    else:
-        css_text = ""
-
-    html = build_html(md_text, css_text)
+    html = build_html(md_text)
 
     pdf = FPDF(orientation="P", unit="mm", format="A4")
     pdf.set_auto_page_break(auto=True, margin=18)
@@ -93,7 +87,7 @@ def generate_pdf(stem: str) -> int:
         return 1
 
     pdf.set_font("Body", size=10)
-    pdf.write_html(html, font_family="Body")
+    pdf.write_html(html, font_family="Body", tag_styles=TAG_STYLES)
     pdf.output(str(pdf_path))
 
     print(f"Wrote {pdf_path}")

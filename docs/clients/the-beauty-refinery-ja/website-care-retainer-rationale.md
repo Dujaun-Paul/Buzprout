@@ -16,7 +16,7 @@
 
 ## Purpose of this document
 
-This explains why a monthly care fee is needed after the website is built and launched — and what the business receives for it.
+This explains why a monthly care fee is needed after the website is built and launched and what the business receives for it.
 
 This is **not** a second build fee. It is the cost of keeping the site secure, online, accurate, and supported while it is in active use.
 
@@ -28,7 +28,7 @@ This is **not** a second build fee. It is the cost of keeping the site secure, o
 
 **Care (monthly)** covers keeping it working after launch. It continues while the site is part of daily operations.
 
-Think of it this way: the build fee is like setting up the studio. The care fee is keeping the lights on, the locks working, and the booking schedule accurate — so customers can still book when you are busy with clients.
+Think of it this way: the build fee is like setting up the studio. The care fee is keeping the lights on, the locks working, and the booking schedule accurate so customers can still book when you are busy with clients.
 
 A finished website is not done forever. Prices change. Browsers update. Booking flows break. Security patches are required. And when something fails on a Friday before a busy weekend, someone needs to own the fix.
 
@@ -38,7 +38,7 @@ A finished website is not done forever. Prices change. Browsers update. Booking 
 
 Modern websites run on layers of technology: **hosting**, **deployment**, **database**, **authentication**, **storage**, **domain**, **DNS**, **SSL**, and sometimes **email** or messaging links.
 
-These platforms provide the foundation — where the site lives, how it scales, and where booking data is stored.
+These platforms provide the foundation. That is where the site lives, how it scales, and where booking data is stored.
 
 They do **not** provide:
 
@@ -52,11 +52,11 @@ They do **not** provide:
 
 **Platform fees are rent for tools. Care is professional time and responsibility.**
 
-Even when hosting or database tiers start at low or no cost, someone must still own them — renew the domain, watch usage limits, plan upgrades before traffic or data grows, and step in when something fails.
+Even when hosting or database tiers start at low or no cost, someone must still own them: renew the domain, watch usage limits, plan upgrades before traffic or data grows, and step in when something fails.
 
 ---
 
-## 3. Nothing is free — there is always a cost
+## 3. Nothing is free: there is always a cost
 
 There is no such thing as a website with zero ongoing cost. The only question is whether you pay in **cash**, **time**, or **lost opportunity**.
 
@@ -68,13 +68,13 @@ There is no such thing as a website with zero ongoing cost. The only question is
 
 Free or low-cost tiers on hosting and database platforms still have limits. Those limits change. Usage caps appear. Paid plans become necessary as the business grows. Domains and DNS still need management every year.
 
-A monthly care fee budgets for that before it becomes an emergency invoice — or a quiet loss of bookings no one notices until Monday.
+A monthly care fee budgets for that before it becomes an emergency invoice or a quiet loss of bookings no one notices until Monday.
 
 ---
 
-## 4. What is included — JMD $5,000 / month
+## 4. What is included: JMD $5,000 / month
 
-This is a **lean Care Essential package** for a live booking site. It sits within Buzprout's published Care Essential range (JMD $4,000–$6,000/month) and is sized for a salon that depends on the website for appointments — not a brochure that rarely changes.
+This is a **lean Care Essential package** for a live booking site. It sits within Buzprout's published Care Essential range (JMD $4,000 to $6,000/month) and is sized for a salon that depends on the website for appointments, not a brochure that rarely changes.
 
 ### Keep the site healthy
 
@@ -86,7 +86,7 @@ This is a **lean Care Essential package** for a live booking site. It sits withi
 
 ### Business content updates
 
-Reasonable monthly updates for a salon — not a full redesign:
+Reasonable monthly updates for a salon, not a full redesign:
 
 - Price changes (JMD / USD)
 - New or removed services
@@ -98,7 +98,7 @@ Reasonable monthly updates for a salon — not a full redesign:
 ### Support and availability
 
 - A clear point of contact for site issues
-- Response within 1–2 business days for non-critical issues; priority attention for outages when possible
+- Response within 1 to 2 business days for non-critical issues; priority attention for outages when possible
 - Guidance when a request is a quick tweak vs a new feature
 
 ### Infrastructure awareness
@@ -117,7 +117,7 @@ To keep the monthly fee fair and predictable, these are billed separately or han
 - New major features (online card payments, SMS, staff dashboards, etc.)
 - Custom photography or branding packages
 - Paid advertising or SEO campaigns
-- Third-party invoices (domain renewals, hosting upgrades, database plans, SMS credits) — at cost or paid directly by the client
+- Third-party invoices (domain renewals, hosting upgrades, database plans, SMS credits), at cost or paid directly by the client
 - Emergency after-hours work beyond agreed hours, unless separately scoped
 
 This keeps the retainer from becoming unlimited unpaid development.
@@ -128,16 +128,16 @@ This keeps the retainer from becoming unlimited unpaid development.
 
 ### Running costs (categories, not vendors)
 
-- **Domain** — Yearly renewal; needs management
-- **Hosting / deployment** — Low cost at first; paid tiers as traffic and features grow
-- **Database / auth / storage** — Low cost at first; paid tiers with usage, backups, and production needs
-- **Email / DNS / SSL** — Occasional fixes and renewals
+- **Domain:** Yearly renewal; needs management
+- **Hosting / deployment:** Low cost at first; paid tiers as traffic and features grow
+- **Database / auth / storage:** Low cost at first; paid tiers with usage, backups, and production needs
+- **Email / DNS / SSL:** Occasional fixes and renewals
 
 Even when platform costs stay modest, **someone must own them**. That ownership is part of care.
 
 ### Professional time (the real value)
 
-At JMD $5,000/month, this is roughly **1–3 hours** of specialist care per month — a light retainer, not a large agency contract.
+At JMD $5,000/month, this is roughly **1 to 3 hours** of specialist care per month, a light retainer, not a large agency contract.
 
 One broken booking weekend can cost the business more than one month of care in lost deposits and appointments. Care is priced to prevent that, not to match server rent line by line.
 
@@ -153,10 +153,10 @@ One broken booking weekend can cost the business more than one month of care in 
 
 Pay-as-you-go sounds cheaper. It usually costs more and slows everything down:
 
-1. **Slow response** — no reserved capacity
-2. **Higher per-fix rates** — emergency pricing
-3. **No proactive updates** — the site drifts from real prices and hours
-4. **Awkward small jobs** — a 20-minute price update becomes admin overhead
+1. **Slow response:** no reserved capacity
+2. **Higher per-fix rates:** emergency pricing
+3. **No proactive updates:** the site drifts from real prices and hours
+4. **Awkward small jobs:** a 20-minute price update becomes admin overhead
 
 **JMD $5,000/month is the simple option:** predictable for the client, sustainable for the team doing the work.
 
@@ -164,7 +164,7 @@ Pay-as-you-go sounds cheaper. It usually costs more and slows everything down:
 
 ## 8. Value for this business
 
-For The Beauty Refinery JA, the website is not a brochure — it is part of operations:
+For The Beauty Refinery JA, the website is not a brochure. It is part of operations:
 
 - Appointments are booked through the site
 - Deposits depend on clear, correct instructions
@@ -178,23 +178,23 @@ Stale prices or a broken booking flow directly affect revenue and trust. Care pr
 ## 9. Short wording for the referrer
 
 > The build fee covers creating and launching the website.  
-> The monthly fee (JMD $5,000) covers keeping it live, secure, and accurate — including oversight of hosting, database, and domain setup; bug fixes; service and price updates; and a dedicated contact when something breaks.  
+> The monthly fee (JMD $5,000) covers keeping it live, secure, and accurate, including oversight of hosting, database, and domain setup; bug fixes; service and price updates; and a dedicated contact when something breaks.  
 >  
 > Platform tools are not the same as care. Hosting and database services run the product; care is the ongoing work and responsibility to keep the booking site reliable.  
 >  
-> At JMD $5,000/month this is a light retainer meant to keep things simple — not a large support contract. Without it, every update or fix becomes a separate bill and takes longer to resolve.
+> At JMD $5,000/month this is a light retainer meant to keep things simple. It is not a large support contract. Without it, every update or fix becomes a separate bill and takes longer to resolve.
 
 ---
 
 ## 10. If more care is needed
 
-**Care Essential (this package) — JMD $5,000/month**  
+**Care Essential (this package):** JMD $5,000/month**  
 Hosting oversight, security and bug fixes, small content and price updates, booking-flow checks. Recommended default.
 
-**Care Standard — JMD $8,000–$12,000/month**  
+**Care Standard:** JMD $8,000 to $12,000/month**  
 Faster response, more monthly change allowance, formal edit hours. For busier studios.
 
-**Build-only / ad-hoc (not recommended) — $0 monthly**  
+**Build-only / ad-hoc (not recommended):** $0 monthly**  
 Client accepts hourly rates and slower support; no proactive care.
 
 Use Care Standard only if the business needs more speed or volume. Do not discount Essential into unpaid on-call work.
