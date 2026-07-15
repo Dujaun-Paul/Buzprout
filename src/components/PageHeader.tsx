@@ -34,7 +34,10 @@ export default function PageHeader({
         <StockVideo
           src={videoSrc!}
           label={videoLabel!}
-          overlayClassName="bg-background/82"
+          overlayStyle={{
+            background:
+              "radial-gradient(ellipse 75% 70% at 50% 40%, color-mix(in srgb, var(--background) 74%, transparent), color-mix(in srgb, var(--background) 34%, transparent) 70%, color-mix(in srgb, var(--background) 20%, transparent))",
+          }}
         />
       )}
       {!hasVideo && (

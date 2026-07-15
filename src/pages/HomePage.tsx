@@ -20,9 +20,8 @@ export default function HomePage() {
         <StockVideo
           src={STOCK_VIDEOS.hero.src}
           label={STOCK_VIDEOS.hero.label}
-          overlayClassName="bg-background/78"
         />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(27,122,74,0.08),transparent)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-10%,rgba(27,122,74,0.06),transparent)]" />
 
         <div className="relative max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-semibold leading-[1.08] tracking-tight text-foreground mb-7 animate-fade-up">
