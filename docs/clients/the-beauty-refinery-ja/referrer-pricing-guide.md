@@ -70,17 +70,17 @@ Prices below are **ranges**. Final quotes depend on pages, integrations, content
 
 *For businesses that need to be found online and look credible.*
 
-**Starter Website:** JMD $40,000 to $95,000** (~USD $250 to $600)  
+**Starter Website:** JMD $40,000 to $95,000 (~USD $250 to $600)  
 Timeline: 7 to 10 days  
 Outcome: A professional presence customers can trust, mobile-ready, with basic search visibility.  
 Good for: New businesses, simple service listings, contact-focused sites.
 
-**Landing Page:** JMD $25,000 to $60,000** (~USD $160 to $380)  
+**Landing Page:** JMD $25,000 to $60,000 (~USD $160 to $380)  
 Timeline: 3 to 5 days  
 Outcome: One focused page built to convert ad clicks and promotions into enquiries.  
 Good for: Campaigns, single offers, event promotions.
 
-**Brand Starter Kit:** JMD $60,000 to $150,000** (~USD $380 to $950)  
+**Brand Starter Kit:** JMD $60,000 to $150,000 (~USD $380 to $950)  
 Outcome: Logo, colours, fonts, and a simple brand guide for consistent use across cards and social.  
 Good for: Businesses launching or refreshing before a site build.
 
@@ -90,17 +90,17 @@ Good for: Businesses launching or refreshing before a site build.
 
 *For businesses that need bookings, leads, and a site that supports revenue.*
 
-**Business Website + Systems:** JMD $120,000 to $280,000** (~USD $760 to $1,770)  
+**Business Website + Systems:** JMD $120,000 to $280,000 (~USD $760 to $1,770)  
 Timeline: 3 to 6 weeks  
 Outcome: A site that captures leads and gives the business a simple way to manage enquiries and bookings.  
 Good for: Salons, clinics, restaurants, professional services, and most growing SMEs.  
 **This is Buzprout's most common recommendation** when the site is part of how the business operates.
 
-**Tourism Website:** JMD $140,000 to $320,000** (~USD $890 to $2,025)  
+**Tourism Website:** JMD $140,000 to $320,000 (~USD $890 to $2,025)  
 Outcome: Turn browsers into booking requests for tours, stays, and experiences.  
 Good for: Tour operators, guest houses, experience providers.
 
-**Logistics / Delivery Lite:** JMD $220,000 to $550,000** (~USD $1,400 to $3,480)  
+**Logistics / Delivery Lite:** JMD $220,000 to $550,000 (~USD $1,400 to $3,480)  
 Outcome: Customer tracking and a team dashboard instead of endless status calls.  
 Good for: Couriers, delivery services, dispatch-heavy operations.
 
@@ -110,12 +110,12 @@ Good for: Couriers, delivery services, dispatch-heavy operations.
 
 *For businesses that need software built around how they actually run.*
 
-**Custom Business Platform:** JMD $550,000 to $2M+** (~USD $3,500+)  
+**Custom Business Platform:** JMD $550,000 to $2M+ (~USD $3,500+)  
 Timeline: 6 to 16+ weeks  
 Outcome: Software for staff, customers, and admins, workflows, data, and integrations designed for the operation.  
 Good for: Multi-location businesses, internal dashboards, complex booking or inventory needs.
 
-**MVP / Startup Build:** JMD $350,000 to $1.2M** (~USD $2,200 to $7,600)  
+**MVP / Startup Build:** JMD $350,000 to $1.2M (~USD $2,200 to $7,600)  
 Timeline: 8 to 14 weeks  
 Outcome: A real product users can touch, focused on learning fast.  
 Good for: Startups validating an idea before a full platform build.
@@ -132,6 +132,58 @@ Quoted separately when not included in the base package:
 - **API integrations:** JMD $50,000 to $150,000
 - **AI chatbot:** JMD $60,000 to $250,000
 - **Speed optimization:** JMD $15,000 to $50,000
+
+---
+
+## Quote from scope (internal: do not underprice)
+
+Published Growth tier tops out at JMD $280,000, but **that range assumes a simpler site**: enquiries, basic booking, or light lead capture. It does **not** automatically cover a full operations stack.
+
+Use this checklist when scoping beauty, clinic, or service businesses. **Add the bands that apply**, then sanity-check the total before quoting.
+
+**Multi-page marketing site (6 to 10 routes):** JMD $120,000 to $200,000  
+Brand, services, policies, training, contact, gallery.
+
+**Online booking (live catalog, deposits, rules):** JMD $60,000 to $100,000  
+Multi-step flow, location/artist logic, server-side validation.
+
+**Staff admin portal (bookings + catalog):** JMD $80,000 to $130,000  
+Login, appointments, services, basic reporting.
+
+**Application / intake workflow:** JMD $35,000 to $60,000  
+Multi-section forms, admin inbox, status + notes.
+
+**Team roles and privileges:** JMD $40,000 to $70,000  
+Owner vs manager access, secured staff creation.
+
+**Database, auth, security layer:** JMD $50,000 to $90,000  
+Schema, access policies, server-side writes, migrations.
+
+**Transactional email (confirmations, reminders):** JMD $25,000 to $45,000  
+Templates, send paths, monitoring hooks.
+
+**How to read this:** overlapping work is bundled, not double-counted line by line. Use it to see why a “website + booking” referral is not a JMD $120,000 project.
+
+### Complexity bands (beauty / bookings)
+
+**Brochure + contact**  
+Starter or low Growth. **JMD $40,000 to $120,000.** No live booking stack.
+
+**Booking site (public only)**  
+Growth. **JMD $180,000 to $280,000.** Appointments on the site; owner still updates via you or ad-hoc.
+
+**Booking + ops platform**  
+Growth high / Systems lite. **JMD $280,000 to $450,000.** Public site, live booking, admin dashboard, applications, staff access, secured backend. **Quote here for TBRJA-class work.**
+
+**Custom platform**  
+Systems. **JMD $550,000+.** Multiple user types, deep workflows, integrations, inventory, etc.
+
+### Floor rules for referrers
+
+1. **Do not quote JMD $120,000** when the client needs booking **and** a staff dashboard. That is a brochure price for an ops product.
+2. **Admin + booking together** usually land **JMD $280,000 minimum** for a firm quote.
+3. **Care must match stack weight.** Brochure: Essential. Booking-only: Essential to Standard. Booking + admin + email: **Standard (JMD $8,000+)**, not brochure Essential.
+4. If build was discounted, **do not discount care into the same hole.** Care is where reliability is paid for.
 
 ---
 
@@ -173,24 +225,24 @@ Care is not "charging for free hosting." It is a predictable fee for **ownership
 
 ### Website Care tiers
 
-**Care Essential:** JMD $4,000 to $6,000/month** (~USD $25 to $38/month)  
+**Care Essential:** JMD $4,000 to $6,000/month (~USD $25 to $38/month)  
 Hosting oversight, SSL, backups, uptime checks, security patches, email support (48-hour response).  
 Edits billed separately. Best for brochure sites that rarely change.
 
-**Care Standard:** JMD $8,000 to $12,000/month** (~USD $50 to $76/month)  
+**Care Standard:** JMD $8,000 to $12,000/month (~USD $50 to $76/month)  
 Everything in Essential, plus 2 hours of content or design edits per month, WhatsApp support, monthly health report.  
 **Recommended for most active business sites** that need regular price or content updates.
 
-**Care Plus:** JMD $15,000 to $22,000/month** (~USD $95 to $140/month)  
+**Care Plus:** JMD $15,000 to $22,000/month (~USD $95 to $140/month)  
 Everything in Standard, plus 5 edit hours, same-day priority response, quarterly analytics review.  
 For tourism, campaigns, and teams that need fast turnaround.
 
 ### Systems retainers (custom software clients)
 
-**Business Systems Retainer:** JMD $35,000 to $120,000/month**  
+**Business Systems Retainer:** JMD $35,000 to $120,000/month  
 Ongoing fixes, features, monitoring, and predictable development time for custom platforms.
 
-**Growth Retainer:** JMD $80,000 to $200,000/month**  
+**Growth Retainer:** JMD $80,000 to $200,000/month  
 Roadmap features, automation, reports, and a long-term improvement partner.
 
 ---
@@ -232,56 +284,100 @@ Use this quick guide when a client comes through a referrer:
 
 **"I just need to be online"** → Entry (Starter Website or Landing Page)
 
-**"I need bookings / enquiries / the site to help run the business"** → Growth (Business Website + Systems)
+**"I need bookings / enquiries / the site to help run the business"** → Growth (confirm if admin portal is required)
+
+**"I need bookings AND staff can manage everything in a dashboard"** → Booking + ops platform (JMD $280,000 to $450,000)
 
 **"I need tracking, dashboards, or software for my team"** → Systems (Custom Platform or Logistics Lite)
 
-**"The site is live but nobody maintains it"** → Care Essential, Standard, or Plus
+**"The site is live but nobody maintains it"** → Care Essential, Standard, or Plus (match tier to stack; see below)
 
 **"We have custom software and keep needing changes"** → Business Systems or Growth Retainer
 
-**Always ask:** What happens if the site breaks before a busy weekend? Who updates prices when they change?
+**Always ask:** Is booking the only need, or does staff need a login? How many services/locations? Any application forms? Who updates prices?
 
----
+### Care tier by stack weight
 
-## Worked example: The Beauty Refinery JA (ongoing care)
+**Brochure site** → Essential (JMD $4,000 to $6,000). Uptime + security; edits often separate.
 
-Build for this client is **already agreed**. This section is about **what comes after** — monthly care for the live operating stack.
+**Booking site (no admin)** → Essential to Standard. Booking-flow checks + price updates.
 
-### Business profile
+**Booking + admin + email** → **Standard (JMD $8,000 to $12,000)**. Dashboard, auth, catalog, email paths.
 
-- Salon with **two locations**
-- Appointments booked **through the website**
-- **Deposits** depend on clear, correct instructions on the site
-- Service menus and training prices **change regularly**
-- **Admin dashboard** for staff (bookings, applications, insights, team roles)
-- **Automated emails** after appointments and for monthly rebook reminders
-- The stack is **operations**, not just marketing
+**Custom platform** → Business Systems Retainer. Ongoing feature and ops work.
 
-### Recommended ongoing package
+## Worked example: The Beauty Refinery JA
 
-**Care (lean Essential package):** JMD $5,000/month**  
-Sits within the published Care Essential band (JMD $4,000 to $6,000) but sized for a **booking- and ops-dependent salon**:
+Live site: [thebeautyrefineryja.com](https://www.thebeautyrefineryja.com/)
 
-- Uptime and security monitoring for the public site **and** admin tools
-- Booking-flow, application form, and email-path checks
-- Reasonable monthly updates: prices, services, hours, policies, locations
-- Light staff guidance for dashboard use (logins, roles, where applications live)
-- Oversight of hosting, database, domain, and transactional email health
-- A dedicated contact when something breaks
+This is the **reference project** for beauty/booking + ops pricing. Use it so referrers do not treat the next similar client like a brochure.
 
-If the salon needs faster turnaround or heavier dashboard / email change volume, step up to **Care Standard (JMD $8,000 to $12,000/month)**.
+### What was built (scope)
 
-### What they pay going forward (illustrative)
+**Public site (9 routes)**  
+Home, services, about, training, gallery, policies, FAQs, contact, retreat application.
 
-- **Care:** JMD $5,000/month  
-- **Infrastructure:** domain, hosting, database, email sending — low at first; may grow with usage (client-owned or at cost)
+**Booking (operations-critical)**  
+4-step flow; 28+ services; Kingston + Treasure Beach; optional artist; 12-hour advance rule; 50% deposit policy; refill logic; booking references; WhatsApp deposit handoff.
 
-**Year picture at $5,000/month:** about **JMD $60,000/year** for ownership of a live booking site, staff admin, applications, and client follow-up emails — far less than repeated emergency fixes plus lost appointments.
+**Admin portal (staff-facing)**  
+Insights, applications inbox, team management with privileges, bookings overview, booking CRUD/reschedule, services, technicians, locations.
 
-### Why the referrer can stand behind this
+**Backend / security**  
+Live database catalog, appointments, applications, staff profiles; access policies; server-side booking validation; secured staff management; versioned schema and migrations.
 
-> Monthly care (JMD $5,000) keeps the live system working: public booking site, staff admin dashboard, application intake, and client email follow-ups. Platform hosting and email tools are separate and still need someone to manage them. At this rate, care is a light retainer, not agency overhead. Without it, every fix is a separate bill and bookings, staff tools, or emails can fail quietly.
+**Not in v1 (price separately if added later)**  
+Card payments, SMS, real-time availability engine, automated deposit email (documented for future).
+
+### How scope maps to money
+
+**Multi-page public site:** JMD $140,000 to $200,000  
+**Booking system (rules + validation):** JMD $70,000 to $100,000  
+**Admin portal (8 modules):** JMD $90,000 to $130,000  
+**Retreat application pipeline:** JMD $40,000 to $55,000  
+**Team privileges + secured staff flows:** JMD $45,000 to $65,000  
+**Database, auth, security layer:** JMD $55,000 to $85,000  
+**Bundled reference (new quote):** **JMD $320,000 to $450,000**
+
+**Do not quote below JMD $280,000** for this scope class on a new client. The published Growth cap (JMD $280,000) is a **simple** business site, not booking + admin + RBAC.
+
+### Build status for this client
+
+If build was already agreed below reference value, treat the gap as a **one-time concession**, not the new list price. Future beauty/booking referrals should use the table above.
+
+**Illustrative milestone split (JMD $380,000 reference quote):**  
+JMD $152,000 signing · JMD $114,000 design · JMD $114,000 launch
+
+**Illustrative Flex (12 months, 40% deposit):**  
+JMD $152,000 deposit + ~JMD $22,000/month × 12 (includes plan fee on financed portion)
+
+### Ongoing care for this stack
+
+This client runs **booking + admin + applications + email**. That is **not** brochure Essential care, even at a lean rate.
+
+**Lean Essential (current TBRJA agreement):** JMD $5,000/month  
+Light retainer; ~1 to 3 hrs/month; booking, admin, email health checks; reasonable price/policy updates.
+
+**Market Standard (new quotes):** JMD $8,000 to $10,000/month  
+Recommended for the same stack on a new client: formal edit hours, WhatsApp support, monthly health report.
+
+**Care Plus:** JMD $15,000+/month  
+Faster response, more change volume, priority during campaigns.
+
+**Why Standard is the market rate here:** care covers **two surfaces** (public + admin), transactional email, application workflow, and catalog with 28+ services across two locations. Essential pricing assumes the site rarely changes and has no staff login.
+
+**Year-one ops picture (reference Standard at JMD $9,000/month):**  
+~JMD $108,000/year care + infrastructure at cost. Still cheaper than one bad month of broken bookings and silent email failure.
+
+### Referrer scripts for TBRJA
+
+**If build is done, care is the conversation:**
+
+> The studio runs on a booking site, staff admin, and client emails. JMD $5,000/month is a lean care rate for that whole stack. Platform hosting and email are separate. Without care, every fix is ad-hoc and outages cost more than the retainer.
+
+**If referring a similar salon (new build):**
+
+> Expect roughly JMD $320,000 to $450,000 for a comparable build (multi-page site, live booking, admin dashboard, applications, team access), plus JMD $8,000 to $12,000/month care after launch. A JMD $120,000 quote is a brochure, not this product.
 
 ---
 
@@ -326,7 +422,7 @@ To keep monthly fees fair and predictable:
 
 ### When referring a beauty / booking client like Beauty Refinery
 
-> For TBRJA, build is already sorted. Focus on care at about JMD $5,000/month: booking checks, admin dashboard health, application intake, email follow-ups, price updates, and someone to call when something fails before a busy weekend.
+> For a comparable new build: roughly JMD $320,000 to $450,000 (site, booking, admin, applications, team access) plus JMD $8,000 to $12,000/month care. For TBRJA with build already agreed, care at JMD $5,000/month is a lean rate for the live stack; Standard is the market rate for the same scope on a new client.
 
 ---
 
@@ -336,7 +432,7 @@ To keep monthly fees fair and predictable:
 2. **Client books** a free discovery call via buzprout.vercel.app or direct contact.
 3. **Buzprout confirms** outcome, scope, and firm quote.
 4. **Client chooses** Milestone, Flex, or Build + Care (if eligible).
-5. **Care is agreed** before or at launch. It is not treated as optional as optional for booking-dependent businesses.
+5. **Care is agreed** before or at launch. It is not treated as optional for booking-dependent businesses.
 
 Referrers are welcome to stay in the loop; client contracts and payments are directly with Buzprout unless otherwise agreed.
 
@@ -346,8 +442,8 @@ Referrers are welcome to stay in the loop; client contracts and payments are dir
 
 **Buzprout prices reflect real business outcomes, not cheap templates.**
 
-- **Build** = create the asset (JMD $25,000 to $2M+ depending on tier)
-- **Care** = keep it reliable (JMD $4,000 to $22,000/month for websites; higher for systems)
+- **Build** = create the asset (JMD $25,000 to $2M+ depending on tier; **booking + admin stacks: JMD $280,000+**)
+- **Care** = keep it reliable (match tier to stack; **ops stacks: JMD $8,000+/month** on new quotes)
 - **Infrastructure** = separate category costs (hosting, database, domain) that still need ownership
 - **Nothing is free:** the only question is whether the client pays in cash, time, or lost opportunity
 

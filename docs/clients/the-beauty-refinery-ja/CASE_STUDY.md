@@ -269,6 +269,12 @@ Brand line retained: *Tailored Beauty. Refined Experience.*
 
 ---
 
+## Pricing reference (internal)
+
+See [referrer-pricing-guide.md](./referrer-pricing-guide.md) for full scope-to-price bands and TBRJA as the benchmark for beauty/booking + ops referrals.
+
+---
+
 ## Related Buzprout docs
 
 - [Referrer pricing guide](./referrer-pricing-guide.md)
