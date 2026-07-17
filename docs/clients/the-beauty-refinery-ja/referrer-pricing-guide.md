@@ -244,9 +244,9 @@ Use this quick guide when a client comes through a referrer:
 
 ---
 
-## Worked example: The Beauty Refinery JA
+## Worked example: The Beauty Refinery JA (ongoing care)
 
-This section shows how pricing fits together for a **beauty / booking business** referred through a partner.
+Build for this client is **already agreed**. This section is about **what comes after** — monthly care for the live operating stack.
 
 ### Business profile
 
@@ -254,49 +254,34 @@ This section shows how pricing fits together for a **beauty / booking business**
 - Appointments booked **through the website**
 - **Deposits** depend on clear, correct instructions on the site
 - Service menus and training prices **change regularly**
-- The site is **operations**, not just marketing
+- **Admin dashboard** for staff (bookings, applications, insights, team roles)
+- **Automated emails** after appointments and for monthly rebook reminders
+- The stack is **operations**, not just marketing
 
-### Recommended package
-
-**Build: Business Website + Systems (Growth tier)**  
-Range: **JMD $120,000 to $280,000**  
-Timeline: 3 to 6 weeks  
-Includes: Professional site, booking flow, mobile experience, analytics, and setup aligned to how the salon sells services.
-
-Firm quote depends on final page count, booking complexity, content readiness, and integrations. Referrers should quote the **range** until Buzprout completes a discovery call.
+### Recommended ongoing package
 
 **Care (lean Essential package):** JMD $5,000/month**  
-Sits within the published Care Essential band (JMD $4,000 to $6,000) but sized for a **booking-dependent salon**, not a static brochure:
+Sits within the published Care Essential band (JMD $4,000 to $6,000) but sized for a **booking- and ops-dependent salon**:
 
-- Uptime and security monitoring
-- Booking-flow checks end to end
+- Uptime and security monitoring for the public site **and** admin tools
+- Booking-flow, application form, and email-path checks
 - Reasonable monthly updates: prices, services, hours, policies, locations
+- Light staff guidance for dashboard use (logins, roles, where applications live)
+- Oversight of hosting, database, domain, and transactional email health
 - A dedicated contact when something breaks
-- Oversight of hosting, database, and domain health
 
-If the salon needs faster turnaround or more monthly changes, step up to **Care Standard (JMD $8,000 to $12,000/month)**.
+If the salon needs faster turnaround or heavier dashboard / email change volume, step up to **Care Standard (JMD $8,000 to $12,000/month)**.
 
-### What the client pays over time (illustrative)
+### What they pay going forward (illustrative)
 
-**Option A:** Milestone build + care**
+- **Care:** JMD $5,000/month  
+- **Infrastructure:** domain, hosting, database, email sending — low at first; may grow with usage (client-owned or at cost)
 
-- Build: e.g. JMD $180,000 (firm quote after discovery) paid in three milestones
-- Care: JMD $5,000/month starting after launch
-- Infrastructure: domain, hosting, database. Low at first; may grow with usage (client-owned or at cost)
-
-**Option B:** Flex build + care**
-
-- Build: deposit + monthly installments over up to 12 months (Growth tier)
-- Care: JMD $5,000/month from launch (separate from Flex payments)
-
-**Year-one picture (example, JMD $180,000 build + $5,000/month care):**  
-Build JMD $180,000 + Care JMD $60,000 = **JMD $240,000 in year one**, before any infrastructure upgrades.
-
-That is modest for a live booking system that protects weekend revenue, and far less than repeated emergency fixes plus lost appointments.
+**Year picture at $5,000/month:** about **JMD $60,000/year** for ownership of a live booking site, staff admin, applications, and client follow-up emails — far less than repeated emergency fixes plus lost appointments.
 
 ### Why the referrer can stand behind this
 
-> The build creates the booking site. The monthly care keeps it accurate and working: prices, hours, deposits, and the book flow. Platform hosting is separate and still needs someone to manage it. At JMD $5,000/month, care is a light retainer, not agency overhead. Without it, every fix is a separate bill and the site drifts from what the salon actually charges.
+> Monthly care (JMD $5,000) keeps the live system working: public booking site, staff admin dashboard, application intake, and client email follow-ups. Platform hosting and email tools are separate and still need someone to manage them. At this rate, care is a light retainer, not agency overhead. Without it, every fix is a separate bill and bookings, staff tools, or emails can fail quietly.
 
 ---
 
@@ -341,7 +326,7 @@ To keep monthly fees fair and predictable:
 
 ### When referring a beauty / booking client like Beauty Refinery
 
-> Expect Growth-tier build (roughly JMD $120,000 to $280,000 depending on scope) plus about JMD $5,000/month care after launch. That care covers booking checks, price updates, and someone to call when the site fails before a busy weekend.
+> For TBRJA, build is already sorted. Focus on care at about JMD $5,000/month: booking checks, admin dashboard health, application intake, email follow-ups, price updates, and someone to call when something fails before a busy weekend.
 
 ---
 
