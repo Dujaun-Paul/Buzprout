@@ -19,6 +19,24 @@ export type CaseStudy = {
 
 export const CASE_STUDIES: CaseStudy[] = [
   {
+    id: "beauty-refinery-ja",
+    client: "The Beauty Refinery JA",
+    industry: "Beauty",
+    location: "Jamaica",
+    problem:
+      "The booking flow looked finished, but appointments only lived in browser memory. Mock admin data reset on refresh, and the owner had no reliable way to manage services, staff, or retreat applications.",
+    solution:
+      "A multi-page public site with live booking, deposit policy at every step, retreat applications, and a privilege-based admin portal so staff manage catalog and appointments without touching code.",
+    metrics: [
+      { label: "Booking persistence", before: "Local state only", after: "Real appointments + refs" },
+      { label: "Admin catalog edits", before: "Lost on refresh", after: "Saved in live database" },
+      { label: "Team access control", before: "No staff governance", after: "Owner-managed privileges" },
+    ],
+    image: "/projects/thebeautyrefineryja.png",
+    url: "https://www.thebeautyrefineryja.com/",
+    projectTitle: "The Beauty Refinery JA",
+  },
+  {
     id: "smart-xpress",
     client: "Smart Xpress Courier",
     industry: "Logistics",

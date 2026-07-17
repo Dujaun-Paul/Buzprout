@@ -14,6 +14,7 @@ export const ABOUT = {
 } as const;
 
 export const CLIENT_LOGOS = [
+  { name: "The Beauty Refinery JA", href: "https://www.thebeautyrefineryja.com/" },
   { name: "Immers3D", href: "https://immers3-d.vercel.app/" },
   { name: "Wayfora", href: "https://wayfora-web.vercel.app/" },
   { name: "Waataly", href: "https://waataly.com" },

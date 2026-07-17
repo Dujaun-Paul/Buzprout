@@ -12,6 +12,17 @@ export type Project = {
 
 export const PROJECTS: Project[] = [
   {
+    title: "The Beauty Refinery JA",
+    category: "More bookings",
+    desc: "Website-only booking with deposit policy, two studio locations, and a staff dashboard the owner runs day to day.",
+    image: "/projects/thebeautyrefineryja.png",
+    url: "https://www.thebeautyrefineryja.com/",
+    tags: ["Beauty", "Online booking", "Admin portal", "Jamaica"],
+    impact: "Bookings that stick",
+    industryIds: ["beauty"],
+    metric: "Live booking + admin ops",
+  },
+  {
     title: "Immers3D",
     category: "More bookings",
     desc: "Immersive 3D previews help tourists explore Jamaica before they book.",
