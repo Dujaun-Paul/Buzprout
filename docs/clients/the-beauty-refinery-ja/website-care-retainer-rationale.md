@@ -11,7 +11,7 @@
 **Document:** Website Care Rationale  
 **For:** Referrer, biller, and client discussion  
 **Status:** Confidential  
-**Note:** Build work is already agreed. This document covers **what comes after** ,  keeping the live system running.
+**Note:** Build work is already agreed. This document covers **what comes after** — keeping the live system running.
 
 ---
 
@@ -27,11 +27,11 @@ The project is no longer just a brochure website. It is a **working system**: on
 
 What the business runs on day to day:
 
-- **Public website** ,  brand, services, hours, locations, policies, training info  
-- **Online booking** ,  appointments tied to deposits and clear instructions  
-- **Admin dashboard** ,  staff login, bookings overview, applications, insights, team roles  
-- **Application intake** ,  retreat / training forms stored for the team to review  
-- **Email automation** ,  post-appointment thank-you and monthly rebook reminders (with staff overrides)
+- **Public website** — brand, services, hours, locations, policies, training info  
+- **Online booking** — appointments tied to deposits and clear instructions  
+- **Admin dashboard** — staff login, bookings overview, applications, insights, team roles  
+- **Application intake** — retreat / training forms stored for the team to review  
+- **Email automation** — post-appointment thank-you and monthly rebook reminders (with staff overrides)
 
 Care is not “server rent.” It is **ownership of that whole stack** so bookings, staff tools, and client emails keep working when prices change, browsers update, or something fails before a busy weekend.
 
@@ -77,9 +77,7 @@ A monthly care fee budgets for that before it becomes an emergency invoice or a 
 
 ## 4. What is included: JMD $5,000 / month
 
-This is a **lean Care Essential package** for a **booking- and operations-dependent salon**. It sits within Buzprout's published Care Essential range (JMD $4,000 to $6,000/month) but covers more than a static brochure: public site, admin dashboard, applications, and email paths.
-
-**Market note (internal):** for this stack on a **new client**, Buzprout would normally quote **Care Standard (JMD $8,000 to $12,000/month)**. JMD $5,000/month here is a lean rate for an agreed relationship, not the list price for booking + admin + email elsewhere.
+This is a **lean Care Essential package** for a **booking- and operations-dependent salon**. It sits within Buzprout's published Care Essential range (JMD $4,000 to $6,000/month) and is sized for a business that depends on the website **and** the admin tools behind it — not a brochure that rarely changes.
 
 ### Keep the system healthy
 
@@ -138,11 +136,7 @@ This keeps the retainer from becoming unlimited unpaid development. **Caring for
 
 ---
 
-## 6. Why JMD $5,000 makes sense (and what full scope is worth)
-
-### What was built (why care is not “hosting only”)
-
-The live system includes a multi-page public site, 4-step booking with business rules, retreat applications, a staff admin portal (bookings, catalog, team privileges, insights), and client email follow-ups. **Reference build value for this scope on a new quote: JMD $320,000 to $450,000.** Care at JMD $5,000/month maintains that asset; it does not re-pay for the build.
+## 6. Why JMD $5,000 makes sense
 
 ### Running costs (categories, not vendors)
 
@@ -156,7 +150,7 @@ Even when platform costs stay modest, **someone must own them**. That ownership 
 
 ### Professional time (the real value)
 
-At JMD $5,000/month, this is roughly **1 to 3 hours** of specialist care per month ,  a light retainer, not a large agency contract.
+At JMD $5,000/month, this is roughly **1 to 3 hours** of specialist care per month — a light retainer, not a large agency contract.
 
 One broken booking weekend, or a week of missed rebook emails, can cost the business more than one month of care in lost deposits and appointments. Care is priced to prevent that, not to match server rent line by line.
 
@@ -215,12 +209,12 @@ Stale prices, a broken book flow, a locked-out admin, or failed follow-up emails
 System health, booking and admin checks, email oversight, security and bug fixes, small content and price updates. Recommended default while the stack stays at current scope.
 
 **Care Standard:** JMD $8,000 to $12,000/month  
-Faster response, more monthly change allowance, formal edit hours. **Market rate for this stack on a new client.**
+Faster response, more monthly change allowance, formal edit hours. For busier studios or heavier dashboard / email change volume.
 
 **Ad-hoc only (not recommended):** $0 monthly  
 Client accepts hourly rates and slower support; no proactive care. Risky once admin tools and automated emails are in daily use.
 
-Use Care Standard for new booking + admin clients. JMD $5,000 Essential here is a lean concession, not a template for underpricing the next salon.
+Use Care Standard only if the business needs more speed or volume. Do not discount Essential into unpaid on-call work.
 
 ---
 
