@@ -232,6 +232,27 @@
     @apply bg-muted border-y border-border;
   }
 
+  /* Tighter vertical rhythm on mobile; keep generous spacing on desktop */
+  .section-y {
+    @apply py-12 md:py-28;
+  }
+
+  .section-y-md {
+    @apply py-10 md:py-20;
+  }
+
+  .section-y-sm {
+    @apply py-10 md:py-16;
+  }
+
+  .section-y-lg {
+    @apply py-14 md:py-36;
+  }
+
+  .section-head {
+    @apply mb-8 md:mb-16;
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     .animate-fade-up {
       animation: fade-up 0.7s ease-out both;

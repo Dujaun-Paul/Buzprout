@@ -2,9 +2,9 @@ import { TESTIMONIALS } from "../data/testimonials";
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-28 px-6">
+    <section className="section-y px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center section-head">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
             Testimonials
           </p>

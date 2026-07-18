@@ -4,9 +4,9 @@ import { MATURITY_STAGES } from "../data/maturity";
 
 export default function MaturitySection() {
   return (
-    <section id="start-here" className="py-28 px-6">
+    <section id="start-here" className="section-y px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16 max-w-2xl mx-auto">
+        <div className="text-center section-head max-w-2xl mx-auto">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
             Where to start
           </p>

@@ -147,7 +147,7 @@ export default function AssessmentSection() {
   }
 
   return (
-    <section className="relative py-16 md:py-24 px-6 overflow-hidden">
+    <section className="relative py-10 md:py-24 px-6 overflow-hidden">
       <div
         className="absolute inset-0 opacity-40 pointer-events-none"
         style={{

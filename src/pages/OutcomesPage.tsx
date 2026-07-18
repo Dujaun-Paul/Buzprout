@@ -16,7 +16,7 @@ export default function OutcomesPage() {
         cta={{ label: "Tell us what's slowing you down", to: "/contact" }}
       />
       <OutcomesList />
-      <section className="py-20 px-6 section-muted">
+      <section className="section-y-md px-6 section-muted">
         <div className="max-w-2xl mx-auto text-center">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
             Not sure which fits?

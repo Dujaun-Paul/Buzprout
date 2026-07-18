@@ -7,7 +7,7 @@ import { STOCK_IMAGES } from "../data/images";
 
 export default function WhySection() {
   return (
-    <section className="py-20 px-6">
+    <section className="section-y-md px-6">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
           <div className="lg:col-span-5">

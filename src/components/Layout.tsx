@@ -91,14 +91,14 @@ export default function Layout() {
         )}
       </header>
 
-      <main className="pb-24 md:pb-0">
+      <main>
         <Outlet />
       </main>
 
       <StickyCTA />
       <CookieBanner />
 
-      <footer className="border-t border-border bg-muted py-16 px-6">
+      <footer className="border-t border-border bg-muted pt-12 pb-32 md:py-16 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
             <div>

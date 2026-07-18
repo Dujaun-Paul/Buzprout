@@ -16,7 +16,7 @@ export default function HomePage() {
 
   return (
     <>
-      <section className="relative pt-36 pb-28 px-6 overflow-hidden min-h-[85vh] flex items-center">
+      <section className="relative pt-28 pb-16 md:pt-36 md:pb-28 px-6 overflow-hidden min-h-[70vh] md:min-h-[85vh] flex items-center">
         <StockVideo
           src={STOCK_VIDEOS.hero.src}
           label={STOCK_VIDEOS.hero.label}
@@ -52,7 +52,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16 px-6">
+      <section className="section-y-sm px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
           <div className="rounded-2xl overflow-hidden border border-border shadow-soft aspect-[4/3] order-2 lg:order-1">
             <StockImage src={STOCK_IMAGES.caribbean.src} alt={STOCK_IMAGES.caribbean.alt} />
@@ -77,9 +77,9 @@ export default function HomePage() {
 
       <OutcomesList limit={3} showLink />
 
-      <section className="py-20 px-6 section-muted">
+      <section className="section-y-md px-6 section-muted">
         <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-8 md:mb-12">
             <div>
               <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">Portfolio</p>
               <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-3">
@@ -128,7 +128,7 @@ export default function HomePage() {
 
       <InsightsSection />
 
-      <section className="py-20 px-6">
+      <section className="section-y-md px-6">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-5">
             Ready to fix what's slowing you down?

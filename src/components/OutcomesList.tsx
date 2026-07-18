@@ -13,10 +13,10 @@ export default function OutcomesList({ limit, showLink = false }: OutcomesListPr
   const items = limit ? OUTCOMES.slice(0, limit) : OUTCOMES;
 
   return (
-    <section className="py-20 px-6">
+    <section className="section-y-md px-6">
       <div className="max-w-7xl mx-auto">
         {!limit && (
-          <div className="mb-12 text-center max-w-2xl mx-auto">
+          <div className="mb-8 md:mb-12 text-center max-w-2xl mx-auto">
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">Outcomes</p>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground mb-4">
               Fixes for the problems you actually have

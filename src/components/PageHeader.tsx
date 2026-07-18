@@ -29,7 +29,7 @@ export default function PageHeader({
   const hasImage = Boolean(imageSrc && imageAlt);
 
   return (
-    <section className={`relative px-6 overflow-hidden ${hasVideo ? "pt-36 pb-24" : "pt-32 pb-16"}`}>
+    <section className={`relative px-6 overflow-hidden ${hasVideo ? "pt-28 pb-14 md:pt-36 md:pb-24" : "pt-24 pb-12 md:pt-32 md:pb-16"}`}>
       {hasVideo && (
         <StockVideo
           src={videoSrc!}

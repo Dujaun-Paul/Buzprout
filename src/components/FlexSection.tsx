@@ -20,9 +20,9 @@ const growthExample = calculateFlexQuote({
 
 export default function FlexSection() {
   return (
-    <section id="flex" className="py-28 px-6">
+    <section id="flex" className="section-y px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="max-w-3xl mb-16">
+        <div className="max-w-3xl section-head">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
             How to start
           </p>
@@ -37,7 +37,7 @@ export default function FlexSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mb-8 md:mb-16">
           {FLEX_PRODUCT.promises.map((promise) => (
             <div
               key={promise}
@@ -49,7 +49,7 @@ export default function FlexSection() {
           ))}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8 md:mb-16">
           {/* Example quote */}
           <div className="p-8 rounded-2xl border border-primary/20 bg-primary/[0.04] shadow-soft">
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-3">
@@ -133,7 +133,7 @@ export default function FlexSection() {
         </div>
 
         {/* Build + Care */}
-        <div className="p-8 rounded-2xl border border-border bg-card mb-16">
+        <div className="p-8 rounded-2xl border border-border bg-card mb-8 md:mb-16">
           <h3 className="text-lg font-semibold text-foreground mb-2">{BUILD_PLUS_CARE.name}</h3>
           <p className="text-sm text-muted-foreground mb-4 max-w-2xl">
             {BUILD_PLUS_CARE.description} Best for entry tier when Flex deposit is still a
@@ -149,7 +149,7 @@ export default function FlexSection() {
         </div>
 
         {/* Ownership */}
-        <div className="mb-12">
+        <div className="mb-8 md:mb-12">
           <h3 className="text-lg font-semibold text-foreground mb-4">How ownership works</h3>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
             {FLEX_OWNERSHIP_POINTS.map((point) => (

@@ -16,9 +16,9 @@ function ResourceCta({ type, href }: { type: string; href: string }) {
 
 export default function InsightsSection() {
   return (
-    <section id="insights" className="py-28 px-6 section-muted">
+    <section id="insights" className="section-y px-6 section-muted">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-12 max-w-2xl">
+        <div className="mb-8 md:mb-12 max-w-2xl">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
             Resources
           </p>

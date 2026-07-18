@@ -3,9 +3,9 @@ import { CASE_STUDIES } from "../data/caseStudies";
 
 export default function CaseStudiesSection() {
   return (
-    <section id="case-studies" className="py-28 px-6">
+    <section id="case-studies" className="section-y px-6">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16 max-w-2xl">
+        <div className="section-head max-w-2xl">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
             Case studies
           </p>

@@ -14,10 +14,10 @@ export default function WorkSection({ activeIndustry, onClearFilter, hideHeader 
     : PROJECTS;
 
   return (
-    <section id="work" className={`${hideHeader ? "py-16" : "py-28"} px-6 section-muted`}>
+    <section id="work" className={`${hideHeader ? "section-y-sm" : "section-y"} px-6 section-muted`}>
       <div className="max-w-7xl mx-auto">
         {!hideHeader && (
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 section-head">
           <div>
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
               Portfolio

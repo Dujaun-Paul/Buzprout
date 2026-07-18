@@ -6,7 +6,7 @@ import { STOCK_IMAGES } from "../data/images";
 
 export default function ProcessSection() {
   return (
-    <section className="py-20 px-6 section-muted">
+    <section className="section-y-md px-6 section-muted">
       <div className="max-w-7xl mx-auto">
         <div className="rounded-2xl overflow-hidden border border-border mb-14 aspect-[21/9] max-w-4xl mx-auto shadow-soft">
           <StockImage src={STOCK_IMAGES.planning.src} alt={STOCK_IMAGES.planning.alt} />

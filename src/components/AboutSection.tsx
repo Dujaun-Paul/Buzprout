@@ -10,9 +10,9 @@ type AboutSectionProps = {
 
 export default function AboutSection({ compact = false }: AboutSectionProps) {
   return (
-    <section id="about" className={`${compact ? "py-16" : "py-28"} px-6`}>
+    <section id="about" className={`${compact ? "section-y-sm" : "section-y"} px-6`}>
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 items-start">
           <div>
             {!compact && (
               <>
@@ -64,7 +64,7 @@ export default function AboutSection({ compact = false }: AboutSectionProps) {
           </div>
         </div>
 
-        <div className="mt-20 pt-12 border-t border-border">
+        <div className="mt-12 md:mt-20 pt-8 md:pt-12 border-t border-border">
           <p className="text-xs text-muted-foreground uppercase tracking-widest mb-6 font-medium">
             Teams we've built for
           </p>

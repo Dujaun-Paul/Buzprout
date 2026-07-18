@@ -126,9 +126,9 @@ function AcademyWaitlistForm() {
 
 export default function AcademySection() {
   return (
-    <section id="academy" className="py-28 px-6 section-muted">
+    <section id="academy" className="section-y px-6 section-muted">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-8 md:mb-16 items-center">
           <div>
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
               DIY path
@@ -155,7 +155,7 @@ export default function AcademySection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-8 md:mb-16">
           <div>
             <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
               <BookOpen size={18} className="text-primary" />
@@ -192,7 +192,7 @@ export default function AcademySection() {
         </div>
 
         <h3 className="text-lg font-semibold text-foreground mb-6">Course options</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8 md:mb-12">
           {COURSE_TIERS.map((tier) => (
             <div
               key={tier.title}

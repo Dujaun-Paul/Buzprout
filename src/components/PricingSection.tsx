@@ -13,9 +13,9 @@ import { CONTACT } from "../data/contact";
 
 export default function PricingSection() {
   return (
-    <section id="pricing" className="py-28 px-6 section-muted">
+    <section id="pricing" className="section-y px-6 section-muted">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-16 max-w-3xl">
+        <div className="section-head max-w-3xl">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">
             Packages
           </p>
@@ -27,7 +27,7 @@ export default function PricingSection() {
           </p>
         </div>
 
-        <div className="mb-16 p-6 md:p-8 rounded-2xl border border-primary/25 bg-primary/[0.05] flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div className="mb-8 md:mb-16 p-6 md:p-8 rounded-2xl border border-primary/25 bg-primary/[0.05] flex flex-col md:flex-row md:items-center md:justify-between gap-6">
           <div>
             <p className="text-xs text-primary uppercase tracking-widest font-medium mb-2">
               Where most owners start
@@ -201,7 +201,7 @@ export default function PricingSection() {
         </div>
 
         {/* Add-ons */}
-        <div className="mt-20 pt-12 border-t border-border">
+        <div className="mt-12 md:mt-20 pt-8 md:pt-12 border-t border-border">
           <h3 className="text-lg font-semibold text-foreground mb-2">
             Need something specific?
           </h3>

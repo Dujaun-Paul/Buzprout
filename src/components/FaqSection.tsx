@@ -6,9 +6,9 @@ export default function FaqSection() {
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
   return (
-    <section className="py-20 px-6 section-muted">
+    <section className="section-y-md px-6 section-muted">
       <div className="max-w-2xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 md:mb-12">
           <p className="text-xs text-primary uppercase tracking-widest font-medium mb-4">FAQ</p>
           <h2 className="text-3xl font-bold tracking-tight text-foreground mb-3">Common questions</h2>
           <p className="text-muted-foreground text-sm">

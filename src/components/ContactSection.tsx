@@ -67,7 +67,7 @@ export default function ContactSection({ compact = false }: ContactSectionProps)
   return (
     <section
       id="contact"
-      className={`relative ${compact ? "py-16" : "py-36"} px-6 overflow-hidden pb-28 md:pb-36`}
+      className={`relative ${compact ? "section-y-sm" : "section-y-lg"} px-6 overflow-hidden pb-28 md:pb-36`}
     >
       {!compact && (
         <>
