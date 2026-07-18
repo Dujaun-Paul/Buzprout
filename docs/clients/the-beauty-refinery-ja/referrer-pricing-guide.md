@@ -303,20 +303,24 @@ The fee combines routine operating costs with ongoing technical ownership:
 - Technical ownership of the public site, booking flow, customer accounts, admin portal, and email delivery
 - Advance warning when usage requires a higher infrastructure tier
 
-### Cost-center view
+### What the platform fee supports
 
-Specific suppliers are intentionally not listed. The client is buying a managed outcome from Buzprout, not being asked to coordinate the underlying technology vendors.
+The client is buying a **managed operating service**, not reimbursing Buzprout for a list of supplier invoices. The JMD $5,000 fee supports all of these connected cost and responsibility areas:
 
-- **Website delivery, secure connection, and global distribution:** currently JMD $0 base
-- **Database, customer accounts, file storage, and server processes:** approximately JMD $1,300–$1,900/month
-- **Domain registration:** approximately JMD $200/month when the annual cost is averaged
-- **Transactional account email:** currently JMD $0 base within the present allowance
-- **Online payment platform:** JMD $0 monthly base; transaction charges apply separately
-- **Monitoring, backups, security patches, software updates, small fixes, and support:** approximately JMD $2,900–$3,700/month
+- **Website hosting and secure delivery:** keeping the public site available, fast, encrypted, and correctly deployed
+- **Business data and customer accounts:** storing bookings, applications, profiles, staff access, and service information
+- **Domain and connection management:** maintaining the business address, secure connection, and routing configuration
+- **Transactional account email:** delivering confirmation and password-recovery messages and monitoring usage limits
+- **Owner billing connection:** maintaining the secure payment path for platform invoices; transaction-processing charges remain separate
+- **Monitoring and data protection:** checking availability, maintaining backups, and responding to failures
+- **Security and software maintenance:** applying patches, updating dependencies, and maintaining access controls
+- **Support and accountability:** handling small fixes, configuration help, and owner/staff questions
 
-Current hard infrastructure is therefore approximately **JMD $1,500–$2,100/month**. The balance of the JMD $5,000 fee pays for maintenance and accountability. Estimates can change with exchange rates, supplier pricing, and usage.
+Some underlying services may use shared capacity or included allowances while usage is low. That is responsible cost management; it does not remove the work required to configure, monitor, secure, update, and support the platform or the responsibility Buzprout carries when something fails.
 
-At current volume, the owner does not receive separate routine infrastructure invoices. If the platform outgrows an included allowance, Buzprout explains the need and price before an upgrade or fee change.
+The exact internal cost of each category can change with usage, exchange rates, and supplier terms, so it is not presented as a fixed pass-through breakdown. The agreed JMD $5,000 is the price for the combined managed service and one accountable technical partner.
+
+At current volume, the owner does not receive separate routine infrastructure invoices. If the platform outgrows an included allowance, Buzprout will explain the need and price before an upgrade or fee change.
 
 ### Billing details
 
