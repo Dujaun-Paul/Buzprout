@@ -10,6 +10,7 @@
 **Document:** Pricing, Billing & Referral Reference
 **Audience:** Referrers, billers, and partners  
 **Status:** Confidential. Share with referred clients as needed  
+**Website:** [buzprout.com](https://buzprout.com)
 **Updated:** July 2026
 
 ---
@@ -399,10 +400,10 @@ Referrers are paid for sending real business. The structure is simple and paid *
 
 ### What a referrer earns
 
-- **Build commission: 10% of the one-time build fee.**  
+- **Build commission: 10% of the one-time build fee.**
   Paid on the build cost the client actually pays. For milestone or monthly (Flex / Build + Care) plans, commission is paid proportionally as each client payment clears.
 
-- **Recurring commission: 10% of the monthly platform / care fee for the first 12 months.**  
+- **Recurring commission: 10% of the monthly platform / care fee for the first 12 months.**
   Paid each month after the client's payment for that month clears. It applies to the first 12 monthly payments per referred client.
 
 ### When and how it is paid
@@ -441,7 +442,7 @@ TBRJA's build is already agreed, so for this client the recurring commission app
 
 1. **Referrer shares** this guide or the relevant section with the client or biller.
 2. **Referrer is named** to Buzprout before the discovery call so the introduction is on record for commission.
-3. **Client books** a free discovery call through Buzprout's official contact link or directly with the team.
+3. **Client books** a free discovery call at [buzprout.com](https://buzprout.com) or directly with the team.
 4. **Buzprout confirms** outcome, scope, and firm quote.
 5. **Client chooses** Milestone, Flex, or Build + Care (if eligible).
 6. **Care is agreed** before or at launch. It is not treated as optional for booking-dependent businesses.
@@ -467,3 +468,4 @@ For booking-dependent businesses like salons, **skipping care to save JMD $5,000
 
 **Buzprout**  
 Technology that helps your business grow.
+[buzprout.com](https://buzprout.com)
