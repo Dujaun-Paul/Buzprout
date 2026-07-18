@@ -277,5 +277,4 @@ See [referrer-pricing-guide.md](./referrer-pricing-guide.md) for full scope-to-p
 
 ## Related Buzprout docs
 
-- [Referrer pricing guide](./referrer-pricing-guide.md)
-- [Website care retainer rationale](./website-care-retainer-rationale.md)
+- [Pricing, billing, and referral guide](./referrer-pricing-guide.md)

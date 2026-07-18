@@ -9,7 +9,7 @@ export const SITE = {
   region: "Caribbean",
   description:
     "Whether you need more bookings, less manual work, or better customer communication, we'll build the right system to help your business move forward.",
-  ogImage: "/og-image.png",
+  ogImage: "/og-image.png?v=2",
 } as const;
 
 export const JSON_LD = {

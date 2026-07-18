@@ -1,4 +1,4 @@
-# Buzprout Referrer Pricing Guide
+# Buzprout Pricing, Billing & Referral Guide
 
 **For referrers sending clients to Buzprout**
 
@@ -7,7 +7,7 @@
 ---
 
 **Prepared by:** Buzprout  
-**Document:** Referrer Pricing & Rationale  
+**Document:** Pricing, Billing & Referral Reference
 **Audience:** Referrers, billers, and partners  
 **Status:** Confidential. Share with referred clients as needed  
 **Updated:** July 2026
@@ -16,7 +16,7 @@
 
 ## Purpose of this document
 
-This guide gives referrers a clear picture of **what Buzprout charges, why those prices exist, and how to set expectations** when sending clients our way.
+This is the complete reference for referrers explaining **what Buzprout charges, how clients are billed, what each price includes, why those prices exist, and how to set expectations** when sending clients our way.
 
 It covers:
 
@@ -24,7 +24,9 @@ It covers:
 - **Payment options** when clients cannot pay everything upfront
 - **Ongoing care** after launch
 - **Add-ons** and what clients pay separately
-- A **worked example** for a beauty / booking business (The Beauty Refinery JA)
+- **Billing boundaries:** what is included, excluded, or quoted separately
+- **Referrer compensation:** what a referrer earns and when they are paid
+- A complete **worked example** showing how the model applies to The Beauty Refinery JA
 
 Published ranges are **starting points**. Every client gets a **firm quote after a free discovery call**, once scope is clear.
 
@@ -58,7 +60,7 @@ Every project and every live site carries cost in one or more forms:
 
 **Platform rent is not care.** Hosting, deployment, and database services provide infrastructure. They do not update service menus, fix bugs after software updates, or answer when the Book button stops working on a Friday night.
 
-Referrers can help clients understand: **the build fee creates the asset; the care fee keeps it reliable; infrastructure bills are separate and still need someone to own them.**
+Referrers can help clients understand: **the build fee creates the asset; the monthly platform or care fee keeps it reliable.** Whether infrastructure is included or billed separately depends on the client agreement. The Beauty Refinery JA's current routine infrastructure is included in its JMD $5,000 platform fee.
 
 ---
 
@@ -244,44 +246,105 @@ Use this quick guide when a client comes through a referrer:
 
 ---
 
-## Worked example: The Beauty Refinery JA (ongoing care)
+## Worked example: The Beauty Refinery JA
 
-Build for this client is **already agreed**. This section is about **what comes after** — monthly care for the live operating stack.
+This case shows how Buzprout's pricing logic applies to a real booking-dependent business. The build is already agreed, so the figures below explain the delivered value and the **JMD $5,000 monthly platform fee** that begins after handover.
 
-### Business profile
+### Why this is a platform, not a brochure site
 
-- Salon with **two locations**
-- Appointments booked **through the website**
-- **Deposits** depend on clear, correct instructions on the site
-- Service menus and training prices **change regularly**
-- **Admin dashboard** for staff (bookings, applications, insights, team roles)
-- **Automated emails** after appointments and for monthly rebook reminders
-- The stack is **operations**, not just marketing
+The Beauty Refinery JA received an operating system for customers, staff, and the owner:
 
-### Recommended ongoing package
+**Public website — 10 page groups**
 
-**Care (lean Essential package):** JMD $5,000/month**  
-Sits within the published Care Essential band (JMD $4,000 to $6,000) but sized for a **booking- and ops-dependent salon**:
+- Home, Services, About, Work, Training, Apply, Policies, FAQs, and Contact
+- Separate application forms for 1-to-1 and 2-to-1 training
+- Live service catalogue with JMD/USD prices and service durations
 
-- Uptime and security monitoring for the public site **and** admin tools
-- Booking-flow, application form, and email-path checks
-- Reasonable monthly updates: prices, services, hours, policies, locations
-- Light staff guidance for dashboard use (logins, roles, where applications live)
-- Oversight of hosting, database, domain, and transactional email health
-- A dedicated contact when something breaks
+**Online booking**
 
-If the salon needs faster turnaround or heavier dashboard / email change volume, step up to **Care Standard (JMD $8,000 to $12,000/month)**.
+- Guided multi-step booking
+- Availability based on opening hours, holidays, days off, partial-day blocks, and service duration
+- Twelve-hour lead time and double-booking prevention
+- Automatic assignment when a customer chooses any available artist
+- Server-side checks before a booking is accepted
 
-### What they pay going forward (illustrative)
+**Customer accounts — 7 screens**
 
-- **Care:** JMD $5,000/month  
-- **Infrastructure:** domain, hosting, database, email sending — low at first; may grow with usage (client-owned or at cost)
+- Registration, login, email confirmation, profile, password change, forgot password, and reset password
+- Prior appointments automatically linked by customer email
 
-**Year picture at $5,000/month:** about **JMD $60,000/year** for ownership of a live booking site, staff admin, applications, and client follow-up emails — far less than repeated emergency fixes plus lost appointments.
+**Owner and staff portal — 10 sections**
+
+- Insights, Applications, Team, Bookings, Services, Availability, Locations, Help & Guide, Password, and Billing
+- Booking search, completion, rescheduling, cancellation, and payment-status management
+- Service pricing and duration controls
+- Staff privileges and bookable-artist configuration
+- Weekly availability and exception management
+- Online invoice viewing and secure payment from the owner billing screen
+
+**Backend, security, and communications**
+
+- Dedicated business data structure with nine staged database updates
+- Eight secure server processes for bookings, rescheduling, staff management, customer linking, and platform billing
+- Record-level access controls across all business data
+- Branded account-confirmation and password-reset emails
+- Owner Operations Manual and technical setup documentation
+
+### Agreed monthly platform fee
+
+**Platform fee: JMD $5,000/month (approximately USD $31)**
+
+The fee combines routine operating costs with ongoing technical ownership:
+
+- Current routine website delivery, database, account, domain, and transactional-email costs
+- Monitoring, managed backups, security and dependency updates
+- Small bug fixes and owner/staff support
+- Technical ownership of the public site, booking flow, customer accounts, admin portal, and email delivery
+- Advance warning when usage requires a higher infrastructure tier
+
+### Cost-center view
+
+Specific suppliers are intentionally not listed. The client is buying a managed outcome from Buzprout, not being asked to coordinate the underlying technology vendors.
+
+- **Website delivery, secure connection, and global distribution:** currently JMD $0 base
+- **Database, customer accounts, file storage, and server processes:** approximately JMD $1,300–$1,900/month
+- **Domain registration:** approximately JMD $200/month when the annual cost is averaged
+- **Transactional account email:** currently JMD $0 base within the present allowance
+- **Online payment platform:** JMD $0 monthly base; transaction charges apply separately
+- **Monitoring, backups, security patches, software updates, small fixes, and support:** approximately JMD $2,900–$3,700/month
+
+Current hard infrastructure is therefore approximately **JMD $1,500–$2,100/month**. The balance of the JMD $5,000 fee pays for maintenance and accountability. Estimates can change with exchange rates, supplier pricing, and usage.
+
+At current volume, the owner does not receive separate routine infrastructure invoices. If the platform outgrows an included allowance, Buzprout explains the need and price before an upgrade or fee change.
+
+### Billing details
+
+- **Handover:** 20 July 2026
+- **First payment due:** 20 August 2026
+- **First invoice:** TBRJA-PLAT-2026-08
+- **Payment method:** secure online checkout from the owner portal’s Billing section
+- **Annual picture at the current rate:** JMD $60,000
+
+The first payment is due one month after handover. The project build and recurring platform fee are separate obligations.
+
+### Not included in the JMD $5,000
+
+- New feature builds, including customer deposit checkout, automatic message reminders, walk-in booking creation, or a customer CRM
+- Redesigns or new pages beyond the delivered set
+- Large content, workflow, or dashboard changes
+- Infrastructure upgrades required after exceeding current usage allowances
+- Per-transaction payment-processing charges
+- Advertising, SEO campaigns, photography, copywriting, or branding
+
+Out-of-scope work is explained and quoted before it begins.
+
+### Growth rule
+
+The current setup is sized for one studio at its present volume. Higher traffic, booking volume, stored data, or email usage may require paid infrastructure tiers. Those costs are not hidden: Buzprout will identify the category, explain why the upgrade is needed, and confirm how it affects billing before making the change.
 
 ### Why the referrer can stand behind this
 
-> Monthly care (JMD $5,000) keeps the live system working: public booking site, staff admin dashboard, application intake, and client email follow-ups. Platform hosting and email tools are separate and still need someone to manage them. At this rate, care is a light retainer, not agency overhead. Without it, every fix is a separate bill and bookings, staff tools, or emails can fail quietly.
+> The Beauty Refinery JA received a full operating platform: public website, booking and availability, customer accounts, owner and staff tools, secure data processes, account emails, billing, and documentation. The JMD $5,000 monthly fee keeps that delivered platform operating and gives the business one accountable technical partner. At current usage it includes routine infrastructure, domain, monitoring, backups, security updates, small fixes, and support. Transaction charges, major new features, redesigns, and future capacity upgrades are separate.
 
 ---
 
@@ -322,21 +385,67 @@ To keep monthly fees fair and predictable:
 
 ### When explaining build vs care
 
-> Build fee = create and launch. Monthly care = keep it live, secure, and accurate. Hosting and database costs are separate categories that still need management.
+> Build fee = create and launch. Monthly care or platform fee = keep it live, secure, and accurate. The agreement will state whether provider costs are included or billed separately.
 
 ### When referring a beauty / booking client like Beauty Refinery
 
-> For TBRJA, build is already sorted. Focus on care at about JMD $5,000/month: booking checks, admin dashboard health, application intake, email follow-ups, price updates, and someone to call when something fails before a busy weekend.
+> For TBRJA, build is already sorted. The JMD $5,000 monthly platform fee includes current routine infrastructure, monitoring, backups, security updates, small fixes, and support for the website, booking system, customer accounts, and admin portal. The first payment is due 20 August 2026 through secure checkout in the owner billing screen.
+
+---
+
+## Referrer compensation
+
+Referrers are paid for sending real business. The structure is simple and paid **only on money actually received** from the client, so there is no risk to Buzprout or the referrer.
+
+### What a referrer earns
+
+- **Build commission: 10% of the one-time build fee.**  
+  Paid on the build cost the client actually pays. For milestone or monthly (Flex / Build + Care) plans, commission is paid proportionally as each client payment clears.
+
+- **Recurring commission: 10% of the monthly platform / care fee for the first 12 months.**  
+  Paid each month after the client's payment for that month clears. It applies to the first 12 monthly payments per referred client.
+
+### When and how it is paid
+
+- Commission is paid **after the client's payment clears**, not at signing. If a payment is refunded or reversed, the related commission is not owed.
+- Payouts are made on a regular cycle (typically monthly) once cleared amounts are confirmed.
+- Recurring commission ends after the 12th monthly payment, or earlier if the client cancels.
+
+### Eligibility
+
+- The **referrer must be named before the client's discovery call** so the introduction is on record.
+- The client must be **new to Buzprout** (not an existing or already-in-progress client).
+- One referrer per client. If two people claim the same client, the first recorded introduction stands.
+- **Self-referrals do not qualify** (a business referring itself for its own project).
+- Commission applies to the **build fee and the monthly platform / care fee only** — not to per-transaction processing charges, third-party infrastructure costs, or reimbursed expenses.
+
+### Worked payout example (Growth build)
+
+A referred client signs a **JMD $200,000** Business Website + Systems build and a **JMD $8,000/month** care plan:
+
+- **Build commission:** 10% of JMD $200,000 = **JMD $20,000** (paid as the client's build payments clear)
+- **Recurring commission:** 10% of JMD $8,000 = **JMD $800/month for 12 months** = **JMD $9,600**
+- **First-year total to referrer:** about **JMD $29,600**
+
+### Beauty Refinery JA payout (recurring only)
+
+TBRJA's build is already agreed, so for this client the recurring commission applies:
+
+- 10% of the **JMD $5,000/month** platform fee = **JMD $500/month**
+- Paid each month after the client's payment clears, for the first 12 months
+- **First-year total to referrer:** **JMD $6,000**
 
 ---
 
 ## Referral process
 
 1. **Referrer shares** this guide or the relevant section with the client or biller.
-2. **Client books** a free discovery call via buzprout.vercel.app or direct contact.
-3. **Buzprout confirms** outcome, scope, and firm quote.
-4. **Client chooses** Milestone, Flex, or Build + Care (if eligible).
-5. **Care is agreed** before or at launch. It is not treated as optional as optional for booking-dependent businesses.
+2. **Referrer is named** to Buzprout before the discovery call so the introduction is on record for commission.
+3. **Client books** a free discovery call through Buzprout's official contact link or directly with the team.
+4. **Buzprout confirms** outcome, scope, and firm quote.
+5. **Client chooses** Milestone, Flex, or Build + Care (if eligible).
+6. **Care is agreed** before or at launch. It is not treated as optional for booking-dependent businesses.
+7. **Referrer is paid** as the client's payments clear (10% of build, then 10% of the monthly fee for 12 months).
 
 Referrers are welcome to stay in the loop; client contracts and payments are directly with Buzprout unless otherwise agreed.
 
@@ -348,7 +457,8 @@ Referrers are welcome to stay in the loop; client contracts and payments are dir
 
 - **Build** = create the asset (JMD $25,000 to $2M+ depending on tier)
 - **Care** = keep it reliable (JMD $4,000 to $22,000/month for websites; higher for systems)
-- **Infrastructure** = separate category costs (hosting, database, domain) that still need ownership
+- **Infrastructure** = real provider costs that may be included in a platform fee or billed separately, as stated in the client agreement
+- **Referrer earns** = 10% of the build fee, plus 10% of the monthly fee for the first 12 months, paid as client payments clear
 - **Nothing is free:** the only question is whether the client pays in cash, time, or lost opportunity
 
 For booking-dependent businesses like salons, **skipping care to save JMD $5,000/month is a false economy.** One bad weekend often costs more than a year of care.
@@ -356,5 +466,4 @@ For booking-dependent businesses like salons, **skipping care to save JMD $5,000
 ---
 
 **Buzprout**  
-Technology that helps your business grow.  
-buzprout.vercel.app
+Technology that helps your business grow.
