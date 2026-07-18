@@ -22,12 +22,12 @@ export default function Layout() {
       <HashScroll />
 
       <header className="fixed top-0 left-0 right-0 z-50 border-b border-border backdrop-blur-xl bg-background/90 shadow-soft">
-        <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link to="/" className="hover:opacity-90 transition-opacity">
+        <div className="max-w-7xl mx-auto px-6 h-16 grid grid-cols-[1fr_auto_1fr] items-center">
+          <Link to="/" className="justify-self-start hover:opacity-90 transition-opacity">
             <BrandLockup />
           </Link>
 
-          <nav className="hidden md:flex items-center gap-7">
+          <nav className="hidden md:flex items-center justify-center gap-7 justify-self-center">
             {NAV_LINKS.map((l) => (
               <NavLink key={l.label} to={l.to} className={navClass}>
                 {l.label}
@@ -35,7 +35,7 @@ export default function Layout() {
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-3 justify-self-end">
             <Link to="/contact" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
               Contact
             </Link>
@@ -50,7 +50,7 @@ export default function Layout() {
           </div>
 
           <button
-            className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
+            className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors justify-self-end col-start-3"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle navigation"
             aria-expanded={menuOpen}
