@@ -42,9 +42,11 @@ export default function HomePage() {
             </a>
             <Link
               to="/assessment"
-              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-md border border-border text-foreground hover:border-primary/40 hover:text-primary transition-colors text-sm"
+              className="btn-glass inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-semibold text-foreground [text-shadow:0_1px_12px_rgba(255,255,255,0.45)] hover:text-primary"
             >
-              Free systems assessment <ArrowUpRight size={16} />
+              <span className="inline-flex items-center gap-2">
+                Free systems assessment <ArrowUpRight size={16} />
+              </span>
             </Link>
           </div>
         </div>
